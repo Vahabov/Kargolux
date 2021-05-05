@@ -704,6 +704,9 @@ body {
         .item {
           width: 49%;
           min-height: 320px;
+          img{
+            margin-left: 10px;
+          }
           .kuryer_delivery {
             width: 155px;
             height: 255px;
@@ -745,6 +748,9 @@ body {
           @include flex-between(flex);
           .left {
             width: 70%;
+            img {
+              display: none;
+            }
             .title {
               margin-bottom: 10px;
               font-family: $extraBold;
@@ -809,9 +815,11 @@ body {
         .right_head {
           width: 49%;
           .title {
-            font-family: $extraBold;
             font-size: 22px;
             margin-bottom: 17px;
+            .orange_color {
+              font-family: $extraBold;
+            }
           }
           .info_text {
             font-size: 14px;

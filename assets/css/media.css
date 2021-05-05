@@ -134,9 +134,18 @@
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    padding-bottom: 50px;
+  }
+  body main .info_and_services_section .container .description_section .title {
+    font-size: 22px;
+  }
+  body main .info_and_services_section .container .description_section p {
+    font-size: 12px;
+    line-height: 18px;
   }
   body main .info_and_services_section .container .item {
     width: 100%;
+    min-height: auto;
   }
   body main .info_and_services_section .container .item .kuryer_delivery {
     width: 94px;
@@ -161,14 +170,81 @@
     display: block;
   }
   body main .info_and_services_section .container .service_item .left {
-    width: 62%;
-    display: inline-block;
+    display: block;
+    width: 100%;
+  }
+  body main .info_and_services_section .container .service_item .left .title {
+    font-size: 16px;
+  }
+  body main .info_and_services_section .container .service_item .left p {
+    font-size: 12px;
+    line-height: 16px;
+  }
+  body main .info_and_services_section .container .service_item .left img {
+    display: block;
+    margin-left: 10px;
+    float: right;
   }
   body main .info_and_services_section .container .service_item .left .btn_more {
     width: 100%;
   }
   body main .info_and_services_section .container .service_item img {
-    float: right;
+    display: none;
+  }
+  body main .order_prices_section .container {
+    padding-bottom: 50px;
+  }
+  body main .order_prices_section .container .heads {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  body main .order_prices_section .container .heads .left_head {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  body main .order_prices_section .container .heads .left_head .country span {
+    font-size: 20px;
+    margin-left: 10px;
+  }
+  body main .order_prices_section .container .heads .left_head .title {
+    margin: 0px;
+    font-size: 18px;
+    text-align: right;
+  }
+  body main .order_prices_section .container .heads .right_head {
+    width: 100%;
+  }
+  body main .order_prices_section .container .heads .right_head .title {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  body main .order_prices_section .container .heads .right_head .info_text {
+    margin-bottom: 20px;
+  }
+  body main .order_prices_section .container .price_blocks {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  body main .order_prices_section .container .price_blocks .info_block {
+    width: 100%;
+    padding: 20px;
+  }
+  body main .order_prices_section .container .price_blocks .info_block:not(:last-child) {
+    margin-bottom: 20px;
   }
   body footer {
     margin-top: 50px;

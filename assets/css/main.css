@@ -1045,6 +1045,10 @@ body main .info_and_services_section .container .item {
   min-height: 320px;
 }
 
+body main .info_and_services_section .container .item img {
+  margin-left: 10px;
+}
+
 body main .info_and_services_section .container .item .kuryer_delivery {
   width: 155px;
   height: 255px;
@@ -1101,6 +1105,10 @@ body main .info_and_services_section .container .service_item {
 
 body main .info_and_services_section .container .service_item .left {
   width: 70%;
+}
+
+body main .info_and_services_section .container .service_item .left img {
+  display: none;
 }
 
 body main .info_and_services_section .container .service_item .left .title {
@@ -1199,9 +1207,12 @@ body main .order_prices_section .container .right_head {
 }
 
 body main .order_prices_section .container .right_head .title {
-  font-family: Nunito-ExtraBold;
   font-size: 22px;
   margin-bottom: 17px;
+}
+
+body main .order_prices_section .container .right_head .title .orange_color {
+  font-family: Nunito-ExtraBold;
 }
 
 body main .order_prices_section .container .right_head .info_text {

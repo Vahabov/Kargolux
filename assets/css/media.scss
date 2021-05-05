@@ -45,7 +45,7 @@
 
 @media screen and (max-width: 991px) {
   body {
-    .mt-block{
+    .mt-block {
       margin-top: 50px;
     }
     .container {
@@ -100,11 +100,11 @@
                     line-height: 16px;
                     font-size: 12px;
                     overflow: hidden;
-                text-overflow: ellipsis;
-                display: -webkit-box;
-                line-clamp: 3;
-                -webkit-line-clamp: 3;
-                -webkit-box-orient: vertical;
+                    text-overflow: ellipsis;
+                    display: -webkit-box;
+                    line-clamp: 3;
+                    -webkit-line-clamp: 3;
+                    -webkit-box-orient: vertical;
                   }
                   a {
                     display: none;
@@ -147,40 +147,111 @@
       }
       .info_and_services_section {
         .container {
+          
           flex-direction: column;
-          .item{
+          padding-bottom: 50px;
+          .description_section {
+            .title{
+              font-size: 22px;
+            }
+            p{
+              font-size: 12px;
+              line-height: 18px;
+            }
+          }
+          .item {
             width: 100%;
-            .kuryer_delivery{
+            min-height: auto;
+            .kuryer_delivery {
               width: 94px;
               height: 135px;
             }
-            .attention{
+            .attention {
               width: 75px;
               height: 131px;
             }
-            .kuryer_order{
+            .kuryer_order {
               width: 92px;
               height: 113px;
             }
-            &:not(:nth-last-child(-n + 2)){
+            &:not(:nth-last-child(-n + 2)) {
               margin-bottom: 0px;
             }
-            &:not(:last-child){
+            &:not(:last-child) {
               margin-bottom: 20px;
             }
           }
-          .service_item{
+          .service_item {
             padding: 20px;
             display: block;
-            .left{
-              width: 62%;
-              display: inline-block;
-              .btn_more{
+            .left {
+              display: block;
+              width: 100%;
+              .title{
+                font-size: 16px;
+              }
+              p{
+                font-size: 12px;
+                line-height: 16px;
+              }
+              img {
+                display: block;
+                margin-left: 10px;
+                float: right;
+              }
+              .btn_more {
                 width: 100%;
               }
             }
-            img{
-              float: right;
+            img {
+              display: none;
+            }
+          }
+        }
+      }
+      .order_prices_section {
+        .container {
+          padding-bottom: 50px;
+          .heads{
+            flex-direction: column;
+            .left_head{
+              .country {
+                span{
+                  font-size: 20px;
+                  margin-left: 10px;
+                }
+              }
+              width: 100%;
+              display: flex;
+              align-items: center;
+              justify-content: space-between;
+              width: 100%;
+              margin-bottom: 30px;
+              .title{
+                margin: 0px;
+                font-size: 18px;
+                text-align: right;
+              }
+            }
+            .right_head{
+              width: 100%;
+              .title{
+                font-size: 18px;
+                margin-bottom: 10px;
+              }
+              .info_text{
+                margin-bottom: 20px;
+              }
+            }
+          }
+          .price_blocks{
+            flex-direction: column;
+            .info_block{
+              width: 100%;
+              padding: 20px;
+              &:not(:last-child){
+                margin-bottom: 20px;
+              }
             }
           }
         }
