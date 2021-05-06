@@ -4,7 +4,7 @@ $(function () {
 
   $(".main_slider_section .owl-carousel").owlCarousel({
     margin: 0,
-    // loop: true,
+    loop: true,
     nav: true,
     autoWidth: false,
     items: 1,
@@ -16,12 +16,12 @@ $(function () {
       0: {
         items: 1,
         nav: false,
-        // loop: true,
+        loop: true,
       },
       1200: {
         items: 1,
         nav: true,
-        // loop: true,
+        loop: true,
       },
     },
   });
@@ -86,7 +86,20 @@ $(function () {
       },
     },
   });
-
+  $(document).keydown(function (event) {
+    if (event.keyCode == 27) {
+      $(".my_modal").fadeOut("fast");
+    }
+  });
+  var modalCenter = $(".modal_center");
+  for (let i = 0; i < modalCenter.length; i++) {
+    const element = modalCenter[i];
+    $(window).click(function (e) {
+      if (e.target == element) {
+        $(".my_modal").fadeOut("fast");
+      }
+    });
+  }
   var owlCustomer = $(".customer_ratings_section .owl-carousel");
   if ($(window).width() < 768) {
     owlCustomer.trigger("destroy.owl.carousel");
@@ -116,5 +129,16 @@ $(function () {
     setTimeout(() => {
       $(".mobile_overlay").fadeOut("fast");
     }, 200);
+  });
+
+  $(document).on("click", ".btn_popup", function (e) {
+    e.stopPropagation()
+    let dataId = $(this).attr("data-id");
+    $(".my_modal").fadeOut("fast");
+    $(`#${dataId}`).fadeIn("fast");
+  });
+
+  $(document).on("click", ".close_modal", function () {
+    $(".my_modal").fadeOut("fast");
   });
 });

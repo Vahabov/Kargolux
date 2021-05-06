@@ -76,6 +76,27 @@
     .container {
       padding: 0px 16px;
     }
+    .my_modal {
+      .modal_center {
+          .modal_inner {
+              width: 90%;
+              padding: 20px;
+              padding-top: 30px;
+          }
+          .how_to_order {
+            .title{
+              font-size: 18px;
+            }
+            .description{
+              font-size: 12px;
+              line-height: 19px;
+            }
+            .video{
+              height: 240px;
+            }
+          }
+      }
+  }
     header {
       .top_section {
         display: none;
