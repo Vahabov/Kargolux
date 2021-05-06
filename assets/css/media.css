@@ -14,6 +14,15 @@
   body main .main_slider_section .container .owl-carousel .owl-nav {
     display: none;
   }
+  body main .youtube_videos_section .container .scrollable_blocl .center .item:first-child {
+    width: 65%;
+  }
+  body main .customer_ratings_section .container .center .owl-nav {
+    display: none;
+  }
+  body main .customer_ratings_section .container .center .owl-carousel .item {
+    width: calc(100vw / 2 - 32px);
+  }
   body footer .center_section .container .links {
     padding-left: 40px;
   }
@@ -60,6 +69,16 @@
     width: 100%;
     margin: 25px 0px 25px 0px;
     height: 42px;
+  }
+  body main .scrollable_block {
+    overflow-x: scroll;
+    margin-right: -16px;
+    padding-right: 15px;
+    overflow-y: hidden;
+  }
+  body main .scrollable_block::-webkit-scrollbar {
+    display: none;
+    width: 0px;
   }
   body main .main_slider_section .container .owl-carousel .item {
     -webkit-box-orient: vertical;
@@ -246,6 +265,269 @@
   body main .order_prices_section .container .price_blocks .info_block:not(:last-child) {
     margin-bottom: 20px;
   }
+  body main .calculator_section .container .calculator {
+    padding: 20px;
+  }
+  body main .calculator_section .container .calculator .head .clear_btn_mobile {
+    display: block;
+  }
+  body main .calculator_section .container .calculator .inputs {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  body main .calculator_section .container .calculator .inputs .item {
+    width: 48%;
+    max-width: 100%;
+  }
+  body main .calculator_section .container .calculator .inputs .item:not(:nth-last-child(-n + 2)) {
+    margin-bottom: 12px;
+  }
+  body main .calculator_section .container .calculator .inputs .calculate_btn_mobile {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  body main .calculator_section .container .calculator .foot {
+    margin-top: 20px;
+  }
+  body main .calculator_section .container .calculator .foot .clear_btn {
+    display: none;
+  }
+  body main .calculator_section .container .calculator .foot .calculate {
+    width: 100%;
+  }
+  body main .calculator_section .container .calculator .foot .calculate .price {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin: 0px;
+  }
+  body main .calculator_section .container .calculator .foot .calculate .calculate_btn {
+    display: none;
+  }
+  body main .how_us_work_section .container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding-bottom: 50px;
+  }
+  body main .how_us_work_section .container .description_section .title {
+    font-size: 22px;
+  }
+  body main .how_us_work_section .container .description_section p {
+    font-size: 12px;
+    line-height: 18px;
+  }
+  body main .how_us_work_section .container .item {
+    width: 100%;
+    min-height: 222px;
+  }
+  body main .how_us_work_section .container .item:not(:nth-last-child(-n + 2)) {
+    margin-bottom: 0px;
+  }
+  body main .how_us_work_section .container .item:not(:last-child) {
+    margin-bottom: 20px;
+  }
+  body main .how_us_work_section .container .left_side {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    padding-left: 150px;
+    padding-right: 0px !important;
+  }
+  body main .how_us_work_section .container .answer_item {
+    padding-right: 150px;
+  }
+  body main .how_us_work_section .container .answer_item .img {
+    width: 180px;
+    height: 180px;
+  }
+  body main .how_us_work_section .container .answer_item .number {
+    font-size: 50px;
+  }
+  body main .how_us_work_section .container .answer_item .content {
+    width: 100%;
+  }
+  body main .how_us_work_section .container .answer_item .content .title {
+    font-size: 16px;
+  }
+  body main .how_us_work_section .container .answer_item .content p {
+    font-size: 12px;
+  }
+  body main .news_and_updates .container {
+    padding-bottom: 50px;
+  }
+  body main .news_and_updates .container .head .title {
+    font-size: 22px;
+  }
+  body main .news_and_updates .container .head .description {
+    font-size: 12px;
+  }
+  body main .news_and_updates .container .scrollable_block .center {
+    min-width: -webkit-max-content;
+    min-width: -moz-max-content;
+    min-width: max-content;
+  }
+  body main .news_and_updates .container .scrollable_block .center .item {
+    width: 255px;
+    margin-right: 20px;
+    padding: 12px;
+  }
+  body main .news_and_updates .container .scrollable_block .center .item .img {
+    height: 228px;
+  }
+  body main .news_and_updates .container .scrollable_block .center .item .content {
+    height: 102px;
+  }
+  body main .news_and_updates .container .scrollable_block .center .item .content .head_content .title_content {
+    font-size: 16px;
+  }
+  body main .news_and_updates .container .scrollable_block .center .item .content .head_content p {
+    font-size: 12px;
+  }
+  body main .partners_carousel_section .container {
+    padding-bottom: 50px;
+  }
+  body main .partners_carousel_section .container .owl-nav {
+    display: none;
+  }
+  body main .youtube_videos_section .container {
+    padding-bottom: 50px;
+  }
+  body main .youtube_videos_section .container .head {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  body main .youtube_videos_section .container .head .content_head {
+    max-width: 100%;
+  }
+  body main .youtube_videos_section .container .head .content_head .title {
+    font-size: 22px;
+    margin-bottom: 7px;
+  }
+  body main .youtube_videos_section .container .head .content_head p {
+    font-size: 12px;
+  }
+  body main .youtube_videos_section .container .head .channel_link {
+    margin-left: 0px;
+    margin-top: 20px;
+    font-size: 22px;
+  }
+  body main .youtube_videos_section .container .scrollable_block .center {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    min-width: -webkit-max-content;
+    min-width: -moz-max-content;
+    min-width: max-content;
+  }
+  body main .youtube_videos_section .container .scrollable_block .center .item {
+    width: 294px !important;
+    height: 237px !important;
+    float: none !important;
+    margin-bottom: 0px !important;
+    margin-right: 16px;
+  }
+  body main .youtube_videos_section .container .scrollable_block .center .item .top_overlay {
+    padding: 13px;
+    width: 100%;
+  }
+  body main .youtube_videos_section .container .scrollable_block .center .item .top_overlay .title {
+    font-size: 16px;
+    margin-bottom: 3px;
+  }
+  body main .youtube_videos_section .container .scrollable_block .center .item .top_overlay .title .orange_color {
+    font-size: 16px;
+  }
+  body main .youtube_videos_section .container .scrollable_block .center .item .top_overlay p {
+    font-size: 12px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    line-clamp: 2;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    line-height: 15px;
+  }
+  body main .youtube_videos_section .container .scrollable_block .center .item .overlay {
+    padding: 13px;
+  }
+  body main .youtube_videos_section .container .scrollable_block .center .item .overlay .content {
+    width: 100%;
+  }
+  body main .youtube_videos_section .container .scrollable_block .center .item .overlay .content .title {
+    font-size: 16px;
+  }
+  body main .youtube_videos_section .container .scrollable_block .center .item .overlay .content p {
+    font-size: 12px;
+  }
+  body main .youtube_videos_section .container .scrollable_block .center .item .overlay .date {
+    position: absolute;
+    right: 14px;
+    top: 14px;
+  }
+  body main .youtube_videos_section .container .scrollable_block .center .item .overlay .date span {
+    font-size: 12px;
+  }
+  body main .customer_ratings_section .container {
+    padding-bottom: 50px;
+  }
+  body main .customer_ratings_section .container .owl-nav {
+    display: none;
+  }
+  body main .customer_ratings_section .container .head .title {
+    font-size: 22px;
+  }
+  body main .customer_ratings_section .container .head .description {
+    font-size: 12px;
+  }
+  body main .customer_ratings_section .container .center {
+    overflow-x: scroll;
+    margin-right: -16px;
+    padding-right: 15px;
+    overflow-y: hidden;
+  }
+  body main .customer_ratings_section .container .center::-webkit-scrollbar {
+    display: none;
+    width: 0px;
+  }
+  body main .customer_ratings_section .container .center .owl-carousel {
+    min-width: -webkit-max-content;
+    min-width: -moz-max-content;
+    min-width: max-content;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  body main .customer_ratings_section .container .center .owl-carousel .item {
+    width: 293px;
+    margin-right: 16px;
+  }
   body footer {
     margin-top: 50px;
   }
@@ -311,6 +593,15 @@
   }
   body footer .bottom_section {
     display: none;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  body main .calculator_section .container .calculator .inputs .item {
+    width: 100%;
+  }
+  body main .calculator_section .container .calculator .inputs .item:not(:last-child) {
+    margin-bottom: 15px !important;
   }
 }
 /*# sourceMappingURL=media.css.map */

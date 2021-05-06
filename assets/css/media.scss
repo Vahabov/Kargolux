@@ -30,6 +30,31 @@
           }
         }
       }
+      .youtube_videos_section {
+        .container {
+          .scrollable_blocl {
+            .center {
+              .item:first-child {
+                width: 65%;
+              }
+            }
+          }
+        }
+      }
+      .customer_ratings_section {
+        .container {
+          .center {
+            .owl-nav {
+              display: none;
+            }
+            .owl-carousel {
+              .item{
+                width: calc(100vw / 2 - 32px);
+              }
+            }
+          }
+        }
+      }
     }
     footer {
       .center_section {
@@ -82,6 +107,18 @@
       }
     }
     main {
+      //components
+      .scrollable_block {
+        overflow-x: scroll;
+        margin-right: -16px;
+        padding-right: 15px;
+        overflow-y: hidden;
+        &::-webkit-scrollbar {
+          display: none;
+          width: 0px;
+        }
+      }
+      //
       .main_slider_section {
         .container {
           .owl-carousel {
@@ -147,14 +184,13 @@
       }
       .info_and_services_section {
         .container {
-          
           flex-direction: column;
           padding-bottom: 50px;
           .description_section {
-            .title{
+            .title {
               font-size: 22px;
             }
-            p{
+            p {
               font-size: 12px;
               line-height: 18px;
             }
@@ -187,10 +223,10 @@
             .left {
               display: block;
               width: 100%;
-              .title{
+              .title {
                 font-size: 16px;
               }
-              p{
+              p {
                 font-size: 12px;
                 line-height: 16px;
               }
@@ -212,11 +248,11 @@
       .order_prices_section {
         .container {
           padding-bottom: 50px;
-          .heads{
+          .heads {
             flex-direction: column;
-            .left_head{
+            .left_head {
               .country {
-                span{
+                span {
                   font-size: 20px;
                   margin-left: 10px;
                 }
@@ -227,30 +263,284 @@
               justify-content: space-between;
               width: 100%;
               margin-bottom: 30px;
-              .title{
+              .title {
                 margin: 0px;
                 font-size: 18px;
                 text-align: right;
               }
             }
-            .right_head{
+            .right_head {
               width: 100%;
-              .title{
+              .title {
                 font-size: 18px;
                 margin-bottom: 10px;
               }
-              .info_text{
+              .info_text {
                 margin-bottom: 20px;
               }
             }
           }
-          .price_blocks{
+          .price_blocks {
             flex-direction: column;
-            .info_block{
+            .info_block {
               width: 100%;
               padding: 20px;
-              &:not(:last-child){
+              &:not(:last-child) {
                 margin-bottom: 20px;
+              }
+            }
+          }
+        }
+      }
+      .calculator_section {
+        .container {
+          .calculator {
+            padding: 20px;
+            .head {
+              .clear_btn_mobile {
+                display: block;
+              }
+            }
+            .inputs {
+              flex-wrap: wrap;
+              justify-content: space-between;
+              align-items: flex-start;
+              .item {
+                width: 48%;
+                max-width: 100%;
+                &:not(:nth-last-child(-n + 2)) {
+                  margin-bottom: 12px;
+                }
+              }
+              .calculate_btn_mobile {
+                display: flex;
+              }
+            }
+            .foot {
+              margin-top: 20px;
+              .clear_btn {
+                display: none;
+              }
+              .calculate {
+                width: 100%;
+                .price {
+                  width: 100%;
+                  display: flex;
+                  align-items: center;
+                  justify-content: space-between;
+                  margin: 0px;
+                }
+                .calculate_btn {
+                  display: none;
+                }
+              }
+            }
+          }
+        }
+      }
+      .how_us_work_section {
+        .container {
+          flex-direction: column;
+          padding-bottom: 50px;
+          .description_section {
+            .title {
+              font-size: 22px;
+            }
+            p {
+              font-size: 12px;
+              line-height: 18px;
+            }
+          }
+          .item {
+            width: 100%;
+            min-height: 222px;
+            &:not(:nth-last-child(-n + 2)) {
+              margin-bottom: 0px;
+            }
+            &:not(:last-child) {
+              margin-bottom: 20px;
+            }
+          }
+          .left_side {
+            justify-content: flex-start;
+            padding-left: 150px;
+            padding-right: 0px !important;
+          }
+          .answer_item {
+            padding-right: 150px;
+            .img {
+              width: 180px;
+              height: 180px;
+            }
+            .number {
+              font-size: 50px;
+            }
+            .content {
+              width: 100%;
+              .title {
+                font-size: 16px;
+              }
+              p {
+                font-size: 12px;
+              }
+            }
+          }
+        }
+      }
+      .news_and_updates {
+        .container {
+          padding-bottom: 50px;
+          .head {
+            .title {
+              font-size: 22px;
+            }
+            .description {
+              font-size: 12px;
+            }
+          }
+          .scrollable_block {
+            .center {
+              min-width: max-content;
+              .item {
+                width: 255px;
+                margin-right: 20px;
+                padding: 12px;
+                .img {
+                  height: 228px;
+                }
+                .content {
+                  height: 102px;
+                  .head_content {
+                    .title_content {
+                      font-size: 16px;
+                    }
+                    p {
+                      font-size: 12px;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      .partners_carousel_section {
+        .container {
+          padding-bottom: 50px;
+          .owl-nav {
+            display: none;
+          }
+        }
+      }
+      .youtube_videos_section {
+        .container {
+          padding-bottom: 50px;
+          .head {
+            flex-direction: column;
+            .content_head {
+              max-width: 100%;
+              .title {
+                font-size: 22px;
+                margin-bottom: 7px;
+              }
+              p {
+                font-size: 12px;
+              }
+            }
+            .channel_link {
+              margin-left: 0px;
+              margin-top: 20px;
+              font-size: 22px;
+            }
+          }
+          .scrollable_block {
+            .center {
+              display: flex;
+              align-items: center;
+              min-width: max-content;
+              .item {
+                width: 294px !important;
+                height: 237px !important;
+                float: none !important;
+                margin-bottom: 0px !important;
+                margin-right: 16px;
+                .top_overlay {
+                  padding: 13px;
+                  width: 100%;
+                  .title {
+                    font-size: 16px;
+                    margin-bottom: 3px;
+                    .orange_color {
+                      font-size: 16px;
+                    }
+                  }
+                  p {
+                    font-size: 12px;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    display: -webkit-box;
+                    line-clamp: 2;
+                    -webkit-line-clamp: 2;
+                    -webkit-box-orient: vertical;
+                    line-height: 15px;
+                  }
+                }
+                .overlay {
+                  padding: 13px;
+                  .content {
+                    width: 100%;
+                    .title {
+                      font-size: 16px;
+                    }
+                    p {
+                      font-size: 12px;
+                    }
+                  }
+                  .date {
+                    position: absolute;
+                    right: 14px;
+                    top: 14px;
+                    span {
+                      font-size: 12px;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+      .customer_ratings_section {
+        .container {
+          padding-bottom: 50px;
+          .owl-nav {
+            display: none;
+          }
+          .head {
+            .title {
+              font-size: 22px;
+            }
+            .description {
+              font-size: 12px;
+            }
+          }
+          .center {
+            overflow-x: scroll;
+            margin-right: -16px;
+            padding-right: 15px;
+            overflow-y: hidden;
+            &::-webkit-scrollbar {
+              display: none;
+              width: 0px;
+            }
+            .owl-carousel {
+              min-width: max-content;
+              display: flex;
+              align-items: center;
+              justify-content: space-between;
+              .item {
+                width: 293px;
+                margin-right: 16px;
               }
             }
           }
@@ -317,6 +607,27 @@
       }
       .bottom_section {
         display: none;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 360px) {
+  body {
+    main {
+      .calculator_section {
+        .container {
+          .calculator {
+            .inputs {
+              .item {
+                width: 100%;
+                &:not(:last-child) {
+                  margin-bottom: 15px !important;
+                }
+              }
+            }
+          }
+        }
       }
     }
   }

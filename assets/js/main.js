@@ -6,29 +6,96 @@ $(function () {
     margin: 0,
     // loop: true,
     nav: true,
-    // infinite: true,
     autoWidth: false,
     items: 1,
     animateOut: "fadeOut",
-    // autoplay: true,
+    autoplay: true,
     autoplayTimeout: 5000,
     autoplayHoverPause: true,
     responsive: {
       0: {
         items: 1,
         nav: false,
+        // loop: true,
       },
       1200: {
         items: 1,
         nav: true,
-        loop: false,
+        // loop: true,
+      },
+    },
+  });
+  $(".partners_carousel_section .owl-carousel").owlCarousel({
+    margin: 40,
+    loop: true,
+    nav: true,
+    autoWidth: false,
+    dots: false,
+    items: 10,
+    autoplay: true,
+    autoplayTimeout: 3000,
+    smartSpeed: 2000,
+    animateIn: "linear",
+    animateOut: "linear",
+    responsive: {
+      0: {
+        items: 2,
+        nav: false,
+        loop: true,
+      },
+      700: {
+        items: 2,
+        nav: false,
+        loop: true,
+      },
+      1000: {
+        items: 6,
+        dots: false,
+        nav: true,
       },
     },
   });
 
+  $(".customer_ratings_section .owl-carousel").owlCarousel({
+    margin: 20,
+    loop: true,
+    nav: true,
+    autoWidth: false,
+    dots: true,
+    items: 10,
+    autoplay: true,
+    autoplayTimeout: 3000,
+    smartSpeed: 1000,
+    animateIn: "linear",
+    animateOut: "linear",
+    responsive: {
+      0: {
+        items: 1,
+        loop: true,
+      },
+      1000: {
+        items: 2,
+        dots: true,
+        nav: false,
+      },
+      1250: {
+        items: 3,
+        nav: false,
+        loop: true,
+        dots: true,
+      },
+    },
+  });
+
+  var owlCustomer = $(".customer_ratings_section .owl-carousel");
+  if ($(window).width() < 768) {
+    owlCustomer.trigger("destroy.owl.carousel");
+    owlCustomer.addClass("off");
+  }
+
   var menuOverlay = $(".overlay_inner")[0];
 
-  $(window).on('click',function (e) {
+  $(window).on("click", function (e) {
     if (e.target == menuOverlay) {
       $(".overlay_inner").removeClass("active_menu");
       setTimeout(() => {
