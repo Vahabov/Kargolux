@@ -4,13 +4,13 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Home Page</title>
-    <link rel="stylesheet" href="./assets/css/main.css" />
-    <link rel="stylesheet" href="./assets/css/media.css" />
-    <link href="./assets/css/owl.carousel.css" rel="stylesheet" />
-    <link href="./assets/css/owl.theme.default.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="/assets/css/main.css" />
+    <link rel="stylesheet" href="/assets/css/media.css" />
+    <link href="/assets/css/owl.carousel.css" rel="stylesheet" />
+    <link href="/assets/css/owl.theme.default.min.css" rel="stylesheet" />
   </head>
   <body>
-    <header>
+    <header class="main_header">
       <div class="container">
         <div class="top_section">
           <ul class="top_navbar">
@@ -41,21 +41,21 @@
           </div>
         </div>
         <div class="center_section">
-          <div class="logo">
-            <img src="./assets/images/icons/logo.svg" alt="#" />
-          </div>
+          <a href="/" class="logo">
+            <img src="/assets/images/icons/logo.svg" alt="#" />
+          </a>
           <button type="button" class="mobile_btn_menu">
-            <img src="./assets/images/icons/hamburger.svg" alt="#" />
+            <img src="/assets/images/icons/hamburger.svg" alt="#" />
           </button>
           <ul class="navbar">
             <li>
-              <a href="#"> Ana səhifə </a>
+              <a href="/"> Ana səhifə </a>
             </li>
             <li>
-              <a href="#"> Tariflər </a>
+              <a href="./tariffs.html"> Tariflər </a>
             </li>
             <li>
-              <a href="#"> Mağazalar </a>
+              <a href="./stores.html"> Mağazalar </a>
             </li>
             <li>
               <a href="#"> Xidmətlər </a>
@@ -68,22 +68,27 @@
             </li>
           </ul>
           <div class="auth">
-            <a href="#" class="login_btn"> Giriş et </a>
-            <a href="#" class="register_btn"> Qeydiyyat </a>
+            <a href="auth/login.html" class="login_btn"> Giriş et </a>
+            <a href="auth/register.html" class="register_btn"> Qeydiyyat </a>
           </div>
         </div>
         <div class="mobile_auth">
-          <a href="#" class="login_btn"> Giriş et </a>
-          <a href="#" class="register_btn"> Qeydiyyat </a>
+          <a href="auth/login.html" class="login_btn"> Giriş et </a>
+          <a href="auth/register.html" class="register_btn"> Qeydiyyat </a>
         </div>
         <div class="bottom_section">
           <button type="button" class="how_order btn_popup" data-id="modal-1">
             <div class="play_icn">
-              <img src="./assets/images/icons/play.svg" alt="#" />
+              <img src="/assets/images/icons/play.svg" alt="#" />
             </div>
             <span>Necə sifariş edim?</span>
           </button>
-          <button type="button" class="order_btn">Sifariş et</button>
+          <div class="buttons">
+            <button type="button" class="facture_btn btn">
+              Faktura əlavə et
+            </button>
+            <button type="button" class="order_btn btn">Sifariş et</button>
+          </div>
         </div>
         <div class="mobile_overlay">
           <div class="overlay_inner">
@@ -91,10 +96,10 @@
               <div class="head">
                 <a href="#" class="logout">
                   Çıxış
-                  <img src="./assets/images/icons/exit.svg" alt="#" />
+                  <img src="/assets/images/icons/exit.svg" alt="#" />
                 </a>
                 <button type="button" class="close_menu">
-                  <img src="./assets/images/icons/close.svg" alt="#" />
+                  <img src="/assets/images/icons/close.svg" alt="#" />
                 </button>
               </div>
               <div class="center">
@@ -127,13 +132,6 @@
                     <a href="#">Haqqımızda</a>
                   </li>
                 </ul>
-                <div class="lang_select">
-                  <select>
-                    <option value="aze">AZE</option>
-                    <option value="ru">RU</option>
-                    <option value="en">EN</option>
-                  </select>
-                </div>
               </div>
               <div class="foot">
                 <span class="follow_us">Bizi sosial şəbəkələrdə izləyin</span>
@@ -142,7 +140,7 @@
                     <li>
                       <a href="#">
                         <img
-                          src="./assets/images/icons/social_icons/facebook.svg"
+                          src="/assets/images/icons/social_icons/facebook.svg"
                           class="injectable"
                           alt="#"
                         />
@@ -151,7 +149,7 @@
                     <li>
                       <a href="#">
                         <img
-                          src="./assets/images/icons/social_icons/instagram.svg"
+                          src="/assets/images/icons/social_icons/instagram.svg"
                           class="injectable"
                           alt="#"
                         />
@@ -160,7 +158,7 @@
                     <li>
                       <a href="#">
                         <img
-                          src="./assets/images/icons/social_icons/whatsapp.svg"
+                          src="/assets/images/icons/social_icons/whatsapp.svg"
                           class="injectable"
                           alt="#"
                         />
@@ -169,7 +167,7 @@
                     <li>
                       <a href="#">
                         <img
-                          src="./assets/images/icons/social_icons/telegram.svg"
+                          src="/assets/images/icons/social_icons/telegram.svg"
                           class="injectable"
                           alt="#"
                         />
@@ -178,7 +176,7 @@
                     <li>
                       <a href="#">
                         <img
-                          src="./assets/images/icons/social_icons/youtube.svg"
+                          src="/assets/images/icons/social_icons/youtube.svg"
                           class="injectable"
                           alt="#"
                         />
@@ -225,7 +223,7 @@
               </div>
               <div class="slider_img_cont">
                 <img
-                  src="./assets/images/img/indexillustrasiya.svg"
+                  src="/assets/images/img/indexillustrasiya.svg"
                   class="slider_img"
                 />
               </div>
@@ -248,7 +246,7 @@
               </div>
               <div class="slider_img_cont">
                 <img
-                  src="./assets/images/img/indexillustrasiya.svg"
+                  src="/assets/images/img/indexillustrasiya.svg"
                   class="slider_img"
                 />
               </div>
@@ -276,7 +274,7 @@
               </div>
               <div class="slider_img_cont">
                 <img
-                  src="./assets/images/img/indexillustrasiya.svg"
+                  src="/assets/images/img/indexillustrasiya.svg"
                   class="slider_img"
                 />
               </div>
@@ -288,7 +286,7 @@
               <li>
                 <a href="#">
                   <img
-                    src="./assets/images/icons/social_icons/facebook.svg"
+                    src="/assets/images/icons/social_icons/facebook.svg"
                     class="injectable"
                     alt="#"
                   />
@@ -297,7 +295,7 @@
               <li>
                 <a href="#">
                   <img
-                    src="./assets/images/icons/social_icons/instagram.svg"
+                    src="/assets/images/icons/social_icons/instagram.svg"
                     class="injectable"
                     alt="#"
                   />
@@ -306,7 +304,7 @@
               <li>
                 <a href="#">
                   <img
-                    src="./assets/images/icons/social_icons/whatsapp.svg"
+                    src="/assets/images/icons/social_icons/whatsapp.svg"
                     class="injectable"
                     alt="#"
                   />
@@ -315,7 +313,7 @@
               <li>
                 <a href="#">
                   <img
-                    src="./assets/images/icons/social_icons/telegram.svg"
+                    src="/assets/images/icons/social_icons/telegram.svg"
                     class="injectable"
                     alt="#"
                   />
@@ -324,7 +322,7 @@
               <li>
                 <a href="#">
                   <img
-                    src="./assets/images/icons/social_icons/youtube.svg"
+                    src="/assets/images/icons/social_icons/youtube.svg"
                     class="injectable"
                     alt="#"
                   />
@@ -353,7 +351,7 @@
             <div class="left">
               <img
                 class="kuryer_delivery"
-                src="./assets/images/icons/Kuryerçatdırılmaxidməti.svg"
+                src="/assets/images/icons/Kuryerçatdırılmaxidməti.svg"
                 alt="#"
               />
               <h2 class="title">Kuryer çatdırılma xidməti</h2>
@@ -366,7 +364,7 @@
             </div>
             <img
               class="kuryer_delivery"
-              src="./assets/images/icons/Kuryerçatdırılmaxidməti.svg"
+              src="/assets/images/icons/Kuryerçatdırılmaxidməti.svg"
               alt="#"
             />
           </div>
@@ -374,7 +372,7 @@
             <div class="left">
               <img
                 class="attention"
-                src="./assets/images/icons/Diqqət-Bəyannaməyükləməkləbağlıməlumat.svg"
+                src="/assets/images/icons/Diqqət-Bəyannaməyükləməkləbağlıməlumat.svg"
                 alt="#"
               />
               <h2 class="title">Diqqət - Bəyannamə yükləməklə bağlı məlumat</h2>
@@ -387,14 +385,14 @@
             </div>
             <img
               class="attention"
-              src="./assets/images/icons/Diqqət-Bəyannaməyükləməkləbağlıməlumat.svg"
+              src="/assets/images/icons/Diqqət-Bəyannaməyükləməkləbağlıməlumat.svg"
               alt="#"
             />
           </div>
           <div class="item service_item">
             <div class="left">
               <img
-                src="./assets/images/icons/Kuryersifarişet.svg"
+                src="/assets/images/icons/Kuryersifarişet.svg"
                 class="kuryer_order"
                 alt="#"
               />
@@ -407,7 +405,7 @@
               <a href="#" class="btn_more">Ətraflı</a>
             </div>
             <img
-              src="./assets/images/icons/Kuryersifarişet.svg"
+              src="/assets/images/icons/Kuryersifarişet.svg"
               class="kuryer_order"
               alt="#"
             />
@@ -421,7 +419,7 @@
               <div class="country">
                 <img
                   class="flag"
-                  src="./assets/images/icons/turkiyebayraqicon.svg"
+                  src="/assets/images/icons/turkiyebayraqicon.svg"
                   alt="#"
                 />
                 <span>Türkiyə</span>
@@ -597,7 +595,7 @@
             </div>
             <img
               class="img"
-              src="./assets/images/icons/qeydiyyatillustrasiya.svg"
+              src="/assets/images/icons/qeydiyyatillustrasiya.svg"
               alt="#"
             />
           </div>
@@ -612,7 +610,7 @@
             </div>
             <img
               class="img"
-              src="./assets/images/icons/sifarisillustrasiya.svg"
+              src="/assets/images/icons/sifarisillustrasiya.svg"
               alt="#"
             />
           </div>
@@ -624,7 +622,7 @@
             </div>
             <img
               class="img"
-              src="./assets/images/icons/catdirilmaillustrasiya.svg"
+              src="/assets/images/icons/catdirilmaillustrasiya.svg"
               alt="#"
             />
           </div>
@@ -643,7 +641,7 @@
             <div class="center">
               <div class="item">
                 <a href="#" class="img">
-                  <img src="./assets/images/img/xeberlerpost1.png" alt="#" />
+                  <img src="/assets/images/img/xeberlerpost1.png" alt="#" />
                 </a>
                 <div class="content">
                   <div class="head_content">
@@ -656,10 +654,10 @@
                   <div class="foot_content">
                     <a href="#">
                       Ətraflı
-                      <img src="./assets/images/icons/arrow.svg" alt="#" />
+                      <img src="/assets/images/icons/arrow.svg" alt="#" />
                     </a>
                     <div class="date">
-                      <img src="./assets/images/icons/calendar.svg" alt="#" />
+                      <img src="/assets/images/icons/calendar.svg" alt="#" />
                       <span>12.04.2021</span>
                     </div>
                   </div>
@@ -667,7 +665,7 @@
               </div>
               <div class="item">
                 <a href="#" class="img">
-                  <img src="./assets/images/img/xeberlerpost2.png" alt="#" />
+                  <img src="/assets/images/img/xeberlerpost2.png" alt="#" />
                 </a>
                 <div class="content">
                   <div class="head_content">
@@ -680,10 +678,10 @@
                   <div class="foot_content">
                     <a href="#">
                       Ətraflı
-                      <img src="./assets/images/icons/arrow.svg" alt="#" />
+                      <img src="/assets/images/icons/arrow.svg" alt="#" />
                     </a>
                     <div class="date">
-                      <img src="./assets/images/icons/calendar.svg" alt="#" />
+                      <img src="/assets/images/icons/calendar.svg" alt="#" />
                       <span>12.04.2021</span>
                     </div>
                   </div>
@@ -691,7 +689,7 @@
               </div>
               <div class="item">
                 <a href="#" class="img">
-                  <img src="./assets/images/img/xeberlerpost3.png" alt="#" />
+                  <img src="/assets/images/img/xeberlerpost3.png" alt="#" />
                 </a>
                 <div class="content">
                   <div class="head_content">
@@ -704,10 +702,10 @@
                   <div class="foot_content">
                     <a href="#">
                       Ətraflı
-                      <img src="./assets/images/icons/arrow.svg" alt="#" />
+                      <img src="/assets/images/icons/arrow.svg" alt="#" />
                     </a>
                     <div class="date">
-                      <img src="./assets/images/icons/calendar.svg" alt="#" />
+                      <img src="/assets/images/icons/calendar.svg" alt="#" />
                       <span>12.04.2021</span>
                     </div>
                   </div>
@@ -721,22 +719,22 @@
         <div class="container">
           <div class="owl-carousel owl-centered">
             <a href="#" class="item">
-              <img src="./assets/images/icons/partners/pitirti.svg" alt="#" />
+              <img src="/assets/images/icons/partners/pitirti.svg" alt="#" />
             </a>
             <a href="#" class="item">
-              <img src="./assets/images/icons/partners/Trendyol.svg" alt="#" />
+              <img src="/assets/images/icons/partners/Trendyol.svg" alt="#" />
             </a>
             <a href="#" class="item">
-              <img src="./assets/images/icons/partners/karaca.svg" alt="#" />
+              <img src="/assets/images/icons/partners/karaca.svg" alt="#" />
             </a>
             <a href="#" class="item">
-              <img src="./assets/images/icons/partners/morhipo.svg" alt="#" />
+              <img src="/assets/images/icons/partners/morhipo.svg" alt="#" />
             </a>
             <a href="#" class="item">
-              <img src="./assets/images/icons/partners/markafoni.svg" alt="#" />
+              <img src="/assets/images/icons/partners/markafoni.svg" alt="#" />
             </a>
             <a href="#" class="item">
-              <img src="./assets/images/icons/partners/camper.svg" alt="#" />
+              <img src="/assets/images/icons/partners/camper.svg" alt="#" />
             </a>
           </div>
         </div>
@@ -754,7 +752,7 @@
             <a href="#" class="channel_link">
               <img
                 class="injectable"
-                src="./assets/images/icons/youtubeicon.svg"
+                src="/assets/images/icons/youtubeicon.svg"
                 alt="#"
               />
               kargolux.az
@@ -766,13 +764,13 @@
                 <button type="button" class="btn_popup" data-id="modal-1">
                   <img
                     class="ytb_icn"
-                    src="./assets/images/icons/youtubeicon.svg"
+                    src="/assets/images/icons/youtubeicon.svg"
                     alt="#"
                   />
                 </button>
                 <img
                   class="news_img"
-                  src="./assets/images/img/photo1.png"
+                  src="/assets/images/img/photo1.png"
                   alt="#"
                 />
                 <!-- <div class="top_overlay">
@@ -798,7 +796,7 @@
                   <div class="date">
                     <img
                       class="injectable"
-                      src="./assets/images/icons/calendar.svg"
+                      src="/assets/images/icons/calendar.svg"
                       alt="#"
                     />
                     <span>12.04.2021</span>
@@ -809,13 +807,13 @@
                 <button type="button" class="btn_popup" data-id="modal-1">
                   <img
                     class="ytb_icn"
-                    src="./assets/images/icons/youtubeicon.svg"
+                    src="/assets/images/icons/youtubeicon.svg"
                     alt="#"
                   />
                 </button>
                 <img
                   class="news_img"
-                  src="./assets/images/img/photo2.png"
+                  src="/assets/images/img/photo2.png"
                   alt="#"
                 />
                 <div class="overlay">
@@ -829,7 +827,7 @@
                   <div class="date">
                     <img
                       class="injectable"
-                      src="./assets/images/icons/calendar.svg"
+                      src="/assets/images/icons/calendar.svg"
                       alt="#"
                     />
                     <span>12.04.2021</span>
@@ -840,13 +838,13 @@
                 <button type="button" class="btn_popup" data-id="modal-1">
                   <img
                     class="ytb_icn"
-                    src="./assets/images/icons/youtubeicon.svg"
+                    src="/assets/images/icons/youtubeicon.svg"
                     alt="#"
                   />
                 </button>
                 <img
                   class="news_img"
-                  src="./assets/images/img/photo3.png"
+                  src="/assets/images/img/photo3.png"
                   alt="#"
                 />
                 <div class="overlay">
@@ -860,7 +858,7 @@
                   <div class="date">
                     <img
                       class="injectable"
-                      src="./assets/images/icons/calendar.svg"
+                      src="/assets/images/icons/calendar.svg"
                       alt="#"
                     />
                     <span>12.04.2021</span>
@@ -885,29 +883,29 @@
               <div class="item">
                 <div class="head_item">
                   <div class="avatar">
-                    <img src="./assets/images/img/photo1.png" alt="#" />
+                    <img src="/assets/images/img/photo1.png" alt="#" />
                   </div>
                   <div class="content">
                     <span class="name">Smith Smith</span>
                     <div class="star_rating">
                       <img
-                        src="./assets/images/icons/raitingusericonactive.svg"
+                        src="/assets/images/icons/raitingusericonactive.svg"
                         alt="#"
                       />
                       <img
-                        src="./assets/images/icons/raitingusericonactive.svg"
+                        src="/assets/images/icons/raitingusericonactive.svg"
                         alt="#"
                       />
                       <img
-                        src="./assets/images/icons/raitingusericonactive.svg"
+                        src="/assets/images/icons/raitingusericonactive.svg"
                         alt="#"
                       />
                       <img
-                        src="./assets/images/icons/raitingusericonactive.svg"
+                        src="/assets/images/icons/raitingusericonactive.svg"
                         alt="#"
                       />
                       <img
-                        src="./assets/images/icons/raitingusericondeactive.svg"
+                        src="/assets/images/icons/raitingusericondeactive.svg"
                         alt="#"
                       />
                     </div>
@@ -921,29 +919,29 @@
               <div class="item">
                 <div class="head_item">
                   <div class="avatar">
-                    <img src="./assets/images/img/photo1.png" alt="#" />
+                    <img src="/assets/images/img/photo1.png" alt="#" />
                   </div>
                   <div class="content">
                     <span class="name">Smith Smith</span>
                     <div class="star_rating">
                       <img
-                        src="./assets/images/icons/raitingusericonactive.svg"
+                        src="/assets/images/icons/raitingusericonactive.svg"
                         alt="#"
                       />
                       <img
-                        src="./assets/images/icons/raitingusericonactive.svg"
+                        src="/assets/images/icons/raitingusericonactive.svg"
                         alt="#"
                       />
                       <img
-                        src="./assets/images/icons/raitingusericonactive.svg"
+                        src="/assets/images/icons/raitingusericonactive.svg"
                         alt="#"
                       />
                       <img
-                        src="./assets/images/icons/raitingusericonactive.svg"
+                        src="/assets/images/icons/raitingusericonactive.svg"
                         alt="#"
                       />
                       <img
-                        src="./assets/images/icons/raitingusericondeactive.svg"
+                        src="/assets/images/icons/raitingusericondeactive.svg"
                         alt="#"
                       />
                     </div>
@@ -957,29 +955,29 @@
               <div class="item">
                 <div class="head_item">
                   <div class="avatar">
-                    <img src="./assets/images/img/photo1.png" alt="#" />
+                    <img src="/assets/images/img/photo1.png" alt="#" />
                   </div>
                   <div class="content">
                     <span class="name">Smith Smith</span>
                     <div class="star_rating">
                       <img
-                        src="./assets/images/icons/raitingusericonactive.svg"
+                        src="/assets/images/icons/raitingusericonactive.svg"
                         alt="#"
                       />
                       <img
-                        src="./assets/images/icons/raitingusericonactive.svg"
+                        src="/assets/images/icons/raitingusericonactive.svg"
                         alt="#"
                       />
                       <img
-                        src="./assets/images/icons/raitingusericonactive.svg"
+                        src="/assets/images/icons/raitingusericonactive.svg"
                         alt="#"
                       />
                       <img
-                        src="./assets/images/icons/raitingusericonactive.svg"
+                        src="/assets/images/icons/raitingusericonactive.svg"
                         alt="#"
                       />
                       <img
-                        src="./assets/images/icons/raitingusericondeactive.svg"
+                        src="/assets/images/icons/raitingusericondeactive.svg"
                         alt="#"
                       />
                     </div>
@@ -993,29 +991,29 @@
               <div class="item">
                 <div class="head_item">
                   <div class="avatar">
-                    <img src="./assets/images/img/photo1.png" alt="#" />
+                    <img src="/assets/images/img/photo1.png" alt="#" />
                   </div>
                   <div class="content">
                     <span class="name">Smith Smith</span>
                     <div class="star_rating">
                       <img
-                        src="./assets/images/icons/raitingusericonactive.svg"
+                        src="/assets/images/icons/raitingusericonactive.svg"
                         alt="#"
                       />
                       <img
-                        src="./assets/images/icons/raitingusericonactive.svg"
+                        src="/assets/images/icons/raitingusericonactive.svg"
                         alt="#"
                       />
                       <img
-                        src="./assets/images/icons/raitingusericonactive.svg"
+                        src="/assets/images/icons/raitingusericonactive.svg"
                         alt="#"
                       />
                       <img
-                        src="./assets/images/icons/raitingusericonactive.svg"
+                        src="/assets/images/icons/raitingusericonactive.svg"
                         alt="#"
                       />
                       <img
-                        src="./assets/images/icons/raitingusericondeactive.svg"
+                        src="/assets/images/icons/raitingusericondeactive.svg"
                         alt="#"
                       />
                     </div>
@@ -1029,29 +1027,29 @@
               <div class="item">
                 <div class="head_item">
                   <div class="avatar">
-                    <img src="./assets/images/img/photo1.png" alt="#" />
+                    <img src="/assets/images/img/photo1.png" alt="#" />
                   </div>
                   <div class="content">
                     <span class="name">Smith Smith</span>
                     <div class="star_rating">
                       <img
-                        src="./assets/images/icons/raitingusericonactive.svg"
+                        src="/assets/images/icons/raitingusericonactive.svg"
                         alt="#"
                       />
                       <img
-                        src="./assets/images/icons/raitingusericonactive.svg"
+                        src="/assets/images/icons/raitingusericonactive.svg"
                         alt="#"
                       />
                       <img
-                        src="./assets/images/icons/raitingusericonactive.svg"
+                        src="/assets/images/icons/raitingusericonactive.svg"
                         alt="#"
                       />
                       <img
-                        src="./assets/images/icons/raitingusericonactive.svg"
+                        src="/assets/images/icons/raitingusericonactive.svg"
                         alt="#"
                       />
                       <img
-                        src="./assets/images/icons/raitingusericondeactive.svg"
+                        src="/assets/images/icons/raitingusericondeactive.svg"
                         alt="#"
                       />
                     </div>
@@ -1065,29 +1063,29 @@
               <div class="item">
                 <div class="head_item">
                   <div class="avatar">
-                    <img src="./assets/images/img/photo1.png" alt="#" />
+                    <img src="/assets/images/img/photo1.png" alt="#" />
                   </div>
                   <div class="content">
                     <span class="name">Smith Smith</span>
                     <div class="star_rating">
                       <img
-                        src="./assets/images/icons/raitingusericonactive.svg"
+                        src="/assets/images/icons/raitingusericonactive.svg"
                         alt="#"
                       />
                       <img
-                        src="./assets/images/icons/raitingusericonactive.svg"
+                        src="/assets/images/icons/raitingusericonactive.svg"
                         alt="#"
                       />
                       <img
-                        src="./assets/images/icons/raitingusericonactive.svg"
+                        src="/assets/images/icons/raitingusericonactive.svg"
                         alt="#"
                       />
                       <img
-                        src="./assets/images/icons/raitingusericonactive.svg"
+                        src="/assets/images/icons/raitingusericonactive.svg"
                         alt="#"
                       />
                       <img
-                        src="./assets/images/icons/raitingusericondeactive.svg"
+                        src="/assets/images/icons/raitingusericondeactive.svg"
                         alt="#"
                       />
                     </div>
@@ -1101,29 +1099,29 @@
               <div class="item">
                 <div class="head_item">
                   <div class="avatar">
-                    <img src="./assets/images/img/photo1.png" alt="#" />
+                    <img src="/assets/images/img/photo1.png" alt="#" />
                   </div>
                   <div class="content">
                     <span class="name">Smith Smith</span>
                     <div class="star_rating">
                       <img
-                        src="./assets/images/icons/raitingusericonactive.svg"
+                        src="/assets/images/icons/raitingusericonactive.svg"
                         alt="#"
                       />
                       <img
-                        src="./assets/images/icons/raitingusericonactive.svg"
+                        src="/assets/images/icons/raitingusericonactive.svg"
                         alt="#"
                       />
                       <img
-                        src="./assets/images/icons/raitingusericonactive.svg"
+                        src="/assets/images/icons/raitingusericonactive.svg"
                         alt="#"
                       />
                       <img
-                        src="./assets/images/icons/raitingusericonactive.svg"
+                        src="/assets/images/icons/raitingusericonactive.svg"
                         alt="#"
                       />
                       <img
-                        src="./assets/images/icons/raitingusericondeactive.svg"
+                        src="/assets/images/icons/raitingusericondeactive.svg"
                         alt="#"
                       />
                     </div>
@@ -1137,29 +1135,29 @@
               <div class="item">
                 <div class="head_item">
                   <div class="avatar">
-                    <img src="./assets/images/img/photo1.png" alt="#" />
+                    <img src="/assets/images/img/photo1.png" alt="#" />
                   </div>
                   <div class="content">
                     <span class="name">Smith Smith</span>
                     <div class="star_rating">
                       <img
-                        src="./assets/images/icons/raitingusericonactive.svg"
+                        src="/assets/images/icons/raitingusericonactive.svg"
                         alt="#"
                       />
                       <img
-                        src="./assets/images/icons/raitingusericonactive.svg"
+                        src="/assets/images/icons/raitingusericonactive.svg"
                         alt="#"
                       />
                       <img
-                        src="./assets/images/icons/raitingusericonactive.svg"
+                        src="/assets/images/icons/raitingusericonactive.svg"
                         alt="#"
                       />
                       <img
-                        src="./assets/images/icons/raitingusericonactive.svg"
+                        src="/assets/images/icons/raitingusericonactive.svg"
                         alt="#"
                       />
                       <img
-                        src="./assets/images/icons/raitingusericondeactive.svg"
+                        src="/assets/images/icons/raitingusericondeactive.svg"
                         alt="#"
                       />
                     </div>
@@ -1173,29 +1171,29 @@
               <div class="item">
                 <div class="head_item">
                   <div class="avatar">
-                    <img src="./assets/images/img/photo1.png" alt="#" />
+                    <img src="/assets/images/img/photo1.png" alt="#" />
                   </div>
                   <div class="content">
                     <span class="name">Smith Smith</span>
                     <div class="star_rating">
                       <img
-                        src="./assets/images/icons/raitingusericonactive.svg"
+                        src="/assets/images/icons/raitingusericonactive.svg"
                         alt="#"
                       />
                       <img
-                        src="./assets/images/icons/raitingusericonactive.svg"
+                        src="/assets/images/icons/raitingusericonactive.svg"
                         alt="#"
                       />
                       <img
-                        src="./assets/images/icons/raitingusericonactive.svg"
+                        src="/assets/images/icons/raitingusericonactive.svg"
                         alt="#"
                       />
                       <img
-                        src="./assets/images/icons/raitingusericonactive.svg"
+                        src="/assets/images/icons/raitingusericonactive.svg"
                         alt="#"
                       />
                       <img
-                        src="./assets/images/icons/raitingusericondeactive.svg"
+                        src="/assets/images/icons/raitingusericondeactive.svg"
                         alt="#"
                       />
                     </div>
@@ -1211,14 +1209,14 @@
         </div>
       </section>
     </main>
-    <footer>
+    <footer class="main_footer">
       <div class="container">
         <div class="top_section">
           <ul class="social_icons">
             <li>
               <a href="#">
                 <img
-                  src="./assets/images/icons/social_icons/facebook.svg"
+                  src="/assets/images/icons/social_icons/facebook.svg"
                   class="injectable"
                   alt="#"
                 />
@@ -1227,7 +1225,7 @@
             <li>
               <a href="#">
                 <img
-                  src="./assets/images/icons/social_icons/instagram.svg"
+                  src="/assets/images/icons/social_icons/instagram.svg"
                   class="injectable"
                   alt="#"
                 />
@@ -1236,7 +1234,7 @@
             <li>
               <a href="#">
                 <img
-                  src="./assets/images/icons/social_icons/whatsapp.svg"
+                  src="/assets/images/icons/social_icons/whatsapp.svg"
                   class="injectable"
                   alt="#"
                 />
@@ -1245,7 +1243,7 @@
             <li>
               <a href="#">
                 <img
-                  src="./assets/images/icons/social_icons/telegram.svg"
+                  src="/assets/images/icons/social_icons/telegram.svg"
                   class="injectable"
                   alt="#"
                 />
@@ -1254,7 +1252,7 @@
             <li>
               <a href="#">
                 <img
-                  src="./assets/images/icons/social_icons/youtube.svg"
+                  src="/assets/images/icons/social_icons/youtube.svg"
                   class="injectable"
                   alt="#"
                 />
@@ -1266,16 +1264,16 @@
       </div>
       <div class="center_section">
         <div class="container">
-          <div class="mobile_foot_logo">
-            <img src="./assets/images/icons/logo_white.svg" alt="" />
-          </div>
+          <a href="#" class="mobile_foot_logo">
+            <img src="/assets/images/icons/logo_white.svg" alt="" />
+          </a>
           <div class="mobile_top_section">
             <ul class="social_icons">
               <li>
                 <a href="#">
                   <img
                     class="injectable"
-                    src="./assets/images/icons/social_icons/facebook.svg"
+                    src="/assets/images/icons/social_icons/facebook.svg"
                     alt="#"
                   />
                 </a>
@@ -1283,7 +1281,7 @@
               <li>
                 <a href="#">
                   <img
-                    src="./assets/images/icons/social_icons/instagram.svg"
+                    src="/assets/images/icons/social_icons/instagram.svg"
                     class="injectable"
                     alt="#"
                   />
@@ -1293,7 +1291,7 @@
                 <a href="#">
                   <img
                     class="injectable"
-                    src="./assets/images/icons/social_icons/whatsapp.svg"
+                    src="/assets/images/icons/social_icons/whatsapp.svg"
                     alt="#"
                   />
                 </a>
@@ -1301,7 +1299,7 @@
               <li>
                 <a href="#">
                   <img
-                    src="./assets/images/icons/social_icons/telegram.svg"
+                    src="/assets/images/icons/social_icons/telegram.svg"
                     class="injectable"
                     alt="#"
                   />
@@ -1310,7 +1308,7 @@
               <li>
                 <a href="#">
                   <img
-                    src="./assets/images/icons/social_icons/youtube.svg"
+                    src="/assets/images/icons/social_icons/youtube.svg"
                     class="injectable"
                     alt="#"
                   />
@@ -1339,13 +1337,13 @@
           </div>
           <ul class="links">
             <li>
-              <a href="#"> Ana səhifə </a>
+              <a href="/"> Ana səhifə </a>
             </li>
             <li>
-              <a href="#"> Tariflər </a>
+              <a href="./tariffs.html"> Tariflər </a>
             </li>
             <li>
-              <a href="#"> Mağazalar </a>
+              <a href="./stores.html"> Mağazalar </a>
             </li>
             <li>
               <a href="#"> Xidmətlər </a>
@@ -1384,17 +1382,17 @@
           <div class="mobile_apps_row">
             <span>Mobil tədbiqi yüklə</span>
             <a href="#" class="imgStore">
-              <img src="./assets/images/icons/playstore.svg" alt="#" />
+              <img src="/assets/images/icons/playstore.svg" alt="#" />
             </a>
             <a href="#" class="imgStore">
-              <img src="./assets/images/icons/appstore.svg" alt="#" />
+              <img src="/assets/images/icons/appstore.svg" alt="#" />
             </a>
           </div>
           <div class="mobile_foot_info">
             <span>© 2021 Kargolux | Bütün Hüquqlar Qorunur</span>
             <img
               class="visa"
-              src="./assets/images/icons/visamaster.svg"
+              src="/assets/images/icons/visamaster.svg"
               alt=""
             />
           </div>
@@ -1403,24 +1401,22 @@
       <div class="bottom_section">
         <div class="container">
           <div class="left">
-            <img
-              class="foot_logo"
-              src="./assets/images/icons/logo_white.svg"
-              alt="#"
-            />
+            <a href="/" class="foot_logo">
+              <img src="/assets/images/icons/logo_white.svg" alt="#" />
+            </a>
             <span>© 2021 Kargolux | Bütün Hüquqlar Qorunur</span>
           </div>
           <div class="right">
             <span>Mobil tədbiqi yüklə</span>
             <a href="#" class="imgStore">
-              <img src="./assets/images/icons/playstore.svg" alt="#" />
+              <img src="/assets/images/icons/playstore.svg" alt="#" />
             </a>
             <a href="#" class="imgStore">
-              <img src="./assets/images/icons/appstore.svg" alt="#" />
+              <img src="/assets/images/icons/appstore.svg" alt="#" />
             </a>
             <img
               class="visa"
-              src="./assets/images/icons/visamaster.svg"
+              src="/assets/images/icons/visamaster.svg"
               alt=""
             />
           </div>
@@ -1450,16 +1446,16 @@
           <button type="button" class="cancell close_modal">
             <img
               class="injectable"
-              src="./assets/images/icons/closeModal.svg"
+              src="/assets/images/icons/closeModal.svg"
               alt="#"
             />
           </button>
         </div>
       </div>
     </div>
-    <script src="./assets/js/jquery-3.6.0.min.js"></script>
-    <script src="./assets/js/owl.carousel.min.js"></script>
-    <script src="./assets/js/svg-inject.min.js"></script>
-    <script src="./assets/js/main.js"></script>
+    <script src="/assets/js/jquery-3.6.0.min.js"></script>
+    <script src="/assets/js/owl.carousel.min.js"></script>
+    <script src="/assets/js/svg-inject.min.js"></script>
+    <script src="/assets/js/main.js"></script>
   </body>
 </html>

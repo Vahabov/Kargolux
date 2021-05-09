@@ -1,92 +1,94 @@
 $(function () {
   //convert img to svg
   SVGInject(document.querySelectorAll("img.injectable"));
+  if ($(".owl-carousel")[0]) {
+    $(".main_slider_section .owl-carousel").owlCarousel({
+      margin: 0,
+      loop: true,
+      nav: true,
+      autoWidth: false,
+      items: 1,
+      animateOut: "fadeOut",
+      autoplay: true,
+      autoplayTimeout: 5000,
+      autoplayHoverPause: true,
+      responsive: {
+        0: {
+          items: 1,
+          nav: false,
+          loop: true,
+        },
+        1200: {
+          items: 1,
+          nav: true,
+          loop: true,
+        },
+      },
+    });
+    $(".partners_carousel_section .owl-carousel").owlCarousel({
+      margin: 40,
+      loop: true,
+      nav: true,
+      autoWidth: false,
+      dots: false,
+      items: 10,
+      autoplay: true,
+      autoplayTimeout: 3000,
+      smartSpeed: 2000,
+      animateIn: "linear",
+      animateOut: "linear",
+      responsive: {
+        0: {
+          items: 2,
+          nav: false,
+          loop: true,
+        },
+        700: {
+          items: 2,
+          nav: false,
+          loop: true,
+        },
+        1000: {
+          items: 6,
+          dots: false,
+          nav: true,
+        },
+      },
+    });
 
-  $(".main_slider_section .owl-carousel").owlCarousel({
-    margin: 0,
-    loop: true,
-    nav: true,
-    autoWidth: false,
-    items: 1,
-    animateOut: "fadeOut",
-    autoplay: true,
-    autoplayTimeout: 5000,
-    autoplayHoverPause: true,
-    responsive: {
-      0: {
-        items: 1,
-        nav: false,
-        loop: true,
+    $(".customer_ratings_section .owl-carousel").owlCarousel({
+      margin: 20,
+      loop: true,
+      nav: true,
+      autoWidth: false,
+      dots: true,
+      items: 10,
+      autoplay: true,
+      autoplayTimeout: 3000,
+      smartSpeed: 1000,
+      animateIn: "linear",
+      animateOut: "linear",
+      responsive: {
+        0: {
+          items: 1,
+          loop: true,
+        },
+        1000: {
+          items: 2,
+          dots: true,
+          nav: false,
+        },
+        1250: {
+          items: 3,
+          nav: false,
+          loop: true,
+          dots: true,
+        },
       },
-      1200: {
-        items: 1,
-        nav: true,
-        loop: true,
-      },
-    },
-  });
-  $(".partners_carousel_section .owl-carousel").owlCarousel({
-    margin: 40,
-    loop: true,
-    nav: true,
-    autoWidth: false,
-    dots: false,
-    items: 10,
-    autoplay: true,
-    autoplayTimeout: 3000,
-    smartSpeed: 2000,
-    animateIn: "linear",
-    animateOut: "linear",
-    responsive: {
-      0: {
-        items: 2,
-        nav: false,
-        loop: true,
-      },
-      700: {
-        items: 2,
-        nav: false,
-        loop: true,
-      },
-      1000: {
-        items: 6,
-        dots: false,
-        nav: true,
-      },
-    },
-  });
+    });
+  }
 
-  $(".customer_ratings_section .owl-carousel").owlCarousel({
-    margin: 20,
-    loop: true,
-    nav: true,
-    autoWidth: false,
-    dots: true,
-    items: 10,
-    autoplay: true,
-    autoplayTimeout: 3000,
-    smartSpeed: 1000,
-    animateIn: "linear",
-    animateOut: "linear",
-    responsive: {
-      0: {
-        items: 1,
-        loop: true,
-      },
-      1000: {
-        items: 2,
-        dots: true,
-        nav: false,
-      },
-      1250: {
-        items: 3,
-        nav: false,
-        loop: true,
-        dots: true,
-      },
-    },
-  });
-  $(document).keydown(function (event) {
+  $(document).on("keydown", function (event) {
     if (event.keyCode == 27) {
       $(".my_modal").fadeOut("fast");
     }
@@ -132,7 +134,7 @@ $(function () {
   });
 
   $(document).on("click", ".btn_popup", function (e) {
-    e.stopPropagation()
+    e.stopPropagation();
     let dataId = $(this).attr("data-id");
     $(".my_modal").fadeOut("fast");
     $(`#${dataId}`).fadeIn("fast");

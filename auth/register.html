@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Register</title>
+    <link rel="stylesheet" href="/assets/css/main.css" />
+    <link rel="stylesheet" href="/assets/css/media.css" />
+    <link
+      rel="stylesheet"
+      href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css"
+    />
+  </head>
+  <body>
+    <header class="auth_header">
+      <div class="container">
+        <a href="/" class="logo">
+          <img src="/assets/images/icons/logo.svg" alt="#" />
+        </a>
+        <div class="lang_select">
+          <select>
+            <option value="aze">AZE</option>
+            <option value="ru">RU</option>
+            <option value="en">EN</option>
+          </select>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="auth_block">
+        <div class="container">
+          <form action="#" class="big_form">
+            <div class="head">
+              <h2 class="title">Qeydiyyat</h2>
+            </div>
+            <div class="input">
+              <input type="text" placeholder="Ad" />
+              <span class="error_message"></span>
+            </div>
+            <div class="input">
+              <input type="text" placeholder="Soyad" />
+              <span class="error_message"></span>
+            </div>
+            <div class="input">
+              <input type="text" placeholder="Doğum tarixi" id="datepicker" />
+              <span class="error_message"></span>
+            </div>
+            <div class="input">
+              <select>
+                <option value="#" hidden>Cins</option>
+                <option value="#">Kişi</option>
+                <option value="#">Qadın</option>
+              </select>
+              <span class="error_message"></span>
+            </div>
+            <div class="input">
+              <input type="email" placeholder="E-mail" />
+              <span class="error_message"></span>
+            </div>
+            <div class="input">
+              <input type="number" placeholder="Mobil nömrə" />
+              <span class="error_message"></span>
+            </div>
+            <div class="input">
+              <input type="password" placeholder="Şifrə" />
+              <span class="error_message"></span>
+            </div>
+            <div class="input">
+              <input type="password" placeholder="Təkrar şifrə" />
+              <span class="error_message"></span>
+            </div>
+            <div class="input_with_info">
+              <div class="input_row">
+                <div class="input">
+                  <select>
+                    <option value="#">AZE</option>
+                    <option value="#">RU</option>
+                    <option value="#">EN</option>
+                  </select>
+                  <input
+                    type="number"
+                    placeholder="Şəxsiyyət vəsiqəsinin seriya nömrəsi"
+                  />
+                </div>
+                <span class="info">
+                  <img src="/assets/images/icons/_.svg" alt="#" />
+                </span>
+              </div>
+              <span class="error_message"></span>
+            </div>
+            <div class="input_with_info">
+              <div class="input_row">
+                <div class="input">
+                  <input
+                    type="number"
+                    placeholder="Şəxsiyyət vəsiqəsinin fin kodu"
+                  />
+                </div>
+                <span class="info">
+                  <img src="/assets/images/icons/_.svg" alt="#" />
+                </span>
+              </div>
+              <span class="error_message"></span>
+            </div>
+            <div class="input adress_input">
+              <input type="text" placeholder="Ünvan" />
+              <span class="error_message"></span>
+            </div>
+            <div class="input branch_select">
+              <select>
+                <option value="#" hidden>Cins</option>
+                <option value="#">Kişi</option>
+                <option value="#">Qadın</option>
+              </select>
+              <span class="error_message"
+                ><span class="red_star">*</span> Siz məhsulunuzu seçdiyiniz
+                filialdan təhvil alacaqsınız</span
+              >
+            </div>
+            <div class="sales_contract">
+              <label class="checkbox_label">
+                Məsafəli <a href="#" class="orange_color">satış sözləşməsini</a> qəbul edirəm.
+                <input type="checkbox" checked="checked" />
+                <span class="checkmark"></span>
+              </label>
+              <div class="login_register">
+                <a href="#" class="btn_login">Giriş et</a>
+                <button type="submit" class="register_btn">Qeydiyyatdan keç</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </section>
+    </main>
+    <footer class="auth_footer">
+      <div class="container">
+        <span class="copyright">© 2021 Kargolux | Bütün Hüquqlar Qorunur</span>
+        <div class="right">
+          <span>Mobil tədbiqi yüklə</span>
+          <a href="#" class="imgStore">
+            <img src="/assets/images/icons/playstore.svg" alt="#" />
+          </a>
+          <a href="#" class="imgStore">
+            <img src="/assets/images/icons/appstore.svg" alt="#" />
+          </a>
+          <img class="visa" src="/assets/images/icons/visamaster.svg" alt="" />
+        </div>
+        <div class="bottom_sect_mobile">
+          <span class="copyright_mob">
+            © 2021 Kargolux | Bütün Hüquqlar Qorunur
+          </span>
+          <img class="visa" src="/assets/images/icons/visamaster.svg" alt="" />
+        </div>
+      </div>
+    </footer>
+
+    <script src="/assets/js/jquery-3.6.0.min.js"></script>
+    <script src="/assets/js/svg-inject.min.js"></script>
+    <script src="/assets/js/main.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script>
+      $(function () {
+        $("#datepicker").datepicker();
+      });
+    </script>
+  </body>
+</html>
