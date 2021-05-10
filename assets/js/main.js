@@ -111,6 +111,7 @@ $(function () {
   var menuOverlay = $(".overlay_inner")[0];
 
   $(window).on("click", function (e) {
+    $(".select_box_in").fadeOut("fast");
     if (e.target == menuOverlay) {
       $(".overlay_inner").removeClass("active_menu");
       setTimeout(() => {
@@ -142,5 +143,24 @@ $(function () {
 
   $(document).on("click", ".close_modal", function () {
     $(".my_modal").fadeOut("fast");
+  });
+
+  $(document).on("click", ".btn_select", function (e) {
+    e.stopPropagation();
+    let nowValue = $(this).find(".select_value");
+    $(this).siblings(".select_box_in").stop().fadeToggle("fast");
+    $(this)
+      .siblings(".select_box_in")
+      .find(".btn_option")
+      .click(function () {
+        nowValue.html($(this).attr("data-value"));
+        $("#selectedValue").val($(this).attr("data-id"));
+        $(".btn_option").removeClass("active_opt");
+        $(this).addClass("active_opt");
+      });
+  });
+  $(".question").click(function () {
+    $(this).toggleClass("active_question");
+    $(this).siblings(".content").stop().slideToggle("fast")
   });
 });

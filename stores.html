@@ -15,16 +15,16 @@
         <div class="top_section">
           <ul class="top_navbar">
             <li>
-              <a href="#"> Qaydalar </a>
+              <a href="./rules.html"> Qaydalar </a>
             </li>
             <li>
-              <a href="#"> Suallar </a>
+              <a href="./questions.html"> Suallar </a>
             </li>
             <li>
-              <a href="#"> Haqqımızda </a>
+              <a href="./about.html"> Haqqımızda </a>
             </li>
             <li>
-              <a href="#"> Daşınması qadağandır olunan məhsullar </a>
+              <a href="./prohibites-products.html"> Daşınması qadağandır olunan məhsullar </a>
             </li>
           </ul>
           <div class="right_column">
@@ -58,13 +58,13 @@
               <a href="./stores.html"> Mağazalar </a>
             </li>
             <li>
-              <a href="#"> Xidmətlər </a>
+              <a href="./services.html"> Xidmətlər </a>
             </li>
             <li>
-              <a href="#"> Xəbərlər və yeniliklər </a>
+              <a href="./news.html"> Xəbərlər və yeniliklər </a>
             </li>
             <li>
-              <a href="#"> Əlaqə </a>
+              <a href="./contact.html"> Əlaqə </a>
             </li>
           </ul>
           <div class="auth">
@@ -140,7 +140,7 @@
                     <li>
                       <a href="#">
                         <img
-                          src="/assets/images/icons/social_icons/facebook.svg"
+                          src="/assets/images/icons/social/facebook.svg"
                           class="injectable"
                           alt="#"
                         />
@@ -149,7 +149,7 @@
                     <li>
                       <a href="#">
                         <img
-                          src="/assets/images/icons/social_icons/instagram.svg"
+                          src="/assets/images/icons/social/instagram.svg"
                           class="injectable"
                           alt="#"
                         />
@@ -158,7 +158,7 @@
                     <li>
                       <a href="#">
                         <img
-                          src="/assets/images/icons/social_icons/whatsapp.svg"
+                          src="/assets/images/icons/social/whatsapp.svg"
                           class="injectable"
                           alt="#"
                         />
@@ -167,7 +167,7 @@
                     <li>
                       <a href="#">
                         <img
-                          src="/assets/images/icons/social_icons/telegram.svg"
+                          src="/assets/images/icons/social/telegram.svg"
                           class="injectable"
                           alt="#"
                         />
@@ -176,7 +176,7 @@
                     <li>
                       <a href="#">
                         <img
-                          src="/assets/images/icons/social_icons/youtube.svg"
+                          src="/assets/images/icons/social/youtube.svg"
                           class="injectable"
                           alt="#"
                         />
@@ -201,6 +201,69 @@
       <section class="stores_section">
         <div class="container">
           <h3 class="title">Mağazalar</h3>
+          <div class="select_box">
+            <button type="button" class="btn_select">
+              <span class="select_value" data-value="Bütün kateqoriyalar">
+                Bütün kateqoriyalar
+              </span>
+              <img
+                onload="SVGInject(this)"
+                src="./assets/images/icons/select_arrow_black.svg"
+                alt="#"
+              />
+            </button>
+            <div class="select_box_in">
+              <a
+                class="btn_option active_opt"
+                href="#"
+                data-value="Bütün kateqoriyalar"
+                >Bütün kateqoriyalar</a
+              >
+              <a class="btn_option" href="#" data-value="Avtomobil məhsulları"
+                >Avtomobil məhsulları</a
+              >
+              <a class="btn_option" href="#" data-value="Uşaq məhsulları"
+                >Uşaq məhsulları</a
+              >
+              <a class="btn_option" href="#" data-value="Kosmetika"
+                >Kosmetika</a
+              >
+              <a class="btn_option" href="#" data-value="Musiqi aksesuarları"
+                >Musiqi aksesuarları</a
+              >
+              <a class="btn_option" href="#" data-value="Multibrend mağazalar"
+                >Multibrend mağazalar</a
+              >
+              <a
+                class="btn_option"
+                href="#"
+                data-value="Geyim, ayaqqabı, aksesuarlar"
+                >Geyim, ayaqqabı, aksesuarlar</a
+              >
+              <a class="btn_option" href="#" data-value="İdman məhsulları"
+                >İdman məhsulları</a
+              >
+              <a
+                class="btn_option"
+                href="#"
+                data-value="Məişət texnikası və elektronika"
+                >Məişət texnikası və elektronika</a
+              >
+              <a
+                class="btn_option"
+                href="#"
+                data-value="Ev və təmir üçün məhsullar"
+                >Ev və təmir üçün məhsullar</a
+              >
+              <a class="btn_option" href="#" data-value="Maraq və hobbi"
+                >Maraq və hobbi</a
+              >
+              <a class="btn_option" href="#" data-value="Kitab">Kitab</a>
+              <a class="btn_option" href="#" data-value="Ev əşyaları"
+                >Ev əşyaları</a
+              >
+            </div>
+          </div>
           <div class="stores_main">
             <div class="stores_items">
               <a href="#" class="item">
@@ -296,7 +359,7 @@
             </div>
             <ul class="stores_sidebar">
               <li class="active_li">
-                <a href="#">Bütün kateqoriyaıar</a>
+                <a href="#">Bütün kateqoriyalar</a>
               </li>
               <li>
                 <a href="#">Avtomobil məhsulları</a>
@@ -336,6 +399,45 @@
               </li>
             </ul>
           </div>
+          <ul class="pagination">
+            <li class="left_icn">
+              <a href="#">
+                <img
+                  class="injectable"
+                  src="./assets/images/icons/arrow.svg"
+                  alt="#"
+                />
+              </a>
+            </li>
+            <li class="active_li">
+              <a href="#1"> 1 </a>
+            </li>
+            <li>
+              <a href="#2"> 2 </a>
+            </li>
+            <li>
+              <a href="#3"> 3 </a>
+            </li>
+            <li>
+              <a href="#4"> 4 </a>
+            </li>
+            <li>
+              <a href="#5"> 5 </a>
+            </li>
+            <li>...</li>
+            <li>
+              <a href="#5"> 728 </a>
+            </li>
+            <li class="right_icn active_icn">
+              <a href="#">
+                <img
+                  class="injectable"
+                  src="./assets/images/icons/arrow.svg"
+                  alt="#"
+                />
+              </a>
+            </li>
+          </ul>
         </div>
       </section>
     </main>
@@ -346,7 +448,7 @@
             <li>
               <a href="#">
                 <img
-                  src="/assets/images/icons/social_icons/facebook.svg"
+                  src="/assets/images/icons/social/facebook.svg"
                   class="injectable"
                   alt="#"
                 />
@@ -355,7 +457,7 @@
             <li>
               <a href="#">
                 <img
-                  src="/assets/images/icons/social_icons/instagram.svg"
+                  src="/assets/images/icons/social/instagram.svg"
                   class="injectable"
                   alt="#"
                 />
@@ -364,7 +466,7 @@
             <li>
               <a href="#">
                 <img
-                  src="/assets/images/icons/social_icons/whatsapp.svg"
+                  src="/assets/images/icons/social/whatsapp.svg"
                   class="injectable"
                   alt="#"
                 />
@@ -373,7 +475,7 @@
             <li>
               <a href="#">
                 <img
-                  src="/assets/images/icons/social_icons/telegram.svg"
+                  src="/assets/images/icons/social/telegram.svg"
                   class="injectable"
                   alt="#"
                 />
@@ -382,7 +484,7 @@
             <li>
               <a href="#">
                 <img
-                  src="/assets/images/icons/social_icons/youtube.svg"
+                  src="/assets/images/icons/social/youtube.svg"
                   class="injectable"
                   alt="#"
                 />
@@ -403,7 +505,7 @@
                 <a href="#">
                   <img
                     class="injectable"
-                    src="/assets/images/icons/social_icons/facebook.svg"
+                    src="/assets/images/icons/social/facebook.svg"
                     alt="#"
                   />
                 </a>
@@ -411,7 +513,7 @@
               <li>
                 <a href="#">
                   <img
-                    src="/assets/images/icons/social_icons/instagram.svg"
+                    src="/assets/images/icons/social/instagram.svg"
                     class="injectable"
                     alt="#"
                   />
@@ -421,7 +523,7 @@
                 <a href="#">
                   <img
                     class="injectable"
-                    src="/assets/images/icons/social_icons/whatsapp.svg"
+                    src="/assets/images/icons/social/whatsapp.svg"
                     alt="#"
                   />
                 </a>
@@ -429,7 +531,7 @@
               <li>
                 <a href="#">
                   <img
-                    src="/assets/images/icons/social_icons/telegram.svg"
+                    src="/assets/images/icons/social/telegram.svg"
                     class="injectable"
                     alt="#"
                   />
@@ -438,7 +540,7 @@
               <li>
                 <a href="#">
                   <img
-                    src="/assets/images/icons/social_icons/youtube.svg"
+                    src="/assets/images/icons/social/youtube.svg"
                     class="injectable"
                     alt="#"
                   />
@@ -476,22 +578,22 @@
               <a href="./stores.html"> Mağazalar </a>
             </li>
             <li>
-              <a href="#"> Xidmətlər </a>
+              <a href="./services.html"> Xidmətlər </a>
             </li>
             <li>
-              <a href="#"> Xəbərlər və yeniliklər </a>
+              <a href="./news.html"> Xəbərlər və yeniliklər </a>
             </li>
             <li>
-              <a href="#"> Əlaqə </a>
+              <a href="./contact.html"> Əlaqə </a>
             </li>
             <li>
-              <a href="#"> Qaydalar </a>
+              <a href="./rules.html"> Qaydalar </a>
             </li>
             <li>
-              <a href="#"> Suallar </a>
+              <a href="./questions.html"> Suallar </a>
             </li>
             <li>
-              <a href="#"> Haqqımızda </a>
+              <a href="./about.html"> Haqqımızda </a>
             </li>
           </ul>
           <div class="adress">
