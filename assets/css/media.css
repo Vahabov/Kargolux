@@ -105,6 +105,35 @@
   body .my_modal .modal_center .how_to_order .video {
     height: 240px;
   }
+  body .my_modal .modal_center .congratulations {
+    min-height: auto;
+  }
+  body .my_modal .modal_center .congratulations .title {
+    max-width: 100%;
+    font-size: 22px;
+  }
+  body .my_modal .modal_center .congratulations .description {
+    font-size: 12px;
+    font-family: Nunito-Regular;
+    max-width: 100%;
+  }
+  body .my_modal .modal_center .congratulations .go_auth {
+    width: 100%;
+    margin-top: 25px;
+  }
+  body .my_modal .modal_center .react_actions .center .left {
+    width: 100%;
+  }
+  body .my_modal .modal_center .react_actions .center .left .title {
+    font-size: 22px;
+    margin-bottom: 10px;
+  }
+  body .my_modal .modal_center .react_actions .center .left .title .mobile_icn {
+    display: block;
+  }
+  body .my_modal .modal_center .react_actions .center .icn {
+    display: none;
+  }
   body .pagination {
     width: 280px;
     margin-top: 50px;

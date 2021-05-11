@@ -1,6 +1,7 @@
 $siteColor: #7b5ce1;
 $siteColor2: #ff6d67;
 $textColor: #282141;
+$errorColor: #ff5050;
 $borderColor: #28214121;
 $light: Nunito-Light;
 $bold: Nunito-Bold;
@@ -240,12 +241,12 @@ body {
         width: 0px;
       }
       .modal_inner {
-        width: 30%;
+        width: 33%;
         background-color: #fff;
         border-radius: $siteRadius10;
         padding: 25px;
         position: relative;
-        padding-top: 30px;
+        padding-top: 50px;
         .cancell {
           position: absolute;
           top: 20px;
@@ -278,6 +279,90 @@ body {
           .element {
             width: 100%;
             height: 100%;
+          }
+        }
+      }
+      .congratulations {
+        @include flex-center(flex);
+        flex-direction: column;
+        width: 40%;
+        min-height: 430px;
+        .title {
+          font-family: $extraBold;
+          font-size: 30px;
+          text-align: center;
+          color: $siteColor2;
+          margin-bottom: 20px;
+          max-width: 60%;
+        }
+        .description {
+          text-align: center;
+          font-family: $regular;
+          font-size: 14px;
+          max-width: 60%;
+        }
+        .go_auth{
+          width: 197px;
+          height: 52px;
+          background-color: $siteColor;
+          border-radius: $siteRadius10;
+          color: #fff;
+          @include flex-center(flex);
+          margin-top: 38px
+        }
+      }
+      .react_actions {
+        .center {
+          @include flex-between(flex);
+          align-items: flex-start;
+          .left {
+            width: 71%;
+            .success {
+              color: #41dda5;
+            }
+            .error {
+              color: $errorColor;
+            }
+            .title {
+              font-family: $extraBold;
+              font-size: 30px;
+              display: flex;
+              align-items: flex-end;
+              .mobile_icn{
+                width: 39px;
+                height: 39px;
+                margin-right: 10px;
+                display: none;
+              }
+            }
+            .description {
+              font-family: $regular;
+              font-size: 14px;
+              margin-top: 3px;
+              line-height: 22px;
+            }
+          }
+          .icn {
+            width: 102px;
+            height: 102px;
+            margin-left: 15px;
+          }
+        }
+        .foot{
+          @include flex-between(flex);
+          margin-top: 30px;
+          .transparent{
+            background-color: transparent !important;
+            border: 1px solid $siteColor;
+            color: $textColor !important;
+          }
+          .btn_foot{
+            width: 48%;
+            height: 52px;
+            border-radius: $siteRadius10;
+            background-color: $siteColor;
+            color: #fff;
+            @include flex-center(flex);
           }
         }
       }
@@ -796,14 +881,14 @@ body {
     }
   }
   .top_popover {
-    .popover_content{
+    .popover_content {
       bottom: 70px;
     }
   }
   .popover_wrapper {
     position: relative;
-    &:hover{
-      .popover_content{
+    &:hover {
+      .popover_content {
         opacity: 1;
         z-index: 100;
       }
@@ -817,7 +902,7 @@ body {
       background-color: #fff;
       opacity: 0;
       z-index: -1;
-      transition: .3s;
+      transition: 0.3s;
       &::before {
         content: "";
         width: 20.45px;
@@ -828,11 +913,11 @@ body {
         background-color: #fff;
         transform: translate(-50%, 0%) rotate(45deg);
       }
-      .register_info_imgs{
+      .register_info_imgs {
         @include flex-between(flex);
-        img{
+        img {
           width: 255px;
-          &:first-child{
+          &:first-child {
             margin-right: 15px;
           }
         }
@@ -1846,7 +1931,7 @@ body {
       .container {
         @include flex-center(flex);
         .red_star {
-          color: #ff5050;
+          color: $errorColor;
         }
         .small_form {
           background-color: #f8f7fe;
@@ -1870,14 +1955,14 @@ body {
           }
           .error {
             input {
-              border-color: #ff5050 !important;
+              border-color: $errorColor !important;
               opacity: 1 !important;
               &::placeholder {
-                color: #ff5050;
+                color: $errorColor;
               }
             }
             .error_message {
-              color: #ff5050;
+              color: $errorColor;
             }
           }
           .input {
@@ -1976,14 +2061,14 @@ body {
           }
           .error {
             input {
-              border-color: #ff5050 !important;
+              border-color: $errorColor !important;
               opacity: 1 !important;
               &::placeholder {
-                color: #ff5050;
+                color: $errorColor;
               }
             }
             .error_message {
-              color: #ff5050;
+              color: $errorColor;
             }
           }
           .input {

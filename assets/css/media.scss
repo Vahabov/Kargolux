@@ -212,6 +212,39 @@ $siteRadius5: 5px;
             height: 240px;
           }
         }
+        .congratulations {
+          min-height: auto;
+          .title{
+            max-width: 100%;
+            font-size: 22px;
+          }
+          .description{
+            font-size: 12px;
+            font-family: $regular;
+            max-width: 100%;
+          }
+          .go_auth{
+            width: 100%;
+            margin-top: 25px;
+          }
+        }
+        .react_actions {
+          .center {
+            .left{
+              width: 100%;
+              .title{
+                font-size: 22px;
+                margin-bottom: 10px;
+                .mobile_icn{
+                  display: block;
+                }
+              }
+            }
+            .icn{
+              display: none;
+            }
+          }
+        }
       }
     }
     .pagination {
