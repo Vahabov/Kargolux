@@ -862,7 +862,7 @@ body .main_header .mobile_overlay .overlay_inner {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
-  height: 100%;
+  height: 97%;
   -webkit-transform: translateX(100vw);
           transform: translateX(100vw);
   -webkit-transition: 0.3s;
@@ -1267,9 +1267,10 @@ body .contact_form input::placeholder {
 body .contact_form textarea {
   border: 0.5px solid #ffffff;
   border-radius: 10px;
-  height: 130px;
+  height: 137px;
   width: 100%;
   padding: 20px;
+  resize: none;
 }
 
 body .contact_form textarea::-webkit-input-placeholder {
@@ -1882,7 +1883,7 @@ body main .info_and_services_section .container .service_item .left .btn_more {
       -ms-flex-pack: center;
           justify-content: center;
   width: 150px;
-  height: 45px;
+  height: 52px;
   background-color: #ff6d67;
   color: #fff;
   border-radius: 10px;
@@ -4221,7 +4222,7 @@ body .main_footer .center_section .container .contact_us .head p {
 
 body .main_footer .center_section .container .links {
   border-left: 1px solid rgba(255, 255, 255, 0.411);
-  padding: 10px 0px 10px 50px;
+  padding: 5px 0px 5px 50px;
 }
 
 body .main_footer .center_section .container .links li:not(:last-child) {
@@ -4235,26 +4236,26 @@ body .main_footer .center_section .container .links li a {
 
 body .main_footer .center_section .container .adress {
   border: 1px solid rgba(255, 255, 255, 0.411);
-  padding: 20px;
+  padding: 35px 42px;
   border-radius: 10px;
   width: 28%;
 }
 
 body .main_footer .center_section .container .adress .a_block:not(:last-child) {
-  margin-bottom: 30px;
+  margin-bottom: 41px;
 }
 
 body .main_footer .center_section .container .adress .a_block .title_adress {
   color: #fff;
   font-size: 18px;
-  margin-bottom: 5px;
+  margin-bottom: 8px;
 }
 
 body .main_footer .center_section .container .adress .a_block span {
   color: #fff;
   font-size: 14px;
   display: block;
-  margin-bottom: 5px;
+  margin-bottom: 7px;
 }
 
 body .main_footer .center_section .container .adress .a_block span:not(:last-child) {

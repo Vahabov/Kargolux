@@ -463,8 +463,8 @@ $siteRadius5: 5px;
               height: 131px;
             }
             .kuryer_order {
-              width: 92px;
-              height: 113px;
+              width: 97px;
+              height: 117px;
             }
             &:not(:nth-last-child(-n + 2)) {
               margin-bottom: 0px;
@@ -495,6 +495,8 @@ $siteRadius5: 5px;
               .btn_more {
                 margin-top: 0px;
                 width: 100%;
+                font-size: 15px;
+                font-family: $extraBold;
               }
             }
             img {

@@ -586,7 +586,7 @@ body {
       .overlay_inner {
         display: flex;
         justify-content: flex-end;
-        height: 100%;
+        height: 97%;
         transform: translateX(100vw);
         transition: 0.3s;
         .menu {
@@ -857,9 +857,10 @@ body {
     textarea {
       border: 0.5px solid #ffffff;
       border-radius: $siteRadius10;
-      height: 130px;
+      height: 137px;
       width: 100%;
       padding: 20px;
+      resize: none;
       &::placeholder {
         color: rgba(255, 255, 255, 0.411);
       }
@@ -1259,7 +1260,7 @@ body {
             .btn_more {
               @include flex-center(flex);
               width: 150px;
-              height: 45px;
+              height: 52px;
               background-color: $siteColor2;
               color: #fff;
               border-radius: $siteRadius10;
@@ -2833,7 +2834,7 @@ body {
         }
         .links {
           border-left: 1px solid rgba(255, 255, 255, 0.411);
-          padding: 10px 0px 10px 50px;
+          padding: 5px 0px 5px 50px;
           li {
             &:not(:last-child) {
               margin-bottom: 20px;
@@ -2846,23 +2847,23 @@ body {
         }
         .adress {
           border: 1px solid rgba(255, 255, 255, 0.411);
-          padding: 20px;
+          padding: 35px 42px;
           border-radius: $siteRadius10;
           width: 28%;
           .a_block {
             &:not(:last-child) {
-              margin-bottom: 30px;
+              margin-bottom: 41px;
             }
             .title_adress {
               color: #fff;
               font-size: 18px;
-              margin-bottom: 5px;
+              margin-bottom: 8px;
             }
             span {
               color: #fff;
               font-size: 14px;
               display: block;
-              margin-bottom: 5px;
+              margin-bottom: 7px;
               &:not(:last-child) {
                 margin-bottom: 5px;
               }

@@ -350,8 +350,8 @@
     height: 131px;
   }
   body main .info_and_services_section .container .item .kuryer_order {
-    width: 92px;
-    height: 113px;
+    width: 97px;
+    height: 117px;
   }
   body main .info_and_services_section .container .item:not(:nth-last-child(-n + 2)) {
     margin-bottom: 0px;
@@ -383,6 +383,8 @@
   body main .info_and_services_section .container .service_item .left .btn_more {
     margin-top: 0px;
     width: 100%;
+    font-size: 15px;
+    font-family: Nunito-ExtraBold;
   }
   body main .info_and_services_section .container .service_item img {
     display: none;
