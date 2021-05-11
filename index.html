@@ -10,7 +10,7 @@
     <link href="/assets/css/owl.theme.default.min.css" rel="stylesheet" />
   </head>
   <body>
-    <header class="main_header">
+    <header class="main_header index_header">
       <div class="container">
         <div class="top_section">
           <ul class="top_navbar">
@@ -24,7 +24,9 @@
               <a href="./about.html"> Haqqımızda </a>
             </li>
             <li>
-              <a href="./prohibites-products.html"> Daşınması qadağandır olunan məhsullar </a>
+              <a href="./prohibites-products.html">
+                Daşınması qadağandır olunan məhsullar
+              </a>
             </li>
           </ul>
           <div class="right_column">
@@ -93,45 +95,47 @@
         <div class="mobile_overlay">
           <div class="overlay_inner">
             <div class="menu">
-              <div class="head">
-                <a href="#" class="logout">
-                  Çıxış
-                  <img src="/assets/images/icons/exit.svg" alt="#" />
-                </a>
-                <button type="button" class="close_menu">
-                  <img src="/assets/images/icons/close.svg" alt="#" />
-                </button>
-              </div>
-              <div class="center">
-                <ul class="list">
-                  <li>
-                    <a href="#">Ana səhifə</a>
-                  </li>
-                  <li>
-                    <a href="#">Tariflər</a>
-                  </li>
-                  <li>
-                    <a href="#">Mağazalar</a>
-                  </li>
-                  <li>
-                    <a href="#">Xidmətlər</a>
-                  </li>
-                  <li>
-                    <a href="#">Xəbərlər və yeniliklər</a>
-                  </li>
-                  <li>
-                    <a href="#">Əlaqə</a>
-                  </li>
-                  <li>
-                    <a href="#">Qaydalar</a>
-                  </li>
-                  <li>
-                    <a href="#">Suallar</a>
-                  </li>
-                  <li>
-                    <a href="#">Haqqımızda</a>
-                  </li>
-                </ul>
+              <div class="top">
+                <div class="head">
+                  <a href="#" class="logout">
+                    Çıxış
+                    <img src="/assets/images/icons/exit.svg" alt="#" />
+                  </a>
+                  <button type="button" class="close_menu">
+                    <img src="/assets/images/icons/close.svg" alt="#" />
+                  </button>
+                </div>
+                <div class="center">
+                  <ul class="list">
+                    <li>
+                      <a href="/">Ana səhifə</a>
+                    </li>
+                    <li>
+                      <a href="./tariffs.html">Tariflər</a>
+                    </li>
+                    <li>
+                      <a href="./stores.html">Mağazalar</a>
+                    </li>
+                    <li>
+                      <a href="./services.html">Xidmətlər</a>
+                    </li>
+                    <li>
+                      <a href="./news.html">Xəbərlər və yeniliklər</a>
+                    </li>
+                    <li>
+                      <a href="./contact.html">Əlaqə</a>
+                    </li>
+                    <li>
+                      <a href="./rules.html">Qaydalar</a>
+                    </li>
+                    <li>
+                      <a href="./questions.html">Suallar</a>
+                    </li>
+                    <li>
+                      <a href="./about.html">Haqqımızda</a>
+                    </li>
+                  </ul>
+                </div>
               </div>
               <div class="foot">
                 <span class="follow_us">Bizi sosial şəbəkələrdə izləyin</span>
@@ -198,7 +202,7 @@
       </div>
     </header>
     <main>
-      <section class="main_slider_section mt-site">
+      <section class="main_slider_section">
         <div class="container">
           <div class="owl-carousel">
             <div class="item">
@@ -227,7 +231,6 @@
                   class="slider_img"
                 />
               </div>
-              <a href="#" class="mobile_btn">Ətraflı</a>
             </div>
             <div class="item">
               <div class="slider_desc_side">
@@ -250,7 +253,6 @@
                   class="slider_img"
                 />
               </div>
-              <a href="#" class="mobile_btn">Ətraflı</a>
             </div>
             <div class="item">
               <div class="slider_desc_side">
@@ -278,7 +280,6 @@
                   class="slider_img"
                 />
               </div>
-              <a href="#" class="mobile_btn">Ətraflı</a>
             </div>
           </div>
           <div class="follow_us_on_social">
@@ -330,6 +331,18 @@
               </li>
             </ul>
             <span class="follow_us">Bizi izləyin</span>
+          </div>
+          <div class="bottom_carousel_buttons">
+            <button type="button" class="order_btn btn">Sifariş et</button>
+            <button type="button" class="facture_btn btn">
+              Faktura əlavə et
+            </button>
+            <button type="button" class="how_order btn_popup" data-id="modal-1">
+              <div class="play_icn">
+                <img src="/assets/images/icons/play.svg" alt="#" />
+              </div>
+              <span>Necə sifariş edim?</span>
+            </button>
           </div>
         </div>
       </section>
@@ -761,12 +774,12 @@
           <div class="scrollable_block">
             <div class="center">
               <div class="item">
-                <button type="button" class="btn_popup" data-id="modal-1">
-                  <img
-                    class="ytb_icn"
-                    src="/assets/images/icons/youtubeicon.svg"
-                    alt="#"
-                  />
+                <button
+                  type="button"
+                  class="btn_popup ytb_icn"
+                  data-id="modal-1"
+                >
+                  <img src="/assets/images/icons/youtubeicon.svg" alt="#" />
                 </button>
                 <img
                   class="news_img"
@@ -804,12 +817,12 @@
                 </div>
               </div>
               <div class="item">
-                <button type="button" class="btn_popup" data-id="modal-1">
-                  <img
-                    class="ytb_icn"
-                    src="/assets/images/icons/youtubeicon.svg"
-                    alt="#"
-                  />
+                <button
+                  type="button"
+                  class="btn_popup ytb_icn"
+                  data-id="modal-1"
+                >
+                  <img src="/assets/images/icons/youtubeicon.svg" alt="#" />
                 </button>
                 <img
                   class="news_img"
@@ -835,12 +848,12 @@
                 </div>
               </div>
               <div class="item">
-                <button type="button" class="btn_popup" data-id="modal-1">
-                  <img
-                    class="ytb_icn"
-                    src="/assets/images/icons/youtubeicon.svg"
-                    alt="#"
-                  />
+                <button
+                  type="button"
+                  class="btn_popup ytb_icn"
+                  data-id="modal-1"
+                >
+                  <img src="/assets/images/icons/youtubeicon.svg" alt="#" />
                 </button>
                 <img
                   class="news_img"

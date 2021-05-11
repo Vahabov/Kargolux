@@ -75,6 +75,7 @@ body {
   min-height: 100vh;
   -webkit-transition: 0.3s;
   transition: 0.3s;
+  background-image: url(../images/img/background.svg);
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
@@ -707,7 +708,7 @@ body .main_header .mobile_auth {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding: 25px 0px;
+  padding: 18px 0px;
   border-bottom: 1px solid #28214121;
 }
 
@@ -726,7 +727,7 @@ body .main_header .mobile_auth .login_btn {
 }
 
 body .main_header .mobile_auth .register_btn {
-  background-color: #ff6d67;
+  background-color: #7b5ce1;
   border-radius: 10px;
   overflow: hidden;
   height: 45px;
@@ -870,7 +871,7 @@ body .main_header .mobile_overlay .overlay_inner {
 
 body .main_header .mobile_overlay .overlay_inner .menu {
   border-radius: 10px 0px 0px 10px;
-  width: 90%;
+  width: 85%;
   height: 100%;
   background-color: #fff;
   overflow: scroll;
@@ -969,7 +970,7 @@ body .main_header .mobile_overlay .overlay_inner .menu .foot div {
 }
 
 body .main_header .mobile_overlay .overlay_inner .menu .foot div .social_icons {
-  width: 72%;
+  width: 70%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -984,8 +985,8 @@ body .main_header .mobile_overlay .overlay_inner .menu .foot div .social_icons {
 body .main_header .mobile_overlay .overlay_inner .menu .foot div .social_icons li a {
   border: 1px solid #7b5ce121;
   border-radius: 100%;
-  width: 35px;
-  height: 35px;
+  width: 30px;
+  height: 30px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -997,7 +998,7 @@ body .main_header .mobile_overlay .overlay_inner .menu .foot div .social_icons l
           justify-content: center;
 }
 
-body .main_header .mobile_overlay .overlay_inner .menu .foot div .social_icons li a img {
+body .main_header .mobile_overlay .overlay_inner .menu .foot div .social_icons li a svg {
   width: 60%;
 }
 
@@ -1384,7 +1385,7 @@ body main .scrollable_block::-webkit-scrollbar {
 
 body main .main_slider_section .container {
   border-bottom: 1px solid #28214121;
-  padding-bottom: 48px;
+  padding-bottom: 30px;
 }
 
 body main .main_slider_section .container .owl-carousel .owl-item.active .slider_overtitle h2,
@@ -1686,6 +1687,77 @@ body main .main_slider_section .container .follow_us_on_social .follow_us {
   margin-left: 15px;
 }
 
+body main .main_slider_section .container .bottom_carousel_buttons {
+  margin-top: 38px;
+  display: none;
+}
+
+body main .main_slider_section .container .bottom_carousel_buttons .btn {
+  border-radius: 10px;
+  overflow: hidden;
+  height: 52px;
+  padding: 0px 20px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #fff;
+  font-size: 16px;
+  margin-bottom: 18px;
+}
+
+body main .main_slider_section .container .bottom_carousel_buttons .order_btn {
+  background-color: #282141;
+}
+
+body main .main_slider_section .container .bottom_carousel_buttons .facture_btn {
+  background-color: #ff6d67;
+}
+
+body main .main_slider_section .container .bottom_carousel_buttons .how_order {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+body main .main_slider_section .container .bottom_carousel_buttons .how_order .play_icn {
+  width: 52px;
+  height: 52px;
+  border-radius: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #7b5ce1;
+}
+
+body main .main_slider_section .container .bottom_carousel_buttons .how_order .play_icn img {
+  width: 10px;
+  height: 11px;
+}
+
+body main .main_slider_section .container .bottom_carousel_buttons .how_order span {
+  font-size: 16px;
+  margin-left: 15px;
+}
+
 body main .info_and_services_section .container {
   border-bottom: 1px solid #28214121;
   padding-bottom: 100px;
@@ -1766,6 +1838,12 @@ body main .info_and_services_section .container .service_item {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+body main .info_and_services_section .container .service_item:hover {
+  background-color: #f1f1f1;
 }
 
 body main .info_and_services_section .container .service_item .left {
@@ -1904,7 +1982,7 @@ body main .order_prices_section .container .price_blocks {
 
 body main .order_prices_section .container .price_blocks .info_block {
   width: 49%;
-  background-color: #7b5ce1;
+  background-color: #9d87e7;
   border-radius: 10px;
   overflow: hidden;
   padding: 30px;
@@ -2417,6 +2495,7 @@ body main .partners_carousel_section .container .owl-nav {
           justify-content: space-between;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
+  z-index: -1;
 }
 
 body main .partners_carousel_section .container .owl-nav button {

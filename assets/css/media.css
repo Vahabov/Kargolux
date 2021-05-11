@@ -23,6 +23,12 @@
   src: url(../fonts/Nunito-Regular.ttf);
 }
 
+@media screen and (max-width: 1360px) {
+  body .container {
+    max-width: 1100px;
+  }
+}
+
 @media screen and (max-width: 1240px) {
   body .container {
     max-width: 991px;
@@ -39,7 +45,7 @@
   body main .main_slider_section .container .owl-carousel .owl-nav {
     display: none;
   }
-  body main .youtube_videos_section .container .scrollable_blocl .center .item:first-child {
+  body main .youtube_videos_section .container .scrollable_block .center .item:first-child {
     width: 65%;
   }
   body main .customer_ratings_section .container .center .owl-nav {
@@ -78,6 +84,9 @@
   body main .auth_block .container .big_form .input_with_info .info .popover_content .register_info_imgs img {
     width: 230px;
   }
+  body main .partners_carousel_section .container .owl-nav {
+    display: none;
+  }
   body .main_footer .center_section .container .links {
     padding-left: 40px;
   }
@@ -85,7 +94,7 @@
 
 @media screen and (max-width: 991px) {
   body .mt-block {
-    margin-top: 50px;
+    margin-top: 30px;
   }
   body .container {
     padding: 0px 16px;
@@ -157,11 +166,15 @@
     width: 30px;
     height: 30px;
   }
+  body .index_header .bottom_section {
+    display: none;
+  }
   body .main_header .top_section {
     display: none;
   }
   body .main_header .center_section {
     border-top: none;
+    height: 90px;
   }
   body .main_header .center_section .mobile_btn_menu {
     display: block;
@@ -191,11 +204,11 @@
     width: 100%;
   }
   body .main_header .bottom_section .buttons .btn {
-    width: 48%;
+    width: 47%;
     min-width: auto;
     margin: 25px 0px 25px 0px;
-    height: 42px;
-    font-size: 15px;
+    height: 52px;
+    font-size: 16px;
     padding: 0px 10px;
   }
   body .section_head {
@@ -301,12 +314,18 @@
   body main .main_slider_section .container .owl-carousel .owl-dots {
     display: none;
   }
+  body main .main_slider_section .container .follow_us_on_social {
+    display: none;
+  }
+  body main .main_slider_section .container .bottom_carousel_buttons {
+    display: block;
+  }
   body main .info_and_services_section .container {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    padding-bottom: 50px;
+    padding-bottom: 30px;
   }
   body main .info_and_services_section .container .description_section .title {
     font-size: 22px;
@@ -364,7 +383,7 @@
     display: none;
   }
   body main .order_prices_section .container {
-    padding-bottom: 50px;
+    padding-bottom: 30px;
   }
   body main .order_prices_section .container .heads {
     -webkit-box-orient: vertical;
@@ -386,6 +405,14 @@
     width: 100%;
     margin-bottom: 30px;
   }
+  body main .order_prices_section .container .heads .left_head .country {
+    width: 138px;
+    height: 40px;
+  }
+  body main .order_prices_section .container .heads .left_head .country .flag {
+    width: 40px;
+    height: 40px;
+  }
   body main .order_prices_section .container .heads .left_head .country span {
     font-size: 20px;
     margin-left: 10px;
@@ -393,7 +420,10 @@
   body main .order_prices_section .container .heads .left_head .title {
     margin: 0px;
     font-size: 18px;
+    font-family: Nunito-SemiBold;
+    line-height: 21px;
     text-align: right;
+    width: 50%;
   }
   body main .order_prices_section .container .heads .right_head {
     width: 100%;
@@ -417,6 +447,16 @@
   }
   body main .order_prices_section .container .price_blocks .info_block:not(:last-child) {
     margin-bottom: 20px;
+  }
+  body main .calculator_section .container {
+    padding-bottom: 30px;
+  }
+  body main .calculator_section .container .description .title {
+    font-size: 22px;
+  }
+  body main .calculator_section .container .description p {
+    font-size: 12px;
+    line-height: 18px;
   }
   body main .calculator_section .container .calculator {
     padding: 20px;
@@ -476,7 +516,7 @@
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    padding-bottom: 50px;
+    padding-bottom: 30px;
   }
   body main .how_us_work_section .container .description_section .title {
     font-size: 22px;
@@ -522,7 +562,7 @@
     font-size: 12px;
   }
   body main .news_and_updates .container {
-    padding-bottom: 50px;
+    padding-bottom: 30px;
   }
   body main .news_and_updates .container .scrollable_block .center {
     min-width: -webkit-max-content;
@@ -547,13 +587,13 @@
     font-size: 12px;
   }
   body main .partners_carousel_section .container {
-    padding-bottom: 50px;
+    padding-bottom: 30px;
   }
   body main .partners_carousel_section .container .owl-nav {
     display: none;
   }
   body main .youtube_videos_section .container {
-    padding-bottom: 50px;
+    padding-bottom: 30px;
   }
   body main .youtube_videos_section .container .head {
     -webkit-box-orient: vertical;
@@ -636,7 +676,8 @@
     font-size: 12px;
   }
   body main .customer_ratings_section .container {
-    padding-bottom: 50px;
+    padding-bottom: 30px;
+    border: none;
   }
   body main .customer_ratings_section .container .owl-nav {
     display: none;

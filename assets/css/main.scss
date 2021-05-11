@@ -86,7 +86,7 @@ body {
   justify-content: space-between;
   min-height: 100vh;
   transition: 0.3s;
-  // background-image: url(../images/img/background.svg);
+  background-image: url(../images/img/background.svg);
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
@@ -301,14 +301,14 @@ body {
           font-size: 14px;
           max-width: 60%;
         }
-        .go_auth{
+        .go_auth {
           width: 197px;
           height: 52px;
           background-color: $siteColor;
           border-radius: $siteRadius10;
           color: #fff;
           @include flex-center(flex);
-          margin-top: 38px
+          margin-top: 38px;
         }
       }
       .react_actions {
@@ -328,7 +328,7 @@ body {
               font-size: 30px;
               display: flex;
               align-items: flex-end;
-              .mobile_icn{
+              .mobile_icn {
                 width: 39px;
                 height: 39px;
                 margin-right: 10px;
@@ -348,15 +348,15 @@ body {
             margin-left: 15px;
           }
         }
-        .foot{
+        .foot {
           @include flex-between(flex);
           margin-top: 30px;
-          .transparent{
+          .transparent {
             background-color: transparent !important;
             border: 1px solid $siteColor;
             color: $textColor !important;
           }
-          .btn_foot{
+          .btn_foot {
             width: 48%;
             height: 52px;
             border-radius: $siteRadius10;
@@ -508,7 +508,7 @@ body {
     }
     .mobile_auth {
       @include flex-between(none);
-      padding: 25px 0px;
+      padding: 18px 0px;
       border-bottom: 1px solid $borderColor;
       .login_btn {
         font-size: 16px;
@@ -516,7 +516,7 @@ body {
         @include flex-center(flex);
       }
       .register_btn {
-        background-color: $siteColor2;
+        background-color: $siteColor;
         border-radius: $siteRadius10;
         overflow: hidden;
         height: 45px;
@@ -591,7 +591,7 @@ body {
         transition: 0.3s;
         .menu {
           border-radius: $siteRadius10 0px 0px $siteRadius10;
-          width: 90%;
+          width: 85%;
           height: 100%;
           background-color: #fff;
           overflow: scroll;
@@ -647,16 +647,16 @@ body {
             div {
               @include flex-between(flex);
               .social_icons {
-                width: 72%;
+                width: 70%;
                 @include flex-between(flex);
                 li {
                   a {
                     border: 1px solid #7b5ce121;
                     border-radius: 100%;
-                    width: 35px;
-                    height: 35px;
+                    width: 30px;
+                    height: 30px;
                     @include flex-center(flex);
-                    img {
+                    svg {
                       width: 60%;
                     }
                   }
@@ -938,7 +938,7 @@ body {
     .main_slider_section {
       .container {
         border-bottom: 1px solid $borderColor;
-        padding-bottom: 48px;
+        padding-bottom: 30px;
         .owl-carousel {
           .owl-item.active {
             .slider_overtitle h2,
@@ -1140,6 +1140,45 @@ body {
             margin-left: 15px;
           }
         }
+        .bottom_carousel_buttons {
+          margin-top: 38px;
+          display: none;
+          .btn {
+            border-radius: $siteRadius10;
+            overflow: hidden;
+            height: 52px;
+            padding: 0px 20px;
+            width: 100%;
+            @include flex-center(flex);
+            color: #fff;
+            font-size: 16px;
+            margin-bottom: 18px
+          }
+          .order_btn {
+            background-color: $textColor;
+          }
+          .facture_btn {
+            background-color: $siteColor2;
+          }
+          .how_order {
+            @include flex-between(flex);
+            .play_icn {
+              width: 52px;
+              height: 52px;
+              border-radius: 100%;
+              @include flex-center(flex);
+              background-color: $siteColor;
+              img {
+                width: 10px;
+                height: 11px;
+              }
+            }
+            span {
+              font-size: 16px;
+              margin-left: 15px;
+            }
+          }
+        }
       }
     }
     .info_and_services_section {
@@ -1194,6 +1233,10 @@ body {
           padding: 45px;
           overflow: hidden;
           @include flex-between(flex);
+          transition: .3s;
+          &:hover{
+            background-color: rgb(241, 241, 241)
+          }
           .left {
             width: 70%;
             img {
@@ -1281,7 +1324,7 @@ body {
           align-items: flex-end;
           .info_block {
             width: 49%;
-            background-color: $siteColor;
+            background-color: #9d87e7;
             border-radius: $siteRadius10;
             overflow: hidden;
             padding: 30px;
@@ -1613,6 +1656,7 @@ body {
           display: flex;
           justify-content: space-between;
           transform: translateY(-50%);
+          z-index: -1;
           button {
             width: 30px;
             height: 30px;
