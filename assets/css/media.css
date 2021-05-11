@@ -274,6 +274,9 @@
   body main .main_slider_section .container .owl-carousel .item .slider_desc_side .slider_overtitle a {
     display: none;
   }
+  body main .main_slider_section .container .owl-carousel .item .slider_desc_side .slider_overtitle .main_slider_text_box {
+    height: auto;
+  }
   body main .main_slider_section .container .owl-carousel .item .slider_img_cont {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -372,11 +375,13 @@
     line-height: 16px;
   }
   body main .info_and_services_section .container .service_item .left img {
+    margin-bottom: 20px;
     display: block;
     margin-left: 10px;
     float: right;
   }
   body main .info_and_services_section .container .service_item .left .btn_more {
+    margin-top: 0px;
     width: 100%;
   }
   body main .info_and_services_section .container .service_item img {
@@ -791,7 +796,7 @@
   }
   body main .auth_block .container .big_form .input_with_info .info .popover_content .register_info_imgs img {
     margin-right: 0px;
-    width: 232px;
+    width: 250px;
     margin-bottom: 15px;
   }
   body main .auth_block .container .big_form .sales_contract {
@@ -1100,15 +1105,37 @@
     width: calc(100% / 2);
   }
   body .main_footer .center_section .container .links li:not(:last-child) {
-    margin-bottom: 15px;
+    margin-bottom: 28px;
+  }
+  body .main_footer .center_section .container .links li a {
+    font-size: 16px;
   }
   body .main_footer .center_section .container .adress {
     width: 100%;
+    padding: 35px 25px;
+  }
+  body .main_footer .center_section .container .adress .a_block span {
+    font-family: Nunito-Regular;
+  }
+  body .main_footer .center_section .container .adress .a_block .title_adress {
+    margin-bottom: 8px;
+  }
+  body .main_footer .center_section .container .adress .a_block:not(:last-child) {
+    margin-bottom: 41px;
   }
   body .main_footer .center_section .container .mobile_apps_row {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+  }
+  body .main_footer .center_section .container .mobile_apps_row a {
+    height: 13vw;
+    width: 100%;
+    max-height: 70px;
+  }
+  body .main_footer .center_section .container .mobile_apps_row a img {
+    width: 100%;
+    height: 100%;
   }
   body .main_footer .center_section .container .mobile_foot_info {
     display: -webkit-box;
@@ -1157,13 +1184,13 @@
     margin-bottom: 10px;
   }
   body .auth_footer .container .right a {
-    max-width: 160px;
     width: 49% !important;
-    height: 47px !important;
+    height: 13vw !important;
     margin-right: 0px !important;
   }
   body .auth_footer .container .right a img {
     width: 100%;
+    height: 100%;
   }
   body .auth_footer .container .right .visa {
     display: none;
