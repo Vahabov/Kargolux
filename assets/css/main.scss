@@ -624,6 +624,11 @@ body {
           .center {
             padding: 20px 15px;
             .list {
+              .active_li {
+                a {
+                  color: $siteColor2;
+                }
+              }
               li {
                 &:not(:last-child) {
                   margin-bottom: 20px;
@@ -1154,7 +1159,7 @@ body {
             @include flex-center(flex);
             color: #fff;
             font-size: 16px;
-            margin-bottom: 18px
+            margin-bottom: 18px;
           }
           .order_btn {
             background-color: $textColor;
@@ -1230,14 +1235,13 @@ body {
         }
         .service_item {
           background: #f8f7fe;
-          box-shadow: 0px 10px 55px rgba(0, 0, 0, 0.1);
           border-radius: $siteRadius10;
           padding: 45px;
           overflow: hidden;
           @include flex-between(flex);
-          transition: .3s;
-          &:hover{
-            background-color: rgb(241, 241, 241)
+          transition: 0.3s;
+          &:hover {
+            box-shadow: 0px 10px 55px rgba(0, 0, 0, 0.1);
           }
           .left {
             width: 70%;
@@ -2387,41 +2391,39 @@ body {
           }
           .stores_sidebar {
             width: 20%;
-            padding-left: 35px;
+            padding-left: 7px;
             .active_li {
-              &::after {
-                width: 6px !important;
-              }
-              &::before {
+              .circle {
                 border-color: $siteColor !important;
+                &::before{
+                  background-color: $siteColor;
+                }
               }
             }
             li {
               position: relative;
+              display: flex;
+              align-items: center;
               &:not(:last-child) {
                 margin-bottom: 10px;
               }
-              &::before {
-                content: "";
+              .circle {
                 width: 10px;
                 height: 10px;
                 border-radius: 100%;
                 border: 1px solid $textColor;
-                position: absolute;
-                top: 50%;
-                left: -23px;
-                transform: translate(0%, -50%);
-              }
-              &::after {
-                content: "";
-                width: 0px;
-                height: 7px;
-                border-radius: 100%;
-                background-color: $siteColor;
-                position: absolute;
-                top: 50%;
-                left: -20.5px;
-                transform: translate(0%, -50%);
+                position: relative;
+                margin-right: 7px;
+                &::before{
+                  content: '';
+                  position: absolute;
+                  top: 50%;
+                  left: 50%;
+                  transform: translate(-50%, -50%);
+                  width: 6px;
+                  height: 6px;
+                  border-radius: 100%;
+                }
               }
               a {
                 font-size: 14px;
@@ -2801,10 +2803,9 @@ body {
                 overflow: hidden;
                 svg {
                   width: 50%;
-                  path {
+                  path,
+                  circle {
                     fill: #fff;
-                    stroke: #fff;
-                    fill-opacity: 0;
                   }
                 }
               }

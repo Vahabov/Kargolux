@@ -936,6 +936,10 @@ body .main_header .mobile_overlay .overlay_inner .menu .center {
   padding: 20px 15px;
 }
 
+body .main_header .mobile_overlay .overlay_inner .menu .center .list .active_li a {
+  color: #ff6d67;
+}
+
 body .main_header .mobile_overlay .overlay_inner .menu .center .list li:not(:last-child) {
   margin-bottom: 20px;
 }
@@ -1826,8 +1830,6 @@ body main .info_and_services_section .container .description_section p:not(:last
 
 body main .info_and_services_section .container .service_item {
   background: #f8f7fe;
-  -webkit-box-shadow: 0px 10px 55px rgba(0, 0, 0, 0.1);
-          box-shadow: 0px 10px 55px rgba(0, 0, 0, 0.1);
   border-radius: 10px;
   padding: 45px;
   overflow: hidden;
@@ -1840,12 +1842,13 @@ body main .info_and_services_section .container .service_item {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  -webkit-transition: .3s;
-  transition: .3s;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
 }
 
 body main .info_and_services_section .container .service_item:hover {
-  background-color: #f1f1f1;
+  -webkit-box-shadow: 0px 10px 55px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 10px 55px rgba(0, 0, 0, 0.1);
 }
 
 body main .info_and_services_section .container .service_item .left {
@@ -3594,49 +3597,50 @@ body main .stores_section .container .stores_main .stores_items .item img {
 
 body main .stores_section .container .stores_main .stores_sidebar {
   width: 20%;
-  padding-left: 35px;
+  padding-left: 7px;
 }
 
-body main .stores_section .container .stores_main .stores_sidebar .active_li::after {
-  width: 6px !important;
-}
-
-body main .stores_section .container .stores_main .stores_sidebar .active_li::before {
+body main .stores_section .container .stores_main .stores_sidebar .active_li .circle {
   border-color: #7b5ce1 !important;
+}
+
+body main .stores_section .container .stores_main .stores_sidebar .active_li .circle::before {
+  background-color: #7b5ce1;
 }
 
 body main .stores_section .container .stores_main .stores_sidebar li {
   position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 body main .stores_section .container .stores_main .stores_sidebar li:not(:last-child) {
   margin-bottom: 10px;
 }
 
-body main .stores_section .container .stores_main .stores_sidebar li::before {
-  content: "";
+body main .stores_section .container .stores_main .stores_sidebar li .circle {
   width: 10px;
   height: 10px;
   border-radius: 100%;
   border: 1px solid #282141;
-  position: absolute;
-  top: 50%;
-  left: -23px;
-  -webkit-transform: translate(0%, -50%);
-          transform: translate(0%, -50%);
+  position: relative;
+  margin-right: 7px;
 }
 
-body main .stores_section .container .stores_main .stores_sidebar li::after {
-  content: "";
-  width: 0px;
-  height: 7px;
-  border-radius: 100%;
-  background-color: #7b5ce1;
+body main .stores_section .container .stores_main .stores_sidebar li .circle::before {
+  content: '';
   position: absolute;
   top: 50%;
-  left: -20.5px;
-  -webkit-transform: translate(0%, -50%);
-          transform: translate(0%, -50%);
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 6px;
+  height: 6px;
+  border-radius: 100%;
 }
 
 body main .stores_section .container .stores_main .stores_sidebar li a {
@@ -4191,10 +4195,9 @@ body .main_footer .center_section .container .mobile_top_section .social_icons l
   width: 50%;
 }
 
-body .main_footer .center_section .container .mobile_top_section .social_icons li a svg path {
+body .main_footer .center_section .container .mobile_top_section .social_icons li a svg path,
+body .main_footer .center_section .container .mobile_top_section .social_icons li a svg circle {
   fill: #fff;
-  stroke: #fff;
-  fill-opacity: 0;
 }
 
 body .main_footer .center_section .container .mobile_top_section .follow_us {
