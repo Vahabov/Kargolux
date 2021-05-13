@@ -1,0 +1,881 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cabinet settings</title>
+    <link rel="stylesheet" href="/assets/css/main.css" />
+    <link rel="stylesheet" href="/assets/css/media.css" />
+    <link
+      rel="stylesheet"
+      href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css"
+    />
+  </head>
+  <body>
+    <header class="main_header">
+      <div class="container">
+        <div class="top_section">
+          <ul class="top_navbar">
+            <li>
+              <a href="../rules.html"> Qaydalar </a>
+            </li>
+            <li>
+              <a href="../questions.html"> Suallar </a>
+            </li>
+            <li class="active_li">
+              <a href="../about.html"> Haqqımızda </a>
+            </li>
+            <li>
+              <a href="../prohibites-products.html">
+                Daşınması qadağandır olunan məhsullar
+              </a>
+            </li>
+          </ul>
+          <div class="right_column">
+            <button class="notify_btn bell_btn">
+              <img src="/assets/images/icons/bell.svg" alt="#" />
+            </button>
+            <button type="button" class="notify_btn shop_btn">
+              <img src="/assets/images/icons/shopping.svg" alt="#" />
+            </button>
+            <a class="phone_call" href="tel:+99412 100 00 00"
+              >+99412 100 00 00</a
+            >
+            <div class="lang_select">
+              <select>
+                <option value="aze">AZE</option>
+                <option value="ru">RU</option>
+                <option value="en">EN</option>
+              </select>
+            </div>
+          </div>
+        </div>
+        <div class="center_section">
+          <a href="/" class="logo">
+            <img src="/assets/images/icons/logo.svg" alt="#" />
+          </a>
+          <button type="button" class="mobile_btn_menu">
+            <img src="/assets/images/icons/hamburger.svg" alt="#" />
+          </button>
+          <ul class="navbar">
+            <li>
+              <a href="/"> Ana səhifə </a>
+            </li>
+            <li>
+              <a href="../tariffs.html"> Tariflər </a>
+            </li>
+            <li>
+              <a href="../stores.html"> Mağazalar </a>
+            </li>
+            <li>
+              <a href="../services.html"> Xidmətlər </a>
+            </li>
+            <li>
+              <a href="../news.html"> Xəbərlər və yeniliklər </a>
+            </li>
+            <li>
+              <a href="../contact.html"> Əlaqə </a>
+            </li>
+          </ul>
+          <div class="user_info">
+            <div class="info">
+              <span class="name">Kamil Vahabov</span>
+              <span class="user_id">#1232434353</span>
+            </div>
+            <div class="avatar">
+              <img src="/assets/images/icons/user-circle.svg" alt="#" />
+            </div>
+          </div>
+        </div>
+        <div class="mobile_user_info">
+          <button type="button" class="btnCabinetMenu">
+            <img src="/assets/images/icons/hamburgerCabinet.svg" alt="#" />
+          </button>
+          <div class="user_info">
+            <div class="avatar">
+              <img src="/assets/images/icons/user-circle.svg" alt="#" />
+            </div>
+            <div class="info">
+              <span class="name">Kamil Vahabov</span>
+              <span class="user_id">#1232434353</span>
+            </div>
+          </div>
+        </div>
+        <div class="cabinet_bottom_section">
+          <div class="buttons">
+            <button type="button" class="facture_btn btn">
+              Faktura əlavə et
+            </button>
+            <a href="./order.html" class="order_btn btn">Sifariş et</a>
+          </div>
+          <div class="cabinet_bread_crumb">
+            <span class="cabinet">Şəxsi kabinet</span>
+            <span class="alt_name">Tənzimləmələr</span>
+          </div>
+          <div class="right_column">
+            <div class="user_profile_info">
+              <div class="info">
+                <div class="icn">
+                  <img src="/assets/images/icons/tl.svg" alt="#" />
+                </div>
+                <div class="in">
+                  <span class="label">Sifariş balansim</span>
+                  <span class="numb">
+                    234
+                    <img
+                      class="injectable"
+                      src="/assets/images/icons/tl.svg"
+                      alt="#"
+                    />
+                  </span>
+                </div>
+              </div>
+              <div class="info">
+                <div class="icn">
+                  <img
+                    class="araba"
+                    src="/assets/images/icons/araba.svg"
+                    alt="#"
+                  />
+                </div>
+                <div class="in">
+                  <span class="label">Daşınma balansım</span>
+                  <span class="numb"> $393 </span>
+                </div>
+              </div>
+              <div class="info">
+                <div class="icn">
+                  <img src="/assets/images/icons/doc.svg" alt="#" />
+                </div>
+                <div class="in">
+                  <span class="label">Bağlamalarım</span>
+                  <span class="numb">
+                    313
+                    <img
+                      class="injectable"
+                      src="/assets/images/icons/tl.svg"
+                      alt="#"
+                    />
+                  </span>
+                </div>
+              </div>
+            </div>
+            <a href="./order.html" class="order_btn btn">Sifariş et</a>
+          </div>
+        </div>
+        <div class="mobile_overlay">
+          <div class="overlay_inner">
+            <div class="menu">
+              <div class="top">
+                <div class="head">
+                  <a href="#" class="logout">
+                    Çıxış
+                    <img src="/assets/images/icons/exit.svg" alt="#" />
+                  </a>
+                  <button type="button" class="close_menu">
+                    <img src="/assets/images/icons/close.svg" alt="#" />
+                  </button>
+                </div>
+                <div class="center">
+                  <ul class="list">
+                    <li>
+                      <a href="/">Ana səhifə</a>
+                    </li>
+                    <li>
+                      <a href="../tariffs.html">Tariflər</a>
+                    </li>
+                    <li>
+                      <a href="../stores.html">Mağazalar</a>
+                    </li>
+                    <li>
+                      <a href="../services.html">Xidmətlər</a>
+                    </li>
+                    <li>
+                      <a href="../news.html">Xəbərlər və yeniliklər</a>
+                    </li>
+                    <li>
+                      <a href="../contact.html">Əlaqə</a>
+                    </li>
+                    <li>
+                      <a href="../rules.html">Qaydalar</a>
+                    </li>
+                    <li>
+                      <a href="../questions.html">Suallar</a>
+                    </li>
+                    <li class="active_li">
+                      <a href="../about.html">Haqqımızda</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="foot">
+                <span class="follow_us">Bizi sosial şəbəkələrdə izləyin</span>
+                <div>
+                  <ul class="social_icons">
+                    <li>
+                      <a href="#">
+                        <img
+                          src="/assets/images/icons/social/facebook.svg"
+                          class="injectable"
+                          alt="#"
+                        />
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <img
+                          src="/assets/images/icons/social/instagram.svg"
+                          class="injectable"
+                          alt="#"
+                        />
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <img
+                          src="/assets/images/icons/social/whatsapp.svg"
+                          class="injectable"
+                          alt="#"
+                        />
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <img
+                          src="/assets/images/icons/social/telegram.svg"
+                          class="injectable"
+                          alt="#"
+                        />
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <img
+                          src="/assets/images/icons/social/youtube.svg"
+                          class="injectable"
+                          alt="#"
+                        />
+                      </a>
+                    </li>
+                  </ul>
+                  <div class="lang_select">
+                    <select>
+                      <option value="aze">AZE</option>
+                      <option value="ru">RU</option>
+                      <option value="en">EN</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="mobile_cabinet_overlay">
+          <div class="overlay_inner_cabinet">
+            <div class="menu">
+              <div class="top">
+                <div class="head">
+                  <div class="user_info">
+                    <div class="avatar">
+                      <img src="/assets/images/icons/user-circle.svg" alt="#" />
+                    </div>
+                    <div class="info">
+                      <span class="name">Kamil Vahabov</span>
+                      <span class="user_id">#1232434353</span>
+                    </div>
+                  </div>
+                  <button type="button" class="close_menu">
+                    <img
+                      class="injectable"
+                      src="/assets/images/icons/close.svg"
+                      alt="#"
+                    />
+                  </button>
+                </div>
+                <div class="center">
+                  <button type="button" class="order_btn">Sifariş et</button>
+                  <ul class="list">
+                    <li class="active_li">
+                      <a href="#">
+                        <img
+                          class="injectable"
+                          src="/assets/images/icons/cabinet-icons/u_setting.svg"
+                          alt="#"
+                        />
+                        Şəxsi məlumatlarım
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <img
+                          class="injectable"
+                          src="/assets/images/icons/cabinet-icons/u_store.svg"
+                          alt="#"
+                        />
+                        Türkiyyə ünvanım
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <img
+                          class="injectable"
+                          src="/assets/images/icons/cabinet-icons/fi_tag.svg"
+                          alt="#"
+                        />
+                        Sifarişlər
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <img
+                          class="injectable"
+                          src="/assets/images/icons/cabinet-icons/u_parcel.svg"
+                          alt="#"
+                        />
+                        Bağlamalarım
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <img
+                          class="injectable"
+                          src="/assets/images/icons/cabinet-icons/u_wallet.svg"
+                          alt="#"
+                        />
+                        Balans
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <img
+                          class="injectable"
+                          src="/assets/images/icons/cabinet-icons/u_user-location.svg"
+                          alt="#"
+                        />
+                        Kuryer sifarişi
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <img
+                          class="injectable"
+                          src="/assets/images/icons/cabinet-icons/u_envelope-download.svg"
+                          alt="#"
+                        />
+                        İsmariclər
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <img
+                          class="injectable"
+                          src="/assets/images/icons/cabinet-icons/u_sign-in-alt.svg"
+                          alt="#"
+                        />
+                        Çıxış
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="foot">
+                <span class="follow_us">Bizi sosial şəbəkələrdə izləyin</span>
+                <div>
+                  <ul class="social_icons">
+                    <li>
+                      <a href="#">
+                        <img
+                          src="/assets/images/icons/social/facebook.svg"
+                          class="injectable"
+                          alt="#"
+                        />
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <img
+                          src="/assets/images/icons/social/instagram.svg"
+                          class="injectable"
+                          alt="#"
+                        />
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <img
+                          src="/assets/images/icons/social/whatsapp.svg"
+                          class="injectable"
+                          alt="#"
+                        />
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <img
+                          src="/assets/images/icons/social/telegram.svg"
+                          class="injectable"
+                          alt="#"
+                        />
+                      </a>
+                    </li>
+                    <li>
+                      <a href="#">
+                        <img
+                          src="/assets/images/icons/social/youtube.svg"
+                          class="injectable"
+                          alt="#"
+                        />
+                      </a>
+                    </li>
+                  </ul>
+                  <div class="lang_select">
+                    <select>
+                      <option value="aze">AZE</option>
+                      <option value="ru">RU</option>
+                      <option value="en">EN</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="container">
+        <section class="main_cabinet_section">
+          <div class="sidebar">
+            <button type="button" class="facture_btn">Faktura əlavə et</button>
+            <div class="user_info">
+              <div class="avatar">
+                <img src="/assets/images/icons/user-circle.svg" alt="#" />
+              </div>
+              <div class="info">
+                <span class="name">Kamil Vahabov</span>
+                <span class="user_id">#1232434353</span>
+              </div>
+            </div>
+            <ul class="sidebar_list">
+              <li class="active_li">
+                <a href="#">
+                  <img
+                    class="injectable"
+                    src="/assets/images/icons/cabinet-icons/u_setting.svg"
+                    alt="#"
+                  />
+                  Şəxsi məlumatlarım
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img
+                    class="injectable"
+                    src="/assets/images/icons/cabinet-icons/u_store.svg"
+                    alt="#"
+                  />
+                  Türkiyyə ünvanım
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img
+                    class="injectable"
+                    src="/assets/images/icons/cabinet-icons/fi_tag.svg"
+                    alt="#"
+                  />
+                  Sifarişlər
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img
+                    class="injectable"
+                    src="/assets/images/icons/cabinet-icons/u_parcel.svg"
+                    alt="#"
+                  />
+                  Bağlamalarım
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img
+                    class="injectable"
+                    src="/assets/images/icons/cabinet-icons/u_wallet.svg"
+                    alt="#"
+                  />
+                  Balans
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img
+                    class="injectable"
+                    src="/assets/images/icons/cabinet-icons/u_user-location.svg"
+                    alt="#"
+                  />
+                  Kuryer sifarişi
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img
+                    class="injectable"
+                    src="/assets/images/icons/cabinet-icons/u_envelope-download.svg"
+                    alt="#"
+                  />
+                  İsmariclər
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img
+                    class="injectable"
+                    src="/assets/images/icons/cabinet-icons/u_sign-in-alt.svg"
+                    alt="#"
+                  />
+                  Çıxış
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="content_main">
+            <div class="settings_main">
+              <div class="tab_navs">
+                <button
+                  type="button"
+                  class="btn_tab active_tab"
+                  data-id="tab-1"
+                >
+                  Tənzimləmələr
+                </button>
+                <button type="button" class="btn_tab" data-id="tab-2">
+                  Şifrəni yenilə
+                </button>
+              </div>
+              <div class="tabs_container">
+                <div class="tab active_tab" id="tab-1">
+                  <div class="inputs_settings">
+                    <div class="input disabled">
+                      <label for="name">Ad</label>
+                      <input type="text" value="Şahin" id="name" disabled />
+                    </div>
+                    <div class="input disabled">
+                      <label for="surname">Soyad</label>
+                      <input type="text" value="Əliyev" id="surname" disabled />
+                    </div>
+                    <div class="input">
+                      <label for="datepicker">Doğum tarixi</label>
+                      <input type="text" value="09.09.1999" id="datepicker" />
+                    </div>
+                    <div class="input">
+                      <label for="email">E-mail adres</label>
+                      <input
+                        type="email"
+                        value="shahin.aliyev@gmail.com"
+                        id="email"
+                      />
+                    </div>
+                    <div class="input">
+                      <label for="phone">Mobil</label>
+                      <input type="number" value="994508500955" id="phone" />
+                    </div>
+                    <div class="input">
+                      <label for="gender">Doğum tarixi</label>
+                      <select name="#" id="gender">
+                        <option value="man">Kişi</option>
+                        <option value="woman">Qadın</option>
+                      </select>
+                    </div>
+                    <div class="input_with_select disabled">
+                      <label for="seria">Ş.V.-nin seriya nömrəsi</label>
+                      <div class="input">
+                        <select disabled>
+                          <option value="#">AZE</option>
+                          <option value="#">AA</option>
+                        </select>
+                        <input
+                          type="number"
+                          value="2342545342"
+                          id="seria"
+                          disabled
+                        />
+                      </div>
+                    </div>
+                    <div class="input disabled">
+                      <label for="fin">Ş.V.-nin FİN kodu</label>
+                      <input type="text" value="2342545342" id="fin" disabled />
+                    </div>
+                    <div class="input">
+                      <label for="adress">Ünvan</label>
+                      <input
+                        type="text"
+                        value="Binəqədi r. Əli Rəcəbli küç."
+                        id="adress"
+                      />
+                    </div>
+                    <div class="input">
+                      <label for="gender">Filial</label>
+                      <select name="#" id="gender">
+                        <option value="man">
+                          Binəqədi r. Əli Rəcəbli küç.
+                        </option>
+                        <option value="woman">
+                          Binəqədi r. Əli Rəcəbli küç. 2
+                        </option>
+                      </select>
+                    </div>
+                  </div>
+                </div>
+                <div class="tab" id="tab-2">
+                  <div class="inputs_settings">
+                    <div class="input error">
+                      <label for="nowPassword">İndiki Şifrə</label>
+                      <input type="text" placeholder="Daxil edin" id="nowPassword" />
+                      <span class="error_message">Zəhmət olmasa şifrənizi düzgün daxil edin</span>
+                    </div>
+                    <div class="input">
+                      <label for="newPassword">Yeni şifrə</label>
+                      <input type="text" placeholder="Daxil edin" id="newPassword" />
+                    </div>
+                    <div class="input">
+                      <label for="nwwPassword2">Şifrənin təsdiqi</label>
+                      <input type="text" placeholder="Daxil edin" id="nwwPassword2" />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="foot_content">
+              <button type="button" class="black_btn">Yadda saxla</button>
+            </div>
+          </div>
+        </section>
+      </div>
+    </main>
+    <footer class="main_footer">
+      <div class="container">
+        <div class="top_section">
+          <ul class="social_icons">
+            <li>
+              <a href="#">
+                <img
+                  src="/assets/images/icons/social/facebook.svg"
+                  class="injectable"
+                  alt="#"
+                />
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img
+                  src="/assets/images/icons/social/instagram.svg"
+                  class="injectable"
+                  alt="#"
+                />
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img
+                  src="/assets/images/icons/social/whatsapp.svg"
+                  class="injectable"
+                  alt="#"
+                />
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img
+                  src="/assets/images/icons/social/telegram.svg"
+                  class="injectable"
+                  alt="#"
+                />
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img
+                  src="/assets/images/icons/social/youtube.svg"
+                  class="injectable"
+                  alt="#"
+                />
+              </a>
+            </li>
+          </ul>
+          <span class="follow_us">Bizi izləyin</span>
+        </div>
+      </div>
+      <div class="center_section">
+        <div class="container">
+          <a href="#" class="mobile_foot_logo">
+            <img src="/assets/images/icons/logo_white.svg" alt="" />
+          </a>
+          <div class="mobile_top_section">
+            <ul class="social_icons">
+              <li>
+                <a href="#">
+                  <img
+                    class="injectable"
+                    src="/assets/images/icons/social/facebook.svg"
+                    alt="#"
+                  />
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img
+                    src="/assets/images/icons/social/instagram.svg"
+                    class="injectable"
+                    alt="#"
+                  />
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img
+                    class="injectable"
+                    src="/assets/images/icons/social/whatsapp.svg"
+                    alt="#"
+                  />
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img
+                    src="/assets/images/icons/social/telegram.svg"
+                    class="injectable"
+                    alt="#"
+                  />
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img
+                    src="/assets/images/icons/social/youtube.svg"
+                    class="injectable"
+                    alt="#"
+                  />
+                </a>
+              </li>
+            </ul>
+            <span class="follow_us">Bizi izləyin</span>
+          </div>
+          <div class="contact_us">
+            <div class="head">
+              <h3>Bizimlə əlaqə</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nisi,
+                qui debitis accusamus nostrum corrupti natus asperiores,
+                reiciendis
+              </p>
+            </div>
+            <form action="#" class="contact_form mt-site">
+              <div class="two_column_input mb-site">
+                <input type="text" placeholder="Your name" />
+                <input type="text" placeholder="Your email" />
+              </div>
+              <textarea placeholder="Your message"></textarea>
+              <button class="btn_send mt-site" type="submit">Göndər</button>
+            </form>
+          </div>
+          <ul class="links">
+            <li>
+              <a href="/"> Ana səhifə </a>
+            </li>
+            <li>
+              <a href="../tariffs.html"> Tariflər </a>
+            </li>
+            <li>
+              <a href="../stores.html"> Mağazalar </a>
+            </li>
+            <li>
+              <a href="../services.html"> Xidmətlər </a>
+            </li>
+            <li>
+              <a href="../news.html"> Xəbərlər və yeniliklər </a>
+            </li>
+            <li>
+              <a href="../contact.html"> Əlaqə </a>
+            </li>
+            <li>
+              <a href="../rules.html"> Qaydalar </a>
+            </li>
+            <li>
+              <a href="../questions.html"> Suallar </a>
+            </li>
+            <li>
+              <a href="../about.html"> Haqqımızda </a>
+            </li>
+          </ul>
+          <div class="adress">
+            <div class="a_block">
+              <h3 class="title_adress">Ünvanımız</h3>
+              <span>Izmir 8, Hyatt Tower2, 5th flr.</span>
+            </div>
+            <div class="a_block">
+              <h3 class="title_adress">Telefon nömrələrimiz</h3>
+              <span>+994 12 555 0046</span>
+              <span>+994 50 555 0033</span>
+            </div>
+            <div class="a_block">
+              <h3 class="title_adress">Email</h3>
+              <span>Info@kargolux.az</span>
+            </div>
+          </div>
+          <div class="mobile_apps_row">
+            <span>Mobil tədbiqi yüklə</span>
+            <a href="#" class="imgStore">
+              <img src="/assets/images/icons/playstore.svg" alt="#" />
+            </a>
+            <a href="#" class="imgStore">
+              <img src="/assets/images/icons/appstore.svg" alt="#" />
+            </a>
+          </div>
+          <div class="mobile_foot_info">
+            <span>© 2021 Kargolux | Bütün Hüquqlar Qorunur</span>
+            <img
+              class="visa"
+              src="/assets/images/icons/visamaster.svg"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+      <div class="bottom_section">
+        <div class="container">
+          <div class="left">
+            <a href="/" class="foot_logo">
+              <img src="/assets/images/icons/logo_white.svg" alt="#" />
+            </a>
+            <span>© 2021 Kargolux | Bütün Hüquqlar Qorunur</span>
+          </div>
+          <div class="right">
+            <span>Mobil tədbiqi yüklə</span>
+            <a href="#" class="imgStore">
+              <img src="/assets/images/icons/playstore.svg" alt="#" />
+            </a>
+            <a href="#" class="imgStore">
+              <img src="/assets/images/icons/appstore.svg" alt="#" />
+            </a>
+            <img
+              class="visa"
+              src="/assets/images/icons/visamaster.svg"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="/assets/js/jquery-3.6.0.min.js"></script>
+    <script src="/assets/js/svg-inject.min.js"></script>
+    <script src="/assets/js/main.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script>
+      $(function () {
+        $("#datepicker").datepicker();
+      });
+    </script>
+  </body>
+</html>
