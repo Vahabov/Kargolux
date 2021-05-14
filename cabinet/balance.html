@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Order</title>
+    <title>Cabinet balance</title>
     <link rel="stylesheet" href="/assets/css/main.css" />
     <link rel="stylesheet" href="/assets/css/media.css" />
   </head>
@@ -18,7 +18,7 @@
             <li>
               <a href="../questions.html"> Suallar </a>
             </li>
-            <li>
+            <li class="active_li">
               <a href="../about.html"> Haqqımızda </a>
             </li>
             <li>
@@ -97,6 +97,68 @@
             </div>
           </a>
         </div>
+        <div class="cabinet_bottom_section">
+          <div class="buttons">
+            <button type="button" class="facture_btn btn">
+              Faktura əlavə et
+            </button>
+            <a href="./order.html" class="order_btn btn">Sifariş et</a>
+          </div>
+          <div class="cabinet_bread_crumb">
+            <span class="cabinet">Şəxsi kabinet</span>
+            <span class="alt_name">Tənzimləmələr</span>
+          </div>
+          <div class="right_column">
+            <div class="user_profile_info">
+              <div class="info">
+                <div class="icn">
+                  <img src="/assets/images/icons/tl.svg" alt="#" />
+                </div>
+                <div class="in">
+                  <span class="label">Sifariş balansim</span>
+                  <span class="numb">
+                    234
+                    <img
+                      class="injectable"
+                      src="/assets/images/icons/tl.svg"
+                      alt="#"
+                    />
+                  </span>
+                </div>
+              </div>
+              <div class="info">
+                <div class="icn">
+                  <img
+                    class="araba"
+                    src="/assets/images/icons/araba.svg"
+                    alt="#"
+                  />
+                </div>
+                <div class="in">
+                  <span class="label">Daşınma balansım</span>
+                  <span class="numb"> $393 </span>
+                </div>
+              </div>
+              <div class="info">
+                <div class="icn">
+                  <img src="/assets/images/icons/doc.svg" alt="#" />
+                </div>
+                <div class="in">
+                  <span class="label">Bağlamalarım</span>
+                  <span class="numb">
+                    313
+                    <img
+                      class="injectable"
+                      src="/assets/images/icons/tl.svg"
+                      alt="#"
+                    />
+                  </span>
+                </div>
+              </div>
+            </div>
+            <a href="./order.html" class="order_btn btn">Sifariş et</a>
+          </div>
+        </div>
         <div class="mobile_overlay">
           <div class="overlay_inner">
             <div class="menu">
@@ -136,7 +198,7 @@
                     <li>
                       <a href="../questions.html">Suallar</a>
                     </li>
-                    <li>
+                    <li class="active_li">
                       <a href="../about.html">Haqqımızda</a>
                     </li>
                   </ul>
@@ -229,8 +291,8 @@
                 <div class="center">
                   <button type="button" class="order_btn">Sifariş et</button>
                   <ul class="list">
-                    <li class="active_li">
-                      <a href="./cabinet/settings.html">
+                    <li>
+                      <a href="#">
                         <img
                           class="injectable"
                           src="/assets/images/icons/cabinet-icons/u_setting.svg"
@@ -269,8 +331,8 @@
                         Bağlamalarım
                       </a>
                     </li>
-                    <li>
-                      <a href="#">
+                    <li class="active_li">
+                      <a href="./balance.html">
                         <img
                           class="injectable"
                           src="/assets/images/icons/cabinet-icons/u_wallet.svg"
@@ -377,126 +439,344 @@
       </div>
     </header>
     <main>
-      <section class="order_page_section">
-        <div class="container">
-          <div class="section_head">
-            <h3 class="title">Sifariş</h3>
-            <span class="product">Məhsul 1</span>
+      <div class="container">
+        <section class="main_cabinet_section">
+          <div class="sidebar">
+            <button type="button" class="facture_btn">Faktura əlavə et</button>
+            <div class="user_info">
+              <div class="avatar">
+                <img src="/assets/images/icons/user-circle.svg" alt="#" />
+              </div>
+              <div class="info">
+                <span class="name">Kamil Vahabov</span>
+                <span class="user_id">#1232434353</span>
+              </div>
+            </div>
+            <ul class="sidebar_list">
+              <li>
+                <a href="#">
+                  <img
+                    class="injectable"
+                    src="/assets/images/icons/cabinet-icons/u_setting.svg"
+                    alt="#"
+                  />
+                  Şəxsi məlumatlarım
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img
+                    class="injectable"
+                    src="/assets/images/icons/cabinet-icons/u_store.svg"
+                    alt="#"
+                  />
+                  Türkiyyə ünvanım
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img
+                    class="injectable"
+                    src="/assets/images/icons/cabinet-icons/fi_tag.svg"
+                    alt="#"
+                  />
+                  Sifarişlər
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img
+                    class="injectable"
+                    src="/assets/images/icons/cabinet-icons/u_parcel.svg"
+                    alt="#"
+                  />
+                  Bağlamalarım
+                </a>
+              </li>
+              <li class="active_li">
+                <a href="./balance.html">
+                  <img
+                    class="injectable"
+                    src="/assets/images/icons/cabinet-icons/u_wallet.svg"
+                    alt="#"
+                  />
+                  Balans
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img
+                    class="injectable"
+                    src="/assets/images/icons/cabinet-icons/u_user-location.svg"
+                    alt="#"
+                  />
+                  Kuryer sifarişi
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img
+                    class="injectable"
+                    src="/assets/images/icons/cabinet-icons/u_envelope-download.svg"
+                    alt="#"
+                  />
+                  İsmariclər
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img
+                    class="injectable"
+                    src="/assets/images/icons/cabinet-icons/u_sign-in-alt.svg"
+                    alt="#"
+                  />
+                  Çıxış
+                </a>
+              </li>
+            </ul>
           </div>
-          <form action="#" class="order_form">
-            <div class="flexable_block">
-              <div class="left_column">
-                <div class="form_inputs_block">
-                  <div class="input product_link">
-                    <label for="productLink">Məhsulun linki</label>
-                    <input
-                      type="text"
-                      placeholder="Məhsul linki"
-                      id="productLink"
-                    />
+          <div class="content_main">
+            <div class="balance_main">
+              <div class="tab_navs">
+                <button
+                  type="button"
+                  class="btn_tab active_tab"
+                  data-id="tab-1"
+                >
+                  Sifariş balansım
+                </button>
+                <button type="button" class="btn_tab" data-id="tab-2">
+                  Daşıma balansım
+                </button>
+              </div>
+              <div class="tabs_container">
+                <div class="tab active_tab" id="tab-1">
+                  <div class="order_balance">
+                    <span class="title">TL balansı</span>
+                    <form action="#">
+                      <div class="input">
+                        <label for="amount22">Məbləğ</label>
+                        <input
+                          type="text"
+                          id="amount22"
+                          placeholder="Məbləğ daxil edin"
+                        />
+                      </div>
+                      <button type="submit" class="btn_submit">
+                        Balans artır
+                      </button>
+                    </form>
                   </div>
-                  <div class="input product_count">
-                    <label for="productCount">Məhsulun sayı</label>
-                    <input type="text" placeholder="Say" id="productCount" />
+                  <div class="gift_card">
+                    <span class="title">Hədiyyə kartı</span>
+                    <p class="desc">
+                      Hədiyyə kartı ilə balansınızı artırmaq üçün aşağıdakı
+                      formadan istifadə edə bilərsiniz. Kart üzərindəki nömrəni
+                      verilən xanaya yazıb təsdiqləyin
+                    </p>
+                    <form action="#">
+                      <div class="input">
+                        <label for="amount">Kartın nömrəsi</label>
+                        <input
+                          type="text"
+                          id="amount"
+                          placeholder="Kartın nömrəsini daxil edin"
+                        />
+                      </div>
+                      <button type="submit" class="btn_submit">
+                        Balans artır
+                      </button>
+                    </form>
                   </div>
-                  <div class="input">
-                    <label for="productPrice">Məhsulun qiyməti</label>
-                    <input type="text" placeholder="Say" id="productPrice" />
-                  </div>
-                  <div class="input">
-                    <label for="productSize">Məhsulun ölçüsü</label>
-                    <input type="text" placeholder="Say" id="productSize" />
-                  </div>
-                  <div class="input">
-                    <label for="productColor">Məhsulun rəngi</label>
-                    <input type="text" placeholder="Say" id="productColor" />
-                  </div>
-                  <div class="total_price input">
-                    <span class="label">Yekun qiymət</span>
-                    <div class="total">
-                      <span>0.00</span>
-                      <img
-                        class="injectable"
-                        src="/assets/images/icons/tl.svg"
-                        alt="#"
-                      />
+                  <div class="balance_archive_block">
+                    <span class="title">Balans keçmişi</span>
+                    <div class="table">
+                      <table>
+                        <tr>
+                          <th>Əməliyyatlar</th>
+                          <th>Məbləğ</th>
+                          <th>Tarix və saat</th>
+                        </tr>
+                        <tr>
+                          <td>Sifariş Qalıq Ödənişi</td>
+                          <td><span class="pluse">+115.49</span></td>
+                          <td>09.05.2020 06:54</td>
+                        </tr>
+                        <tr>
+                          <td>Sifariş Ödənişi</td>
+                          <td><span class="minus">-115.49</span></td>
+                          <td>09.05.2020 06:54</td>
+                        </tr>
+                        <tr>
+                          <td>Balans artırılması</td>
+                          <td><span class="pluse">+115.49</span></td>
+                          <td>09.05.2020 06:54</td>
+                        </tr>
+                        <tr>
+                          <td>Sifariş Qalıq Ödənişi</td>
+                          <td><span class="pluse">+115.49</span></td>
+                          <td>09.05.2020 06:54</td>
+                        </tr>
+                        <tr>
+                          <td>Sifariş Ödənişi</td>
+                          <td><span class="minus">-115.49</span></td>
+                          <td>09.05.2020 06:54</td>
+                        </tr>
+                        <tr>
+                          <td>Balans artırılması</td>
+                          <td><span class="pluse">+115.49</span></td>
+                          <td>09.05.2020 06:54</td>
+                        </tr>
+                      </table>
                     </div>
                   </div>
-                  <div class="input product_detail">
-                    <label for="productDetail">Məhsulun digər detalları </label>
-                    <textarea placeholder="Məhsulun detalları"></textarea>
+                </div>
+                <div class="tab" id="tab-2">
+                  <div class="order_balance">
+                    <span class="title">AZN balansının artırılması</span>
+                    <form action="#">
+                      <div class="input">
+                        <label for="amount2">Məbləğ</label>
+                        <input
+                          type="text"
+                          id="amount2"
+                          placeholder="Məbləğ daxil edin"
+                        />
+                      </div>
+                      <button type="submit" class="btn_submit">
+                        Balans artır
+                      </button>
+                    </form>
                   </div>
-                  <p class="info_message">
-                    DİQQƏT: 24 saat ərzində ödəniş edilməyən sifarişlər
-                    avtomatik olaraq silinir
-                  </p>
+                  <div class="e_manat_balance">
+                    <img src="/assets/images/img/e-manat.png" alt="#" />
+                    <div class="content">
+                      <span class="title">E-manat ilə balans artırma</span>
+                      <p class="desc">
+                        E-manat terminalları vasitəsilə balansınızı artıra
+                        bilərsiniz. Bunun üçün E-manat terminalına
+                        yaxınlaşırsınız, 'digər' bölməsinə daxil olaraq
+                        'Starex'-i seçirsiniz. '010103' müştəri kodunuzu yığaraq
+                        'davam et' düyməsini sıxırsınız. İstədiyiniz məbləği
+                        daxil edib təsdiq edirsiniz. Əməliyyatı bitirdikdən
+                        sonra pul dərhal şəxsi kabinetdəki balansınızda
+                        görünəcək.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="gift_card">
+                    <span class="title">Hədiyyə kartı</span>
+                    <p class="desc">
+                      Hədiyyə kartı ilə balansınızı artırmaq üçün aşağıdakı
+                      formadan istifadə edə bilərsiniz. Kart üzərindəki nömrəni
+                      verilən xanaya yazıb təsdiqləyin
+                    </p>
+                    <form action="#">
+                      <div class="input error">
+                        <label for="amount3">Kartın nömrəsi</label>
+                        <input
+                          type="text"
+                          id="amount3"
+                          placeholder="Kartın nömrəsini daxil edin"
+                        />
+                        <span class="error_message"
+                          >Kupon kartın nömrəsi düzgün daxil edilməyib
+                        </span>
+                      </div>
+                      <button type="submit" class="btn_submit">
+                        Balans artır
+                      </button>
+                    </form>
+                  </div>
+                  <div class="balance_archive_block">
+                    <span class="title">Balans keçmişi</span>
+                    <div class="table">
+                      <table>
+                        <tr>
+                          <th>Əməliyyatlar</th>
+                          <th>Məbləğ</th>
+                          <th>Tarix və saat</th>
+                        </tr>
+                        <tr>
+                          <td>Sifariş Qalıq Ödənişi</td>
+                          <td><span class="pluse">+115.49</span></td>
+                          <td>09.05.2020 06:54</td>
+                        </tr>
+                        <tr>
+                          <td>Sifariş Ödənişi</td>
+                          <td><span class="minus">-115.49</span></td>
+                          <td>09.05.2020 06:54</td>
+                        </tr>
+                        <tr>
+                          <td>Balans artırılması</td>
+                          <td><span class="pluse">+115.49</span></td>
+                          <td>09.05.2020 06:54</td>
+                        </tr>
+                        <tr>
+                          <td>Sifariş Qalıq Ödənişi</td>
+                          <td><span class="pluse">+115.49</span></td>
+                          <td>09.05.2020 06:54</td>
+                        </tr>
+                        <tr>
+                          <td>Sifariş Ödənişi</td>
+                          <td><span class="minus">-115.49</span></td>
+                          <td>09.05.2020 06:54</td>
+                        </tr>
+                        <tr>
+                          <td>Balans artırılması</td>
+                          <td><span class="pluse">+115.49</span></td>
+                          <td>09.05.2020 06:54</td>
+                        </tr>
+                      </table>
+                    </div>
+                  </div>
                 </div>
-                <div class="add_form_block">
-                  <button type="button" class="add_block_btn">
-                    <img src="/assets/images/icons/pluse.svg" alt="#" />
-                    <span>Məhsul əlavə et</span>
-                  </button>
-                </div>
-              </div>
-              <div class="sidebar">
-                <span class="title">Toplam qiymət</span>
-                <div class="product_price">
-                  <span class="text">Ümumi məhsul qiyməti -</span>
-                  <span class="text"
-                    >0.00 <img src="/assets/images/icons/tl.svg" alt="#"
-                  /></span>
-                </div>
-                <div class="product_price">
-                  <span>Ümumi xidmət haqqı (5%) - </span>
-                  <span class="text"
-                    >0.00 <img src="/assets/images/icons/tl.svg" alt="#"
-                  /></span>
-                </div>
-                <div class="product_price">
-                  <span class="orange_color text">Ümumi məhsul sayı (0)</span>
-                </div>
-                <span class="sub_title">Seçilmiş xidmətlər</span>
-                <div class="delivery">
-                  <label class="checkbox_label">
-                    Təcili sifariş
-                    <input type="checkbox" checked="checked" />
-                    <span class="checkmark"></span>
-                  </label>
-                  <span class="delivery_price"> +1 $ </span>
-                </div>
-                <span class="delivery_info">
-                  * Sifarişin məbləği kargonuz Türkiyə ofisinə çatdıqda bəlli
-                  olacaqdır.
-                </span>
-                <span class="order_info">
-                  * Diqqət! <br />
-                  Hörmətli müştəri, diqqətinizə çatdırırıq ki, təcili sifarişlər
-                  sifariş olunduqdan maksimum 30 dəqiqə ərzində növbəli şəkildə
-                  icra olunur
-                </span>
               </div>
             </div>
-            <div class="foot_form">
-              <div class="buttons">
-                <button type="button" class="btn btn_basket">Səbətə at</button>
-                <button type="button" class="btn btn_order">Ödəniş et</button>
-              </div>
-              <div class="right">
-                <span class="info">
-                  Zəhmət olmasa satış sözləşməsini qəbul edin
-                </span>
-                <label class="checkbox_label">
-                  Məsafəli
-                  <a href="#" class="orange_color">satış sözləşməsini</a> qəbul
-                  edirəm.
-                  <input type="checkbox" />
-                  <span class="checkmark"></span>
-                </label>
-              </div>
+            <div class="foot_content">
+              <ul class="pagination">
+                <li class="left_icn">
+                  <a href="#">
+                    <img
+                      class="injectable"
+                      src="/assets/images/icons/arrow_mini.svg"
+                      alt="#"
+                    />
+                  </a>
+                </li>
+                <li class="active_li">
+                  <a href="#1"> 1 </a>
+                </li>
+                <li>
+                  <a href="#2"> 2 </a>
+                </li>
+                <li>
+                  <a href="#3"> 3 </a>
+                </li>
+                <li>
+                  <a href="#4"> 4 </a>
+                </li>
+                <li>
+                  <a href="#5"> 5 </a>
+                </li>
+                <li>...</li>
+                <li>
+                  <a href="#5"> 728 </a>
+                </li>
+                <li class="right_icn active_icn">
+                  <a href="#">
+                    <img
+                      class="injectable"
+                      src="/assets/images/icons/arrow_mini.svg"
+                      alt="#"
+                    />
+                  </a>
+                </li>
+              </ul>
             </div>
-          </form>
-        </div>
-      </section>
+          </div>
+        </section>
+      </div>
     </main>
     <footer class="main_footer">
       <div class="container">

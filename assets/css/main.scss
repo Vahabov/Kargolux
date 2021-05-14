@@ -3407,7 +3407,7 @@ body {
       .sidebar {
         width: 21%;
         padding: 25px;
-        background-color: #fff;
+        background-color: #f8f7fe;
         border-radius: $siteRadius10;
         overflow: hidden;
         .facture_btn {
@@ -3516,7 +3516,7 @@ body {
               color: #fff !important;
             }
             .btn_tab {
-              width: 151px;
+              min-width: 151px;
               height: 52px;
               border-radius: $siteRadius10;
               padding: 0px 20px;
@@ -3635,6 +3635,256 @@ body {
             }
           }
         }
+        .address_cabinet_section {
+          .addresses {
+            padding: 28px 25px;
+            background-color: #f8f7fe;
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            min-height: 497px;
+            border-radius: $siteRadius10;
+            .adress_text {
+              width: 75% !important;
+            }
+            .address {
+              width: 22%;
+              position: relative;
+              margin-bottom: 53px;
+              margin-right: 10px;
+              .name {
+                display: block;
+                font-family: $bold;
+                font-size: 16px;
+                color: $siteColor;
+                margin-bottom: 10px;
+              }
+              .onCopy {
+                text-align: left;
+                display: flex;
+                align-items: center;
+
+                img {
+                  width: 14px;
+                  height: 16px;
+                  margin-right: 7px;
+                }
+                .copyAlert {
+                  position: absolute;
+                  color: rgb(155, 155, 155);
+                  top: 0px;
+                  right: 20px;
+                  font-size: 10px;
+                  display: none;
+                }
+              }
+            }
+          }
+        }
+        .balance_main {
+          background-color: #fff;
+          border-radius: $siteRadius10;
+          overflow: hidden;
+          padding: 25px;
+          .tab_navs {
+            display: flex;
+            align-items: center;
+            .active_tab {
+              background-color: $siteColor2 !important;
+              color: #fff !important;
+            }
+            .btn_tab {
+              min-width: 163px;
+              height: 52px;
+              border-radius: $siteRadius10;
+              padding: 0px 20px;
+              @include flex-center(flex);
+              font-size: 16px;
+              font-family: $bold;
+              opacity: 1;
+              &:not(:last-child) {
+                margin-right: 15px;
+              }
+            }
+          }
+          .error {
+            input {
+              border-color: $errorColor !important;
+              opacity: 1 !important;
+              &::placeholder {
+                color: $errorColor;
+              }
+            }
+            .error_message {
+              color: $errorColor;
+            }
+          }
+          .input {
+            margin-right: 20px;
+            label {
+              display: block;
+              font-family: $regular;
+              font-size: 14px;
+              margin-bottom: 5px;
+            }
+            input {
+              border: 1px solid $textColor;
+              border-radius: $siteRadius10;
+              height: 52px;
+              padding: 0px 20px;
+              font-family: $regular;
+              font-size: 14px;
+              width: 100%;
+            }
+            .error_message {
+              font-size: 12px;
+              font-family: $regular;
+              margin-top: 4px;
+            }
+          }
+          .btn_submit {
+            border-radius: $siteRadius10;
+            overflow: hidden;
+            height: 52px;
+            padding: 0px 20px;
+            min-width: 150px;
+            @include flex-center(flex);
+            color: #fff;
+            font-size: 16px;
+            background-color: $textColor;
+          }
+          .order_balance {
+            margin-top: 37px;
+            margin-bottom: 29px;
+            .title {
+              font-family: $extraBold;
+              font-size: 20px;
+              margin-bottom: 10px;
+              display: block;
+            }
+            form {
+              display: flex;
+              align-items: flex-start;
+              .input {
+                width: 156px;
+              }
+              .btn_submit {
+                margin-top: 24px;
+              }
+            }
+          }
+          .gift_card {
+            .title {
+              font-family: $extraBold;
+              font-size: 18px;
+              display: block;
+              margin-bottom: 2px;
+            }
+            .desc {
+              font-family: $regular;
+              font-size: 16px;
+              margin-bottom: 21px;
+            }
+            form {
+              display: flex;
+              align-items: flex-start;
+              .input {
+                width: 271px;
+              }
+              .btn_submit {
+                margin-top: 24px;
+              }
+            }
+          }
+          .e_manat_balance {
+            display: flex;
+            align-items: center;
+            margin-bottom: 30px;
+            .content {
+              margin-left: 20px;
+              .title {
+                font-family: $extraBold;
+                font-size: 18px;
+                display: block;
+              }
+              .desc {
+                font-family: $regular;
+                font-size: 14px;
+              }
+            }
+          }
+          .balance_archive_block {
+            margin-top: 40px;
+            .title {
+              font-family: $extraBold;
+              font-size: 16px;
+              margin-bottom: 5px;
+              display: block;
+              color: $siteColor;
+            }
+            .table {
+              width: 100%;
+              max-height: 132px;
+              overflow-y: scroll;
+              overflow-x: hidden;
+              padding-right: 15px;
+              &::-webkit-scrollbar {
+                width: 2px;
+                position: absolute;
+              }
+              &::-webkit-scrollbar-track {
+                border-radius: $siteRadius5;
+                background-color: #c4c4c4;
+              }
+              &::-webkit-scrollbar-thumb {
+                background: $textColor;
+                border-radius: $siteRadius5;
+              }
+              &::-webkit-scrollbar-thumb:hover {
+                background: $siteColor;
+              }
+              table {
+                border-collapse: collapse;
+                width: 100%;
+                .minus {
+                  color: #41dda5;
+                }
+                .pluse {
+                  color: #fd4c50;
+                }
+                th {
+                  background-color: #e8e7f0;
+                }
+                td,
+                th {
+                  text-align: left;
+                  padding: 10px 16px;
+                  font-family: $regular;
+                  font-size: 12px;
+                  * {
+                    font-size: 12px;
+                  }
+                }
+
+                tr {
+                  &:nth-child(odd) {
+                    background-color: #f1f0f9;
+                    td:first-child,
+                    th:first-child {
+                      border-top-left-radius: $siteRadius5;
+                      border-bottom-left-radius: $siteRadius5;
+                    }
+                    td:last-child,
+                    th:last-child {
+                      border-top-right-radius: $siteRadius5;
+                      border-bottom-right-radius: $siteRadius5;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
         .foot_content {
           margin-top: 15px;
           @include flex-between(flex);
@@ -3648,6 +3898,45 @@ body {
             @include flex-center(flex);
             margin: auto 0px auto auto;
             background-color: $textColor;
+          }
+          .pagination {
+            margin-top: 10px;
+            margin-left: 0px;
+            .left_icn *,
+            .right_icn * {
+              width: 10px;
+              height: 11px;
+              svg {
+                path {
+                  stroke: #aaaaad;
+                  fill: none;
+                }
+              }
+            }
+            .active_li {
+              background-color: #fff;
+              border-radius: 100%;
+              width: 23px;
+              height: 23px;
+              @include flex-center(flex);
+              a {
+                color: $siteColor2;
+              }
+            }
+            .active_icn {
+              background-color: #fff;
+              svg {
+                path {
+                  stroke: #000;
+                }
+              }
+            }
+            li {
+              a {
+                font-size: 12px;
+                line-height: 22px;
+              }
+            }
           }
         }
       }

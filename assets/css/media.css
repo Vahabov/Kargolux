@@ -1246,6 +1246,7 @@
   }
   body main .main_cabinet_section .content_main .settings_main .tab_navs .btn_tab {
     padding: 0px 12px;
+    min-width: auto;
   }
   body main .main_cabinet_section .content_main .settings_main .inputs_settings .input:not(:last-child) {
     margin-bottom: 25px;
@@ -1258,11 +1259,76 @@
     width: 100%;
     margin-right: 0px;
   }
+  body main .main_cabinet_section .content_main .address_cabinet_section .addresses {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  body main .main_cabinet_section .content_main .address_cabinet_section .addresses .address {
+    width: 48%;
+    margin-right: 0px;
+    margin-bottom: 30px;
+  }
+  body main .main_cabinet_section .content_main .address_cabinet_section .addresses .adress_text {
+    width: 100% !important;
+  }
+  body main .main_cabinet_section .content_main .balance_main {
+    padding: 15px;
+  }
+  body main .main_cabinet_section .content_main .balance_main .tab_navs .btn_tab {
+    padding: 0px 10px;
+    min-width: auto;
+  }
+  body main .main_cabinet_section .content_main .balance_main .tab_navs .btn_tab:not(:last-child) {
+    margin-right: 5px;
+  }
+  body main .main_cabinet_section .content_main .balance_main .order_balance {
+    margin-top: 30px;
+  }
+  body main .main_cabinet_section .content_main .balance_main .order_balance .title {
+    font-size: 18px;
+  }
+  body main .main_cabinet_section .content_main .balance_main .order_balance form {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  body main .main_cabinet_section .content_main .balance_main .order_balance form .input {
+    width: 100%;
+    margin-right: 0px;
+  }
+  body main .main_cabinet_section .content_main .balance_main .order_balance form .btn_submit {
+    width: 100%;
+    margin-top: 20px;
+  }
+  body main .main_cabinet_section .content_main .balance_main .gift_card .title {
+    font-size: 16px;
+  }
+  body main .main_cabinet_section .content_main .balance_main .gift_card .desc {
+    font-size: 12px;
+  }
+  body main .main_cabinet_section .content_main .balance_main .gift_card form {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  body main .main_cabinet_section .content_main .balance_main .gift_card form .input {
+    width: 100%;
+    margin-right: 0px;
+  }
+  body main .main_cabinet_section .content_main .balance_main .gift_card form .btn_submit {
+    width: 100%;
+    margin-top: 20px;
+  }
+  body main .main_cabinet_section .content_main .balance_main .balance_archive_block .table {
+    padding-right: 5px;
+  }
   body main .main_cabinet_section .content_main .foot_content {
     margin-top: 25px;
   }
   body main .main_cabinet_section .content_main .foot_content .black_btn {
     width: 100%;
+  }
+  body main .main_cabinet_section .content_main .foot_content .pagination {
+    margin: 15px auto 0px auto;
   }
   body .main_footer {
     margin-top: 30px;

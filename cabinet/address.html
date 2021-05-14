@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Order</title>
+    <title>Cabinet adress</title>
     <link rel="stylesheet" href="/assets/css/main.css" />
     <link rel="stylesheet" href="/assets/css/media.css" />
   </head>
@@ -18,7 +18,7 @@
             <li>
               <a href="../questions.html"> Suallar </a>
             </li>
-            <li>
+            <li class="active_li">
               <a href="../about.html"> Haqqımızda </a>
             </li>
             <li>
@@ -97,6 +97,68 @@
             </div>
           </a>
         </div>
+        <div class="cabinet_bottom_section">
+          <div class="buttons">
+            <button type="button" class="facture_btn btn">
+              Faktura əlavə et
+            </button>
+            <a href="./order.html" class="order_btn btn">Sifariş et</a>
+          </div>
+          <div class="cabinet_bread_crumb">
+            <span class="cabinet">Şəxsi kabinet</span>
+            <span class="alt_name">Tənzimləmələr</span>
+          </div>
+          <div class="right_column">
+            <div class="user_profile_info">
+              <div class="info">
+                <div class="icn">
+                  <img src="/assets/images/icons/tl.svg" alt="#" />
+                </div>
+                <div class="in">
+                  <span class="label">Sifariş balansim</span>
+                  <span class="numb">
+                    234
+                    <img
+                      class="injectable"
+                      src="/assets/images/icons/tl.svg"
+                      alt="#"
+                    />
+                  </span>
+                </div>
+              </div>
+              <div class="info">
+                <div class="icn">
+                  <img
+                    class="araba"
+                    src="/assets/images/icons/araba.svg"
+                    alt="#"
+                  />
+                </div>
+                <div class="in">
+                  <span class="label">Daşınma balansım</span>
+                  <span class="numb"> $393 </span>
+                </div>
+              </div>
+              <div class="info">
+                <div class="icn">
+                  <img src="/assets/images/icons/doc.svg" alt="#" />
+                </div>
+                <div class="in">
+                  <span class="label">Bağlamalarım</span>
+                  <span class="numb">
+                    313
+                    <img
+                      class="injectable"
+                      src="/assets/images/icons/tl.svg"
+                      alt="#"
+                    />
+                  </span>
+                </div>
+              </div>
+            </div>
+            <a href="./order.html" class="order_btn btn">Sifariş et</a>
+          </div>
+        </div>
         <div class="mobile_overlay">
           <div class="overlay_inner">
             <div class="menu">
@@ -136,7 +198,7 @@
                     <li>
                       <a href="../questions.html">Suallar</a>
                     </li>
-                    <li>
+                    <li class="active_li">
                       <a href="../about.html">Haqqımızda</a>
                     </li>
                   </ul>
@@ -229,8 +291,8 @@
                 <div class="center">
                   <button type="button" class="order_btn">Sifariş et</button>
                   <ul class="list">
-                    <li class="active_li">
-                      <a href="./cabinet/settings.html">
+                    <li>
+                      <a href="#">
                         <img
                           class="injectable"
                           src="/assets/images/icons/cabinet-icons/u_setting.svg"
@@ -239,7 +301,7 @@
                         Şəxsi məlumatlarım
                       </a>
                     </li>
-                    <li>
+                    <li class="active_li">
                       <a href="#">
                         <img
                           class="injectable"
@@ -377,126 +439,211 @@
       </div>
     </header>
     <main>
-      <section class="order_page_section">
-        <div class="container">
-          <div class="section_head">
-            <h3 class="title">Sifariş</h3>
-            <span class="product">Məhsul 1</span>
+      <div class="container">
+        <section class="main_cabinet_section">
+          <div class="sidebar">
+            <button type="button" class="facture_btn">Faktura əlavə et</button>
+            <div class="user_info">
+              <div class="avatar">
+                <img src="/assets/images/icons/user-circle.svg" alt="#" />
+              </div>
+              <div class="info">
+                <span class="name">Kamil Vahabov</span>
+                <span class="user_id">#1232434353</span>
+              </div>
+            </div>
+            <ul class="sidebar_list">
+              <li>
+                <a href="#">
+                  <img
+                    class="injectable"
+                    src="/assets/images/icons/cabinet-icons/u_setting.svg"
+                    alt="#"
+                  />
+                  Şəxsi məlumatlarım
+                </a>
+              </li>
+              <li class="active_li">
+                <a href="#">
+                  <img
+                    class="injectable"
+                    src="/assets/images/icons/cabinet-icons/u_store.svg"
+                    alt="#"
+                  />
+                  Türkiyyə ünvanım
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img
+                    class="injectable"
+                    src="/assets/images/icons/cabinet-icons/fi_tag.svg"
+                    alt="#"
+                  />
+                  Sifarişlər
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img
+                    class="injectable"
+                    src="/assets/images/icons/cabinet-icons/u_parcel.svg"
+                    alt="#"
+                  />
+                  Bağlamalarım
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img
+                    class="injectable"
+                    src="/assets/images/icons/cabinet-icons/u_wallet.svg"
+                    alt="#"
+                  />
+                  Balans
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img
+                    class="injectable"
+                    src="/assets/images/icons/cabinet-icons/u_user-location.svg"
+                    alt="#"
+                  />
+                  Kuryer sifarişi
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img
+                    class="injectable"
+                    src="/assets/images/icons/cabinet-icons/u_envelope-download.svg"
+                    alt="#"
+                  />
+                  İsmariclər
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img
+                    class="injectable"
+                    src="/assets/images/icons/cabinet-icons/u_sign-in-alt.svg"
+                    alt="#"
+                  />
+                  Çıxış
+                </a>
+              </li>
+            </ul>
           </div>
-          <form action="#" class="order_form">
-            <div class="flexable_block">
-              <div class="left_column">
-                <div class="form_inputs_block">
-                  <div class="input product_link">
-                    <label for="productLink">Məhsulun linki</label>
-                    <input
-                      type="text"
-                      placeholder="Məhsul linki"
-                      id="productLink"
-                    />
-                  </div>
-                  <div class="input product_count">
-                    <label for="productCount">Məhsulun sayı</label>
-                    <input type="text" placeholder="Say" id="productCount" />
-                  </div>
-                  <div class="input">
-                    <label for="productPrice">Məhsulun qiyməti</label>
-                    <input type="text" placeholder="Say" id="productPrice" />
-                  </div>
-                  <div class="input">
-                    <label for="productSize">Məhsulun ölçüsü</label>
-                    <input type="text" placeholder="Say" id="productSize" />
-                  </div>
-                  <div class="input">
-                    <label for="productColor">Məhsulun rəngi</label>
-                    <input type="text" placeholder="Say" id="productColor" />
-                  </div>
-                  <div class="total_price input">
-                    <span class="label">Yekun qiymət</span>
-                    <div class="total">
-                      <span>0.00</span>
-                      <img
-                        class="injectable"
-                        src="/assets/images/icons/tl.svg"
-                        alt="#"
-                      />
-                    </div>
-                  </div>
-                  <div class="input product_detail">
-                    <label for="productDetail">Məhsulun digər detalları </label>
-                    <textarea placeholder="Məhsulun detalları"></textarea>
-                  </div>
-                  <p class="info_message">
-                    DİQQƏT: 24 saat ərzində ödəniş edilməyən sifarişlər
-                    avtomatik olaraq silinir
-                  </p>
-                </div>
-                <div class="add_form_block">
-                  <button type="button" class="add_block_btn">
-                    <img src="/assets/images/icons/pluse.svg" alt="#" />
-                    <span>Məhsul əlavə et</span>
+          <div class="content_main">
+            <div class="address_cabinet_section">
+              <div class="addresses">
+                <div class="address">
+                  <span class="name">Ad Soyad</span>
+                  <button type="button" class="onCopy">
+                    <img src="/assets/images/icons/copy.svg" alt="#" />
+                    <span class="copiedText">Bəylər Həşimli</span>
+                    <span class="copyAlert">Copied!</span>
                   </button>
                 </div>
-              </div>
-              <div class="sidebar">
-                <span class="title">Toplam qiymət</span>
-                <div class="product_price">
-                  <span class="text">Ümumi məhsul qiyməti -</span>
-                  <span class="text"
-                    >0.00 <img src="/assets/images/icons/tl.svg" alt="#"
-                  /></span>
+                <div class="address adress_text">
+                  <span class="name">Türkiyə ünvanım</span>
+                  <button type="button" class="onCopy">
+                    <img src="/assets/images/icons/copy.svg" alt="#" />
+                    <span class="copiedText">
+                      Islambey mah. Hükümet sk. Dış kapı No: 14A D:2 Arnavutköy.
+                      İstanbul. kod 1907033614 Kargofly Express
+                    </span>
+                    <span class="copyAlert">Copied!</span>
+
+                  </button>
                 </div>
-                <div class="product_price">
-                  <span>Ümumi xidmət haqqı (5%) - </span>
-                  <span class="text"
-                    >0.00 <img src="/assets/images/icons/tl.svg" alt="#"
-                  /></span>
+                <div class="address">
+                  <span class="name">İl - şehir</span>
+                  <button type="button" class="onCopy">
+                    <img src="/assets/images/icons/copy.svg" alt="#" />
+                    <span class="copiedText">İstanbul</span>
+                    <span class="copyAlert">Copied!</span>
+                  </button>
                 </div>
-                <div class="product_price">
-                  <span class="orange_color text">Ümumi məhsul sayı (0)</span>
+                <div class="address">
+                  <span class="name">İlçe</span>
+                  <button type="button" class="onCopy">
+                    <img src="/assets/images/icons/copy.svg" alt="#" />
+                    <span class="copiedText">Arnavutköy</span>
+                    <span class="copyAlert">Copied!</span>
+                  </button>
                 </div>
-                <span class="sub_title">Seçilmiş xidmətlər</span>
-                <div class="delivery">
-                  <label class="checkbox_label">
-                    Təcili sifariş
-                    <input type="checkbox" checked="checked" />
-                    <span class="checkmark"></span>
-                  </label>
-                  <span class="delivery_price"> +1 $ </span>
+                <div class="address">
+                  <span class="name">Adres başlığı</span>
+                  <button type="button" class="onCopy">
+                    <img src="/assets/images/icons/copy.svg" alt="#" />
+                    <span class="copiedText">KargoFly</span>
+                    <span class="copyAlert">Copied!</span>
+                  </button>
                 </div>
-                <span class="delivery_info">
-                  * Sifarişin məbləği kargonuz Türkiyə ofisinə çatdıqda bəlli
-                  olacaqdır.
-                </span>
-                <span class="order_info">
-                  * Diqqət! <br />
-                  Hörmətli müştəri, diqqətinizə çatdırırıq ki, təcili sifarişlər
-                  sifariş olunduqdan maksimum 30 dəqiqə ərzində növbəli şəkildə
-                  icra olunur
-                </span>
+                <div class="address">
+                  <span class="name">Semt</span>
+                  <button type="button" class="onCopy">
+                    <img src="/assets/images/icons/copy.svg" alt="#" />
+                    <span class="copiedText">Arnavutköy</span>
+                    <span class="copyAlert">Copied!</span>
+                  </button>
+                </div>
+                <div class="address">
+                  <span class="name">ZIP/Post kodu</span>
+                  <button type="button" class="onCopy">
+                    <img src="/assets/images/icons/copy.svg" alt="#" />
+                    <span class="copiedText">34275</span>
+                    <span class="copyAlert">Copied!</span>
+                  </button>
+                </div>
+                <div class="address">
+                  <span class="name">Ülkə</span>
+                  <button type="button" class="onCopy">
+                    <img src="/assets/images/icons/copy.svg" alt="#" />
+                    <span class="copiedText">Türkiye</span>
+                    <span class="copyAlert">Copied!</span>
+                  </button>
+                </div>
+                <div class="address">
+                  <span class="name">Mobil telefon</span>
+                  <button type="button" class="onCopy">
+                    <img src="/assets/images/icons/copy.svg" alt="#" />
+                    <span class="copiedText">552 788 23 11</span>
+                    <span class="copyAlert">Copied!</span>
+                  </button>
+                </div>
+                <div class="address">
+                  <span class="name">TC kimlik</span>
+                  <button type="button" class="onCopy">
+                    <img src="/assets/images/icons/copy.svg" alt="#" />
+                    <span class="copiedText">11111111111</span>
+                    <span class="copyAlert">Copied!</span>
+                  </button>
+                </div>
+                <div class="address">
+                  <span class="name">Vergi dairesi</span>
+                  <button type="button" class="onCopy">
+                    <img src="/assets/images/icons/copy.svg" alt="#" />
+                    <span class="copiedText">KÜÇÜKKÖY</span>
+                    <span class="copyAlert">Copied!</span>
+                  </button>
+                </div>
+                <div class="address">
+                  <span class="name">Vergi numarası</span>
+                  <button type="button" class="onCopy">
+                    <img src="/assets/images/icons/copy.svg" alt="#" />
+                    <span class="copiedText">3881376911</span>
+                    <span class="copyAlert">Copied!</span>
+                  </button>
+                </div>
+                
               </div>
             </div>
-            <div class="foot_form">
-              <div class="buttons">
-                <button type="button" class="btn btn_basket">Səbətə at</button>
-                <button type="button" class="btn btn_order">Ödəniş et</button>
-              </div>
-              <div class="right">
-                <span class="info">
-                  Zəhmət olmasa satış sözləşməsini qəbul edin
-                </span>
-                <label class="checkbox_label">
-                  Məsafəli
-                  <a href="#" class="orange_color">satış sözləşməsini</a> qəbul
-                  edirəm.
-                  <input type="checkbox" />
-                  <span class="checkmark"></span>
-                </label>
-              </div>
-            </div>
-          </form>
-        </div>
-      </section>
+          </div>
+        </section>
+      </div>
     </main>
     <footer class="main_footer">
       <div class="container">

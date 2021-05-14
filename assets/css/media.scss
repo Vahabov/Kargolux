@@ -1283,7 +1283,7 @@ $siteRadius5: 5px;
               .buttons {
                 margin-top: 21px;
                 width: 100%;
-                .btn{
+                .btn {
                   width: 48%;
                   min-width: auto;
                   margin-right: 0px !important;
@@ -1293,7 +1293,7 @@ $siteRadius5: 5px;
                 text-align: left;
                 display: flex;
                 flex-direction: column-reverse;
-                .info{
+                .info {
                   margin-bottom: 0px;
                   margin-top: 15px;
                 }
@@ -1323,6 +1323,7 @@ $siteRadius5: 5px;
             .tab_navs {
               .btn_tab {
                 padding: 0px 12px;
+                min-width: auto;
               }
             }
             .inputs_settings {
@@ -1341,10 +1342,79 @@ $siteRadius5: 5px;
               }
             }
           }
+          .address_cabinet_section {
+            .addresses {
+              justify-content: space-between;
+              .address {
+                width: 48%;
+                margin-right: 0px;
+                margin-bottom: 30px;
+              }
+              .adress_text {
+                width: 100% !important;
+              }
+            }
+          }
+          .balance_main {
+            padding: 15px;
+            .tab_navs {
+              .btn_tab {
+                padding: 0px 10px;
+                min-width: auto;
+                &:not(:last-child){
+                  margin-right: 5px;
+                }
+              }
+            }
+            .order_balance {
+              margin-top: 30px;
+              .title {
+                font-size: 18px;
+              }
+              form {
+                flex-wrap: wrap;
+                .input {
+                  width: 100%;
+                  margin-right: 0px;
+                }
+                .btn_submit {
+                  width: 100%;
+                  margin-top: 20px;
+                }
+              }
+            }
+            .gift_card {
+              .title {
+                font-size: 16px;
+              }
+              .desc {
+                font-size: 12px;
+              }
+              form {
+                flex-wrap: wrap;
+                .input {
+                  width: 100%;
+                  margin-right: 0px;
+                }
+                .btn_submit {
+                  width: 100%;
+                  margin-top: 20px;
+                }
+              }
+            }
+            .balance_archive_block {
+              .table{
+                padding-right: 5px;
+              }
+            }
+          }
           .foot_content {
             margin-top: 25px;
             .black_btn {
               width: 100%;
+            }
+            .pagination{
+              margin: 15px auto 0px auto;
             }
           }
         }
