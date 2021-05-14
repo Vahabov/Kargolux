@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Cabinet balance</title>
+    <title>Cabinet courier order</title>
     <link rel="stylesheet" href="/assets/css/main.css" />
     <link rel="stylesheet" href="/assets/css/media.css" />
   </head>
@@ -292,7 +292,7 @@
                   <button type="button" class="order_btn">Sifariş et</button>
                   <ul class="list">
                     <li>
-                      <a href="./settings.html">
+                      <a href="#">
                         <img
                           class="injectable"
                           src="/assets/images/icons/cabinet-icons/u_setting.svg"
@@ -302,7 +302,7 @@
                       </a>
                     </li>
                     <li>
-                      <a href="./address.html">
+                      <a href="./settings.html">
                         <img
                           class="injectable"
                           src="/assets/images/icons/cabinet-icons/u_store.svg"
@@ -331,7 +331,7 @@
                         Bağlamalarım
                       </a>
                     </li>
-                    <li class="active_li">
+                    <li>
                       <a href="./balance.html">
                         <img
                           class="injectable"
@@ -341,7 +341,7 @@
                         Balans
                       </a>
                     </li>
-                    <li>
+                    <li class="active_li">
                       <a href="./courier-order.html">
                         <img
                           class="injectable"
@@ -352,7 +352,7 @@
                       </a>
                     </li>
                     <li>
-                     <a href="./messages.html">
+                      <a href="./messages.html">
                         <img
                           class="injectable"
                           src="/assets/images/icons/cabinet-icons/u_envelope-download.svg"
@@ -493,7 +493,7 @@
                   Bağlamalarım
                 </a>
               </li>
-              <li class="active_li">
+              <li>
                 <a href="./balance.html">
                   <img
                     class="injectable"
@@ -503,7 +503,7 @@
                   Balans
                 </a>
               </li>
-              <li>
+              <li class="active_li">
                 <a href="./courier-order.html">
                   <img
                     class="injectable"
@@ -536,243 +536,258 @@
             </ul>
           </div>
           <div class="content_main">
-            <div class="balance_main">
-              <div class="tab_navs">
-                <button
-                  type="button"
-                  class="btn_tab active_tab"
-                  data-id="tab-1"
-                >
-                  Sifariş balansım
-                </button>
-                <button type="button" class="btn_tab" data-id="tab-2">
-                  Daşıma balansım
-                </button>
-              </div>
-              <div class="tabs_container">
-                <div class="tab active_tab" id="tab-1">
-                  <div class="order_balance">
-                    <span class="title">TL balansı</span>
-                    <form action="#">
-                      <div class="input">
-                        <label for="amount22">Məbləğ</label>
-                        <input
-                          type="text"
-                          id="amount22"
-                          placeholder="Məbləğ daxil edin"
-                        />
-                      </div>
-                      <button type="submit" class="btn_submit">
-                        Balans artır
-                      </button>
-                    </form>
-                  </div>
-                  <div class="gift_card">
-                    <span class="title">Hədiyyə kartı</span>
-                    <p class="desc">
-                      Hədiyyə kartı ilə balansınızı artırmaq üçün aşağıdakı
-                      formadan istifadə edə bilərsiniz. Kart üzərindəki nömrəni
-                      verilən xanaya yazıb təsdiqləyin
-                    </p>
-                    <form action="#">
-                      <div class="input">
-                        <label for="amount">Kartın nömrəsi</label>
-                        <input
-                          type="text"
-                          id="amount"
-                          placeholder="Kartın nömrəsini daxil edin"
-                        />
-                      </div>
-                      <button type="submit" class="btn_submit">
-                        Balans artır
-                      </button>
-                    </form>
-                  </div>
-                  <div class="balance_archive_block">
-                    <span class="title">Balans keçmişi</span>
-                    <div class="table">
-                      <table>
-                        <tr>
-                          <th>Əməliyyatlar</th>
-                          <th>Məbləğ</th>
-                          <th>Tarix və saat</th>
-                        </tr>
-                        <tr>
-                          <td>Sifariş Qalıq Ödənişi</td>
-                          <td><span class="pluse">+115.49</span></td>
-                          <td>09.05.2020 06:54</td>
-                        </tr>
-                        <tr>
-                          <td>Sifariş Ödənişi</td>
-                          <td><span class="minus">-115.49</span></td>
-                          <td>09.05.2020 06:54</td>
-                        </tr>
-                        <tr>
-                          <td>Balans artırılması</td>
-                          <td><span class="pluse">+115.49</span></td>
-                          <td>09.05.2020 06:54</td>
-                        </tr>
-                        <tr>
-                          <td>Sifariş Qalıq Ödənişi</td>
-                          <td><span class="pluse">+115.49</span></td>
-                          <td>09.05.2020 06:54</td>
-                        </tr>
-                        <tr>
-                          <td>Sifariş Ödənişi</td>
-                          <td><span class="minus">-115.49</span></td>
-                          <td>09.05.2020 06:54</td>
-                        </tr>
-                        <tr>
-                          <td>Balans artırılması</td>
-                          <td><span class="pluse">+115.49</span></td>
-                          <td>09.05.2020 06:54</td>
-                        </tr>
-                      </table>
-                    </div>
-                  </div>
+            <div class="courier_order_block">
+              <div class="inputs">
+                <div class="input">
+                  <label for="country">Bölgə</label>
+                  <select id="country">
+                    <option value="#">Binəqədi rayonu</option>
+                    <option value="#">Xetai rayonu</option>
+                    <option value="#">Suraxani rayonu</option>
+                  </select>
                 </div>
-                <div class="tab" id="tab-2">
-                  <div class="order_balance">
-                    <span class="title">AZN balansının artırılması</span>
-                    <form action="#">
-                      <div class="input">
-                        <label for="amount2">Məbləğ</label>
-                        <input
-                          type="text"
-                          id="amount2"
-                          placeholder="Məbləğ daxil edin"
-                        />
-                      </div>
-                      <button type="submit" class="btn_submit">
-                        Balans artır
-                      </button>
-                    </form>
-                  </div>
-                  <div class="e_manat_balance">
-                    <img src="/assets/images/img/e-manat.png" alt="#" />
-                    <div class="content">
-                      <span class="title">E-manat ilə balans artırma</span>
-                      <p class="desc">
-                        E-manat terminalları vasitəsilə balansınızı artıra
-                        bilərsiniz. Bunun üçün E-manat terminalına
-                        yaxınlaşırsınız, 'digər' bölməsinə daxil olaraq
-                        'Starex'-i seçirsiniz. '010103' müştəri kodunuzu yığaraq
-                        'davam et' düyməsini sıxırsınız. İstədiyiniz məbləği
-                        daxil edib təsdiq edirsiniz. Əməliyyatı bitirdikdən
-                        sonra pul dərhal şəxsi kabinetdəki balansınızda
-                        görünəcək.
-                      </p>
-                    </div>
-                  </div>
-                  <div class="gift_card">
-                    <span class="title">Hədiyyə kartı</span>
-                    <p class="desc">
-                      Hədiyyə kartı ilə balansınızı artırmaq üçün aşağıdakı
-                      formadan istifadə edə bilərsiniz. Kart üzərindəki nömrəni
-                      verilən xanaya yazıb təsdiqləyin
-                    </p>
-                    <form action="#">
-                      <div class="input error">
-                        <label for="amount3">Kartın nömrəsi</label>
-                        <input
-                          type="text"
-                          id="amount3"
-                          placeholder="Kartın nömrəsini daxil edin"
-                        />
-                        <span class="error_message"
-                          >Kupon kartın nömrəsi düzgün daxil edilməyib
-                        </span>
-                      </div>
-                      <button type="submit" class="btn_submit">
-                        Balans artır
-                      </button>
-                    </form>
-                  </div>
-                  <div class="balance_archive_block">
-                    <span class="title">Balans keçmişi</span>
-                    <div class="table">
-                      <table>
-                        <tr>
-                          <th>Əməliyyatlar</th>
-                          <th>Məbləğ</th>
-                          <th>Tarix və saat</th>
-                        </tr>
-                        <tr>
-                          <td>Sifariş Qalıq Ödənişi</td>
-                          <td><span class="pluse">+115.49</span></td>
-                          <td>09.05.2020 06:54</td>
-                        </tr>
-                        <tr>
-                          <td>Sifariş Ödənişi</td>
-                          <td><span class="minus">-115.49</span></td>
-                          <td>09.05.2020 06:54</td>
-                        </tr>
-                        <tr>
-                          <td>Balans artırılması</td>
-                          <td><span class="pluse">+115.49</span></td>
-                          <td>09.05.2020 06:54</td>
-                        </tr>
-                        <tr>
-                          <td>Sifariş Qalıq Ödənişi</td>
-                          <td><span class="pluse">+115.49</span></td>
-                          <td>09.05.2020 06:54</td>
-                        </tr>
-                        <tr>
-                          <td>Sifariş Ödənişi</td>
-                          <td><span class="minus">-115.49</span></td>
-                          <td>09.05.2020 06:54</td>
-                        </tr>
-                        <tr>
-                          <td>Balans artırılması</td>
-                          <td><span class="pluse">+115.49</span></td>
-                          <td>09.05.2020 06:54</td>
-                        </tr>
-                      </table>
-                    </div>
-                  </div>
+                <div class="input">
+                  <label for="subcountry">Alt bölgə</label>
+                  <input
+                    type="text"
+                    placeholder="Azpetrolun yanı"
+                    id="subcountry"
+                  />
+                </div>
+                <div class="input">
+                  <label for="adress">Ünvan</label>
+                  <input
+                    type="text"
+                    placeholder="Binəqədi r. İsa Bədəlov küç..."
+                    id="adress"
+                  />
+                </div>
+                <div class="input">
+                  <label for="phonenumber">Telefon nömrəsi</label>
+                  <input
+                    type="number"
+                    placeholder="+994508500955"
+                    id="phonenumber"
+                  />
+                </div>
+                <div class="input note">
+                  <label for="note">Əlavə qeyd</label>
+                  <input
+                    type="text"
+                    placeholder="Gəlib çatmamışdan 30 dəqiqə əvvəl zəng edin zəhmət olmasa"
+                    id="note"
+                  />
+                </div>
+                <div class="input">
+                  <label for="country">Bölgə</label>
+                  <select id="country">
+                    <option value="#">Qara Qarayev filialı</option>
+                  </select>
                 </div>
               </div>
+              <h3 class="box_title">Seçdiyiniz anbarda olan bağlamalarınız</h3>
+              <div class="box_table_block">
+                <span class="title">Bağlamalar</span>
+                <div class="table">
+                  <table>
+                    <tr>
+                      <th></th>
+                      <th>Kod</th>
+                      <th>Status</th>
+                      <th>Karqo çəkisi</th>
+                      <th>Karqo məbləği</th>
+                      <th>Əlavə xidmətlərin dəyəri</th>
+                    </tr>
+                    <tr>
+                      <td>
+                        <label class="checkbox_label">
+                          <input type="checkbox" checked="checked" />
+                          <span class="checkmark"></span>
+                        </label>
+                      </td>
+                      <td>244194</td>
+                      <td>Kassada ödənilib</td>
+                      <td>0.182 kq</td>
+                      <td>
+                        <span class="price">2.5 $</span>
+                        <span
+                          >4.25
+                          <img src="/assets/images/icons/manat.svg" alt="#"
+                        /></span>
+                      </td>
+                      <td>
+                        <span class="price">2.5 $</span>
+                        <span
+                          >4.25
+                          <img src="/assets/images/icons/manat.svg" alt="#"
+                        /></span>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <label class="checkbox_label">
+                          <input type="checkbox" />
+                          <span class="checkmark"></span>
+                        </label>
+                      </td>
+                      <td>244194</td>
+                      <td>Kassada ödənilib</td>
+                      <td>0.182 kq</td>
+                      <td>
+                        <span class="price">2.5 $</span>
+                        <span
+                          >0 <img src="/assets/images/icons/manat.svg" alt="#"
+                        /></span>
+                      </td>
+                      <td>
+                        <span class="price">2.5 $</span>
+                        <span
+                          >0 <img src="/assets/images/icons/manat.svg" alt="#"
+                        /></span>
+                      </td>
+                    </tr>
+                    <tr>
+                        <td>
+                          <label class="checkbox_label">
+                            <input type="checkbox" checked="checked" />
+                            <span class="checkmark"></span>
+                          </label>
+                        </td>
+                        <td>244194</td>
+                        <td>Kassada ödənilib</td>
+                        <td>0.182 kq</td>
+                        <td>
+                          <span class="price">2.5 $</span>
+                          <span
+                            >4.25
+                            <img src="/assets/images/icons/manat.svg" alt="#"
+                          /></span>
+                        </td>
+                        <td>
+                          <span class="price">2.5 $</span>
+                          <span
+                            >4.25
+                            <img src="/assets/images/icons/manat.svg" alt="#"
+                          /></span>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <label class="checkbox_label">
+                            <input type="checkbox" />
+                            <span class="checkmark"></span>
+                          </label>
+                        </td>
+                        <td>244194</td>
+                        <td>Kassada ödənilib</td>
+                        <td>0.182 kq</td>
+                        <td>
+                          <span class="price">2.5 $</span>
+                          <span
+                            >0 <img src="/assets/images/icons/manat.svg" alt="#"
+                          /></span>
+                        </td>
+                        <td>
+                          <span class="price">2.5 $</span>
+                          <span
+                            >0 <img src="/assets/images/icons/manat.svg" alt="#"
+                          /></span>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <label class="checkbox_label">
+                            <input type="checkbox" checked="checked" />
+                            <span class="checkmark"></span>
+                          </label>
+                        </td>
+                        <td>244194</td>
+                        <td>Kassada ödənilib</td>
+                        <td>0.182 kq</td>
+                        <td>
+                          <span class="price">2.5 $</span>
+                          <span
+                            >4.25
+                            <img src="/assets/images/icons/manat.svg" alt="#"
+                          /></span>
+                        </td>
+                        <td>
+                          <span class="price">2.5 $</span>
+                          <span
+                            >4.25
+                            <img src="/assets/images/icons/manat.svg" alt="#"
+                          /></span>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>
+                          <label class="checkbox_label">
+                            <input type="checkbox" />
+                            <span class="checkmark"></span>
+                          </label>
+                        </td>
+                        <td>244194</td>
+                        <td>Kassada ödənilib</td>
+                        <td>0.182 kq</td>
+                        <td>
+                          <span class="price">2.5 $</span>
+                          <span
+                            >0 <img src="/assets/images/icons/manat.svg" alt="#"
+                          /></span>
+                        </td>
+                        <td>
+                          <span class="price">2.5 $</span>
+                          <span
+                            >0 <img src="/assets/images/icons/manat.svg" alt="#"
+                          /></span>
+                        </td>
+                      </tr>
+                  </table>
+                </div>
+              </div>
+              <div class="total_prices">
+                <div class="column_price">
+                  <div class="row_price">
+                    <span>Balans :</span>
+                    <span>37.41</span>
+                    <img src="/assets/images/icons/manat.svg" alt="#" />
+                  </div>
+                  <div class="row_price">
+                    <span>Bölgəyə görə kuryer məbləği :</span>
+                    <span>37.41</span>
+                    <img src="/assets/images/icons/manat.svg" alt="#" />
+                  </div>
+                </div>
+                <div class="column_price">
+                  <div class="row_price">
+                    <span>Bölgəyə görə kuryer məbləği :</span>
+                    <span>37.41</span>
+                    <img src="/assets/images/icons/manat.svg" alt="#" />
+                  </div>
+                  <div class="row_price">
+                    <span>Bölgəyə görə kuryer məbləği :</span>
+                    <span>37.41</span>
+                    <img src="/assets/images/icons/manat.svg" alt="#" />
+                  </div>
+                </div>
+                <div class="column_price">
+                  <div class="total_price">
+                    <span>Toplam: 4.00</span>
+                    <img
+                      class="injectable"
+                      src="/assets/images/icons/manat.svg"
+                      alt="#"
+                    />
+                  </div>
+                </div>
+              </div>
+              <p class="info">
+                Kuryer sifarişiniz 24 saat ərzində planlaşdırılır. Kuryerin iş
+                saatları 10:00 - 19:00 (həftənin 6 günü)
+              </p>
             </div>
             <div class="foot_content">
-              <ul class="pagination">
-                <li class="left_icn">
-                  <a href="#">
-                    <img
-                      class="injectable"
-                      src="/assets/images/icons/arrow_mini.svg"
-                      alt="#"
-                    />
-                  </a>
-                </li>
-                <li class="active_li">
-                  <a href="#1"> 1 </a>
-                </li>
-                <li>
-                  <a href="#2"> 2 </a>
-                </li>
-                <li>
-                  <a href="#3"> 3 </a>
-                </li>
-                <li>
-                  <a href="#4"> 4 </a>
-                </li>
-                <li>
-                  <a href="#5"> 5 </a>
-                </li>
-                <li>...</li>
-                <li>
-                  <a href="#5"> 728 </a>
-                </li>
-                <li class="right_icn active_icn">
-                  <a href="#">
-                    <img
-                      class="injectable"
-                      src="/assets/images/icons/arrow_mini.svg"
-                      alt="#"
-                    />
-                  </a>
-                </li>
-              </ul>
+              <button type="button" class="black_btn">Təsdiqlə</button>
             </div>
           </div>
         </section>

@@ -210,4 +210,9 @@ $(function () {
     document.execCommand("copy");
     $temp.remove();
   }
+
+  //MESSAGESCROLL
+  if ($("#messagesBlock")[0]) {
+    $("#messagesBlock").scrollTop($("#messages")[0].scrollHeight + 2);
+  }
 });

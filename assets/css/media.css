@@ -1321,6 +1321,72 @@
   body main .main_cabinet_section .content_main .balance_main .balance_archive_block .table {
     padding-right: 5px;
   }
+  body main .main_cabinet_section .content_main .messages_block {
+    padding: 16px;
+  }
+  body main .main_cabinet_section .content_main .messages_block .head {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    padding-bottom: 18px;
+  }
+  body main .main_cabinet_section .content_main .messages_block .head .service_info {
+    margin-bottom: 15px;
+  }
+  body main .main_cabinet_section .content_main .messages_block .head .service_info .info span {
+    font-size: 14px;
+  }
+  body main .main_cabinet_section .content_main .messages_block .head .customer_info span {
+    font-size: 14px;
+    text-align: left;
+  }
+  body main .main_cabinet_section .content_main .messages_block .center .messages .scrolled_block .message {
+    max-width: 90%;
+  }
+  body main .main_cabinet_section .content_main .messages_block .foot {
+    margin-top: 20px;
+  }
+  body main .main_cabinet_section .content_main .courier_order_block {
+    padding: 18px;
+  }
+  body main .main_cabinet_section .content_main .courier_order_block .inputs .input {
+    width: 100%;
+  }
+  body main .main_cabinet_section .content_main .courier_order_block .box_table_block .table {
+    overflow: scroll;
+  }
+  body main .main_cabinet_section .content_main .courier_order_block .box_table_block .table::-webkit-scrollbar {
+    display: none;
+    width: 0px;
+  }
+  body main .main_cabinet_section .content_main .courier_order_block .box_table_block .table table {
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
+  }
+  body main .main_cabinet_section .content_main .courier_order_block .box_title {
+    font-family: Nunito-Bold;
+    font-size: 16px;
+  }
+  body main .main_cabinet_section .content_main .courier_order_block .total_prices {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  body main .main_cabinet_section .content_main .courier_order_block .total_prices .total_price {
+    margin-top: 12px;
+  }
+  body main .main_cabinet_section .content_main .courier_order_block .info {
+    font-size: 12px;
+  }
   body main .main_cabinet_section .content_main .foot_content {
     margin-top: 25px;
   }
@@ -1472,6 +1538,9 @@
 }
 
 @media screen and (max-width: 360px) {
+  body .main_header .cabinet_bottom_section .right_column .user_profile_info .info:not(:last-child) {
+    margin-bottom: 20px !important;
+  }
   body main .calculator_section .container .calculator .inputs .item {
     width: 100%;
   }
