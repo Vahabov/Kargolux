@@ -156,6 +156,16 @@
   body .my_modal .modal_center .react_actions .center .icn {
     display: none;
   }
+  body .my_modal .modal_center .facture_modal .title {
+    font-size: 22px;
+  }
+  body .my_modal .modal_center .facture_modal .info {
+    padding-left: 0px;
+    font-size: 12px;
+  }
+  body .my_modal .modal_center .facture_modal form input {
+    width: 72%;
+  }
   body .pagination {
     width: 280px;
     margin-top: 50px;
@@ -189,8 +199,10 @@
     border-top: none;
     height: 90px;
   }
-  body .main_header .center_section .mobile_btn_menu {
-    display: block;
+  body .main_header .center_section .mobile_right {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
   }
   body .main_header .center_section .navbar {
     display: none;
@@ -1350,8 +1362,8 @@
   body main .main_cabinet_section .content_main .messages_block .foot {
     margin-top: 20px;
   }
-  body main .main_cabinet_section .content_main .courier_order_block {
-    padding: 18px;
+  body main .main_cabinet_section .content_main .inner_block {
+    padding: 18px !important;
   }
   body main .main_cabinet_section .content_main .courier_order_block .inputs .input {
     width: 100%;
@@ -1387,11 +1399,28 @@
   body main .main_cabinet_section .content_main .courier_order_block .info {
     font-size: 12px;
   }
+  body main .main_cabinet_section .content_main .courier_order_block .table_courier {
+    display: none;
+  }
+  body main .main_cabinet_section .content_main .courier_order_block .table_courier_mobile {
+    display: block;
+  }
   body main .main_cabinet_section .content_main .foot_content {
     margin-top: 25px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  body main .main_cabinet_section .content_main .foot_content .purple_btn {
+    width: 100%;
+    margin-bottom: 20px;
   }
   body main .main_cabinet_section .content_main .foot_content .black_btn {
     width: 100%;
+  }
+  body main .main_cabinet_section .content_main .foot_content .operations_select {
+    display: none;
   }
   body main .main_cabinet_section .content_main .foot_content .pagination {
     margin: 15px auto 0px auto;

@@ -290,6 +290,20 @@ $siteRadius5: 5px;
             }
           }
         }
+        .facture_modal {
+          .title {
+            font-size: 22px;
+          }
+          .info {
+            padding-left: 0px;
+            font-size: 12px;
+          }
+          form {
+            input {
+              width: 72%;
+            }
+          }
+        }
       }
     }
     .pagination {
@@ -331,8 +345,8 @@ $siteRadius5: 5px;
       .center_section {
         border-top: none;
         height: 90px;
-        .mobile_btn_menu {
-          display: block;
+        .mobile_right {
+          display: flex;
         }
         .navbar {
           display: none;
@@ -1432,27 +1446,29 @@ $siteRadius5: 5px;
             .center {
               .messages {
                 .scrolled_block {
-                  .message{
+                  .message {
                     max-width: 90%;
                   }
                 }
               }
             }
-            .foot{
+            .foot {
               margin-top: 20px;
             }
           }
+          .inner_block {
+            padding: 18px !important;
+          }
           .courier_order_block {
-            padding: 18px;
             .inputs {
-              .input{
-                width: 100%
+              .input {
+                width: 100%;
               }
             }
             .box_table_block {
-              .table{
+              .table {
                 overflow: scroll;
-                &::-webkit-scrollbar{
+                &::-webkit-scrollbar {
                   display: none;
                   width: 0px;
                 }
@@ -1461,25 +1477,39 @@ $siteRadius5: 5px;
                 }
               }
             }
-            .box_title{
+            .box_title {
               font-family: $bold;
               font-size: 16px;
             }
-            .total_prices{
+            .total_prices {
               flex-direction: column;
               align-items: flex-start;
-              .total_price{
+              .total_price {
                 margin-top: 12px;
               }
             }
-            .info{
+            .info {
               font-size: 12px;
+            }
+            .table_courier {
+              display: none;
+            }
+            .table_courier_mobile{
+              display: block;
             }
           }
           .foot_content {
             margin-top: 25px;
+            flex-direction: column-reverse;
+            .purple_btn {
+              width: 100%;
+              margin-bottom: 20px;
+            }
             .black_btn {
               width: 100%;
+            }
+            .operations_select {
+              display: none;
             }
             .pagination {
               margin: 15px auto 0px auto;
@@ -1624,7 +1654,7 @@ $siteRadius5: 5px;
       .cabinet_bottom_section {
         .right_column {
           .user_profile_info {
-            .info:not(:last-child){
+            .info:not(:last-child) {
               margin-bottom: 20px !important;
             }
           }
