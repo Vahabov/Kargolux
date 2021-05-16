@@ -79,10 +79,18 @@ body {
   min-height: 100vh;
   -webkit-transition: 0.3s;
   transition: 0.3s;
+}
+
+body .bg_overlay {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100vh;
+  z-index: -100;
   background-image: url(../images/img/background.svg);
   background-repeat: no-repeat;
   background-size: cover;
-  background-attachment: fixed;
 }
 
 body * {
@@ -6227,7 +6235,7 @@ body main .main_cabinet_section .content_main .settings_main .inputs_settings .e
   color: #ff5050;
 }
 
-body main .main_cabinet_section .content_main .settings_main .inputs_settings .disabled input {
+body main .main_cabinet_section .content_main .settings_main .inputs_settings .disabled input, body main .main_cabinet_section .content_main .settings_main .inputs_settings .disabled .disable_text {
   color: #848484 !important;
   background-color: #c4c4c477 !important;
   border: none !important;
@@ -6238,7 +6246,7 @@ body main .main_cabinet_section .content_main .settings_main .inputs_settings .d
   border: none !important;
 }
 
-body main .main_cabinet_section .content_main .settings_main .inputs_settings .disabled .input input {
+body main .main_cabinet_section .content_main .settings_main .inputs_settings .disabled .input input, body main .main_cabinet_section .content_main .settings_main .inputs_settings .disabled .input .disable_text {
   background-color: transparent !important;
 }
 
@@ -6274,6 +6282,22 @@ body main .main_cabinet_section .content_main .settings_main .inputs_settings .i
   font-family: Nunito-Regular;
   font-size: 14px;
   width: 100%;
+}
+
+body main .main_cabinet_section .content_main .settings_main .inputs_settings .input .disable_text {
+  border: 1px solid #282141;
+  border-radius: 10px;
+  height: 52px;
+  padding: 0px 20px;
+  font-family: Nunito-Regular;
+  font-size: 14px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 body main .main_cabinet_section .content_main .settings_main .inputs_settings .input select {
@@ -6320,7 +6344,8 @@ body main .main_cabinet_section .content_main .settings_main .inputs_settings .i
   width: 100%;
 }
 
-body main .main_cabinet_section .content_main .settings_main .inputs_settings .input_with_select .input input {
+body main .main_cabinet_section .content_main .settings_main .inputs_settings .input_with_select .input input,
+body main .main_cabinet_section .content_main .settings_main .inputs_settings .input_with_select .input .disable_text {
   border: none;
   height: 100%;
 }
