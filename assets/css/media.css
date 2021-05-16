@@ -112,6 +112,26 @@
   body .container {
     padding: 0px 16px;
   }
+  body .notify_btn .notify_modal::before {
+    top: 24px;
+  }
+  body .notify_btn .notify_modal .notify_modal_in {
+    top: 33px;
+  }
+  body .notify_btn .notify_modal_main::before {
+    right: -10px;
+  }
+  body .notify_btn .notify_modal_main .notify_modal_in {
+    min-width: 90vw;
+    right: -118px !important;
+  }
+  body .notify_btn .basket_modal_main::before {
+    right: -12px;
+  }
+  body .notify_btn .basket_modal_main .notify_modal_in {
+    min-width: 90vw;
+    right: -70px !important;
+  }
   body .my_modal .modal_center .modal_inner {
     width: 90%;
     padding: 20px;
@@ -165,6 +185,24 @@
   }
   body .my_modal .modal_center .facture_modal form input {
     width: 72%;
+  }
+  body .my_modal .modal_center .facture_edit_modal .inputs .input {
+    width: 100%;
+    margin-right: 0px !important;
+  }
+  body .my_modal .modal_center .facture_edit_modal .foot_buttons {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  body .my_modal .modal_center .facture_edit_modal .foot_buttons .black_btn {
+    width: 100%;
+    min-width: auto;
+    margin-left: 0px;
+  }
+  body .my_modal .modal_center .facture_edit_modal .foot_buttons .black_btn:not(:last-child) {
+    margin-top: 15px;
   }
   body .pagination {
     width: 280px;
@@ -1250,6 +1288,42 @@
     left: 0px;
     top: -1;
   }
+  body main .two_column_page {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  body main .two_column_page .left_column {
+    width: 100%;
+  }
+  body main .two_column_page .left_column .title {
+    font-size: 22px;
+    margin-bottom: 5px;
+  }
+  body main .two_column_page .left_column .description {
+    margin-bottom: 28px;
+  }
+  body main .two_column_page .left_column .info_rows {
+    margin-bottom: 34px;
+  }
+  body main .two_column_page .left_column .info_rows .info_title {
+    font-size: 18px;
+  }
+  body main .two_column_page .left_column .info_rows .delivery {
+    font-size: 16px;
+  }
+  body main .two_column_page .right_column {
+    width: 100%;
+    padding: 23px 16px;
+  }
+  body main .two_column_page .right_column .element {
+    height: 260px;
+  }
+  body main .main_cabinet_section {
+    padding-bottom: 0px;
+    border-bottom: none;
+  }
   body main .main_cabinet_section .sidebar {
     display: none;
   }
@@ -1405,6 +1479,12 @@
   body main .main_cabinet_section .content_main .courier_order_block .table_courier_mobile {
     display: block;
   }
+  body main .main_cabinet_section .content_main .declarations_main .table_declaration {
+    display: none;
+  }
+  body main .main_cabinet_section .content_main .declarations_main .table_declaration_mobile {
+    display: block;
+  }
   body main .main_cabinet_section .content_main .foot_content {
     margin-top: 25px;
     -webkit-box-orient: vertical;
@@ -1421,6 +1501,12 @@
   }
   body main .main_cabinet_section .content_main .foot_content .operations_select {
     display: none;
+  }
+  body main .main_cabinet_section .content_main .foot_content .toggle_pay {
+    width: 100%;
+  }
+  body main .main_cabinet_section .content_main .foot_content .toggle_pay .pay_btn {
+    width: 100%;
   }
   body main .main_cabinet_section .content_main .foot_content .pagination {
     margin: 15px auto 0px auto;

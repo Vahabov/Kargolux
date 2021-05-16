@@ -3,9 +3,11 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Cabinet notifications</title>
+    <title>Cabinet declarations</title>
     <link rel="stylesheet" href="/assets/css/main.css" />
+    <link rel="stylesheet" href="/assets/css/main.css.map" />
     <link rel="stylesheet" href="/assets/css/media.css" />
+    <link rel="stylesheet" href="/assets/css/media.css.map" />
   </head>
   <body>
     <header class="main_header">
@@ -28,12 +30,196 @@
             </li>
           </ul>
           <div class="right_column">
-            <button class="notify_btn bell_btn">
+           <div class="notify_btn bell_btn">
               <img src="/assets/images/icons/bell.svg" alt="#" />
-            </button>
-            <button type="button" class="notify_btn shop_btn">
+              <div class="notify_modal notify_modal_main">
+                <div class="overlay_modal"></div>
+                <div class="notify_modal_in">
+                  <span class="title">Bildirişlər</span>
+                  <div class="notifications">
+                    <a href="#" class="item">
+                      <span class="date">17.02.2021 22:02</span>
+                      <p class="content">
+                        #862516243 nömrəli bağlamanız Xalqlar Dostlugu ofisinə
+                        çatdırıldı.
+                      </p>
+                    </a>
+                    <a href="#" class="item">
+                      <span class="date">17.02.2021 22:02</span>
+                      <p class="content">
+                        #862516243 nömrəli bağlamanız Xalqlar Dostlugu ofisinə
+                        çatdırıldı.
+                      </p>
+                    </a>
+                    <a href="#" class="item">
+                      <span class="date">17.02.2021 22:02</span>
+                      <p class="content">
+                        #862516243 nömrəli bağlamanız Xalqlar Dostlugu ofisinə
+                        çatdırıldı.
+                      </p>
+                    </a>
+                  </div>
+                  <a href="./notifications.html" class="show_all"
+                    >Hamısına bax..</a
+                  >
+                  <button type="button" class="cancell close_notify_modal">
+                    <img
+                      class="injectable"
+                      src="/assets/images/icons/closeModal.svg"
+                      alt="#"
+                    />
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="notify_btn shop_btn">
               <img src="/assets/images/icons/shopping.svg" alt="#" />
-            </button>
+              <div class="notify_modal basket_modal_main">
+                <div class="overlay_modal"></div>
+                <div class="notify_modal_in">
+                  <span class="title">Sifariş</span>
+                  <div class="table">
+                    <table>
+                      <tr>
+                        <th>Kod</th>
+                        <th>Link</th>
+                        <th>Qiymət</th>
+                        <th>Yekun qiymət</th>
+                        <th>Rəng</th>
+                        <th>Çəki</th>
+                        <th>Ölçü</th>
+                        <th></th>
+                      </tr>
+
+                      <tr>
+                        <td>244194</td>
+                        <td><a href="www.trendyol.com">www.trendyol.com</a></td>
+                        <td class="price">
+                          <span>99.99</span>
+                          <img src="/assets/images/icons/tl.svg" alt="#" />
+                        </td>
+                        <td class="price">
+                          <span>104.99</span>
+                          <img src="/assets/images/icons/tl.svg" alt="#" />
+                        </td>
+                        <td>Mavi</td>
+                        <td>0.325 kq</td>
+                        <td>M</td>
+                        <td>
+                          <div class="buttons">
+                            <button type="button" class="btn">
+                              <img
+                                src="/assets/images/icons/edit.svg"
+                                alt="#"
+                              />
+                            </button>
+                            <button type="button" class="btn">
+                              <img
+                                src="/assets/images/icons/trash.svg"
+                                alt="#"
+                              />
+                            </button>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>244194</td>
+                        <td><a href="www.trendyol.com">www.trendyol.com</a></td>
+                        <td class="price">
+                          <span>99.99</span>
+                          <img src="/assets/images/icons/tl.svg" alt="#" />
+                        </td>
+                        <td class="price">
+                          <span>104.99</span>
+                          <img src="/assets/images/icons/tl.svg" alt="#" />
+                        </td>
+                        <td>Mavi</td>
+                        <td>0.325 kq</td>
+                        <td>M</td>
+                        <td>
+                          <div class="buttons">
+                            <button type="button" class="btn">
+                              <img
+                                src="/assets/images/icons/edit.svg"
+                                alt="#"
+                              />
+                            </button>
+                            <button type="button" class="btn">
+                              <img
+                                src="/assets/images/icons/trash.svg"
+                                alt="#"
+                              />
+                            </button>
+                          </div>
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>244194</td>
+                        <td><a href="www.trendyol.com">www.trendyol.com</a></td>
+                        <td class="price">
+                          <span>99.99</span>
+                          <img src="/assets/images/icons/tl.svg" alt="#" />
+                        </td>
+                        <td class="price">
+                          <span>104.99</span>
+                          <img src="/assets/images/icons/tl.svg" alt="#" />
+                        </td>
+                        <td>Mavi</td>
+                        <td>0.325 kq</td>
+                        <td>M</td>
+                        <td>
+                          <div class="buttons">
+                            <button type="button" class="btn">
+                              <img
+                                src="/assets/images/icons/edit.svg"
+                                alt="#"
+                              />
+                            </button>
+                            <button type="button" class="btn">
+                              <img
+                                src="/assets/images/icons/trash.svg"
+                                alt="#"
+                              />
+                            </button>
+                          </div>
+                        </td>
+                      </tr>
+                    </table>
+                  </div>
+                  <div class="foot_basket">
+                    <div class="left">
+                      <div class="total_price">
+                        <span>Ümumi qiymət: 277</span>
+                        <img
+                          class="injectable"
+                          src="/assets/images/icons/tl.svg"
+                          alt="#"
+                        />
+                      </div>
+                      <label class="checkbox_label">
+                        Məsafəli
+                        <a href="#" class="orange_color">satış sözləşməsini</a>
+                        qəbul edirəm.
+                        <input type="checkbox" />
+                        <span class="checkmark"></span>
+                      </label>
+                    </div>
+                    <div class="right">
+                      <button type="button" class="black_btn">
+                        Sifariş ver
+                      </button>
+                    </div>
+                  </div>
+                  <button type="button" class="cancell close_notify_modal">
+                    <img
+                      class="injectable"
+                      src="/assets/images/icons/closeModal.svg"
+                      alt="#"
+                    />
+                  </button>
+                </div>
+              </div>
+            </div>
             <a class="phone_call" href="tel:+99412 100 00 00"
               >+99412 100 00 00</a
             >
@@ -51,12 +237,134 @@
             <img src="/assets/images/icons/logo.svg" alt="#" />
           </a>
           <div class="mobile_right">
-            <button class="notify_btn bell_btn">
+            <div class="notify_btn bell_btn">
               <img src="/assets/images/icons/bell.svg" alt="#" />
-            </button>
-            <button type="button" class="notify_btn shop_btn">
+              <div class="notify_modal notify_modal_main">
+                <div class="overlay_modal"></div>
+                <div class="notify_modal_in">
+                  <span class="title">Bildirişlər</span>
+                  <div class="notifications">
+                    <a href="#" class="item">
+                      <span class="date">17.02.2021 22:02</span>
+                      <p class="content">
+                        #862516243 nömrəli bağlamanız Xalqlar Dostlugu ofisinə
+                        çatdırıldı.
+                      </p>
+                    </a>
+                    <a href="#" class="item">
+                      <span class="date">17.02.2021 22:02</span>
+                      <p class="content">
+                        #862516243 nömrəli bağlamanız Xalqlar Dostlugu ofisinə
+                        çatdırıldı.
+                      </p>
+                    </a>
+                    <a href="#" class="item">
+                      <span class="date">17.02.2021 22:02</span>
+                      <p class="content">
+                        #862516243 nömrəli bağlamanız Xalqlar Dostlugu ofisinə
+                        çatdırıldı.
+                      </p>
+                    </a>
+                  </div>
+                  <a href="./notifications.html" class="show_all"
+                    >Hamısına bax..</a
+                  >
+                  <button type="button" class="cancell close_notify_modal">
+                    <img
+                      class="injectable"
+                      src="/assets/images/icons/closeModal.svg"
+                      alt="#"
+                    />
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="notify_btn shop_btn">
               <img src="/assets/images/icons/shopping.svg" alt="#" />
-            </button>
+              <div class="notify_modal basket_modal_main">
+                <div class="overlay_modal"></div>
+                <div class="notify_modal_in">
+                  <span class="title">Sifariş</span>
+                  <div class="mobile_items">
+                    <div class="item">
+                      <div class="cols">
+                        <div class="col">
+                          <span class="title_item">Kod</span>
+                          <span>244194</span>
+                        </div>
+                        <div class="col">
+                          <span class="title_item">Rəng</span>
+                          <span>Mavı</span>
+                        </div>
+                        <div class="col">
+                          <span class="title_item">Sifariş linki</span>
+                          <a href="www.trendyol.com">www.trendyol.com</a>
+                        </div>
+                        <div class="col">
+                          <span class="title_item">Çəki</span>
+                          <span>0.325 kq</span>
+                        </div>
+                        <div class="col">
+                          <span class="title_item"
+                            >Qiymət
+                            <img src="/assets/images/icons/tl.svg" alt="#"
+                          /></span>
+                          <span>109.99</span>
+                        </div>
+                        <div class="col">
+                          <span class="title_item">Ölçü</span>
+                          <span>M</span>
+                        </div>
+                        <div class="col">
+                          <span class="title_item"
+                            >Yekun qiymət
+                            <img src="/assets/images/icons/tl.svg" alt="#"
+                          /></span>
+                          <span>109.99</span>
+                        </div>
+                        <div class="col">
+                          <span class="title_item">Say</span>
+                          <span>3</span>
+                        </div>
+                      </div>
+                      <div class="buttons">
+                        <button type="button" class="btn">
+                          <img src="/assets/images/icons/edit.svg" alt="#" />
+                        </button>
+                        <button type="button" class="btn">
+                          <img src="/assets/images/icons/trash.svg" alt="#" />
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="mobile_foot_basket">
+                    <label class="checkbox_label">
+                      Məsafəli
+                      <a href="#" class="orange_color">satış sözləşməsini</a>
+                      qəbul edirəm.
+                      <input type="checkbox" />
+                      <span class="checkmark"></span>
+                    </label>
+                    <div class="total_price">
+                      <span>Ümumi qiymət: 277</span>
+                      <img
+                        class="injectable"
+                        src="/assets/images/icons/tl.svg"
+                        alt="#"
+                      />
+                    </div>
+                    <button type="button" class="black_btn">Sifariş ver</button>
+                  </div>
+                  <button type="button" class="cancell close_notify_modal">
+                    <img
+                      class="injectable"
+                      src="/assets/images/icons/closeModal.svg"
+                      alt="#"
+                    />
+                  </button>
+                </div>
+              </div>
+            </div>
             <button type="button" class="mobile_btn_menu">
               <img src="/assets/images/icons/hamburger.svg" alt="#" />
             </button>
@@ -310,7 +618,7 @@
                       </a>
                     </li>
                     <li>
-                       <a href="./address.html">
+                      <a href="./address.html">
                         <img
                           class="injectable"
                           src="/assets/images/icons/cabinet-icons/u_store.svg"
@@ -320,7 +628,7 @@
                       </a>
                     </li>
                     <li>
-                      <a href="#">
+                      <a href="./orders.html">
                         <img
                           class="injectable"
                           src="/assets/images/icons/cabinet-icons/fi_tag.svg"
@@ -482,7 +790,7 @@
                 </a>
               </li>
               <li>
-                <a href="#">
+                <a href="./orders.html">
                   <img
                     class="injectable"
                     src="/assets/images/icons/cabinet-icons/fi_tag.svg"
@@ -545,7 +853,7 @@
           </div>
           <div class="content_main">
             <div class="declarations_main">
-              <div class="table">
+              <div class="table_declaration">
                 <table>
                   <tr>
                     <th></th>
@@ -564,7 +872,7 @@
                   <tr>
                     <td>
                       <label class="checkbox_label">
-                        <input type="checkbox" checked="checked" />
+                        <input type="checkbox" />
                         <span class="checkmark"></span>
                       </label>
                     </td>
@@ -591,7 +899,7 @@
                         <button type="button" class="btn" title="Ödəniş et">
                           <img src="/assets/images/icons/pay.svg" alt="#" />
                         </button>
-                        <button type="button" class="btn" title="Düzəliş et">
+                        <button type="button" class="btn btn_popup" title="Düzəliş et" data-id="modal-3">
                           <img src="/assets/images/icons/edit.svg" alt="#" />
                         </button>
                         <div
@@ -616,7 +924,7 @@
                   <tr>
                     <td>
                       <label class="checkbox_label">
-                        <input type="checkbox" checked="checked" />
+                        <input type="checkbox" />
                         <span class="checkmark"></span>
                       </label>
                     </td>
@@ -643,7 +951,7 @@
                         <button type="button" class="btn" title="Ödəniş et">
                           <img src="/assets/images/icons/pay.svg" alt="#" />
                         </button>
-                        <button type="button" class="btn" title="Düzəliş et">
+                        <button type="button" class="btn btn_popup" title="Düzəliş et" data-id="modal-3">
                           <img src="/assets/images/icons/edit.svg" alt="#" />
                         </button>
                         <div
@@ -668,7 +976,7 @@
                   <tr>
                     <td>
                       <label class="checkbox_label">
-                        <input type="checkbox" checked="checked" />
+                        <input type="checkbox" />
                         <span class="checkmark"></span>
                       </label>
                     </td>
@@ -695,7 +1003,7 @@
                         <button type="button" class="btn" title="Ödəniş et">
                           <img src="/assets/images/icons/pay.svg" alt="#" />
                         </button>
-                        <button type="button" class="btn" title="Düzəliş et">
+                        <button type="button" class="btn btn_popup" title="Düzəliş et" data-id="modal-3">
                           <img src="/assets/images/icons/edit.svg" alt="#" />
                         </button>
                         <div
@@ -720,7 +1028,7 @@
                   <tr>
                     <td>
                       <label class="checkbox_label">
-                        <input type="checkbox" checked="checked" />
+                        <input type="checkbox" />
                         <span class="checkmark"></span>
                       </label>
                     </td>
@@ -747,7 +1055,7 @@
                         <button type="button" class="btn" title="Ödəniş et">
                           <img src="/assets/images/icons/pay.svg" alt="#" />
                         </button>
-                        <button type="button" class="btn" title="Düzəliş et">
+                        <button type="button" class="btn btn_popup" title="Düzəliş et" data-id="modal-3">
                           <img src="/assets/images/icons/edit.svg" alt="#" />
                         </button>
                         <div
@@ -772,7 +1080,7 @@
                   <tr>
                     <td>
                       <label class="checkbox_label">
-                        <input type="checkbox" checked="checked" />
+                        <input type="checkbox" />
                         <span class="checkmark"></span>
                       </label>
                     </td>
@@ -799,7 +1107,7 @@
                         <button type="button" class="btn" title="Ödəniş et">
                           <img src="/assets/images/icons/pay.svg" alt="#" />
                         </button>
-                        <button type="button" class="btn" title="Düzəliş et">
+                        <button type="button" class="btn btn_popup" title="Düzəliş et" data-id="modal-3">
                           <img src="/assets/images/icons/edit.svg" alt="#" />
                         </button>
                         <div
@@ -824,7 +1132,7 @@
                   <tr>
                     <td>
                       <label class="checkbox_label">
-                        <input type="checkbox" checked="checked" />
+                        <input type="checkbox" />
                         <span class="checkmark"></span>
                       </label>
                     </td>
@@ -851,7 +1159,7 @@
                         <button type="button" class="btn" title="Ödəniş et">
                           <img src="/assets/images/icons/pay.svg" alt="#" />
                         </button>
-                        <button type="button" class="btn" title="Düzəliş et">
+                        <button type="button" class="btn btn_popup" title="Düzəliş et" data-id="modal-3">
                           <img src="/assets/images/icons/edit.svg" alt="#" />
                         </button>
                         <div
@@ -876,7 +1184,7 @@
                   <tr>
                     <td>
                       <label class="checkbox_label">
-                        <input type="checkbox" checked="checked" />
+                        <input type="checkbox" />
                         <span class="checkmark"></span>
                       </label>
                     </td>
@@ -903,7 +1211,7 @@
                         <button type="button" class="btn" title="Ödəniş et">
                           <img src="/assets/images/icons/pay.svg" alt="#" />
                         </button>
-                        <button type="button" class="btn" title="Düzəliş et">
+                        <button type="button" class="btn btn_popup" title="Düzəliş et" data-id="modal-3">
                           <img src="/assets/images/icons/edit.svg" alt="#" />
                         </button>
                         <div
@@ -928,7 +1236,7 @@
                   <tr>
                     <td>
                       <label class="checkbox_label">
-                        <input type="checkbox" checked="checked" />
+                        <input type="checkbox" />
                         <span class="checkmark"></span>
                       </label>
                     </td>
@@ -955,7 +1263,7 @@
                         <button type="button" class="btn" title="Ödəniş et">
                           <img src="/assets/images/icons/pay.svg" alt="#" />
                         </button>
-                        <button type="button" class="btn" title="Düzəliş et">
+                        <button type="button" class="btn btn_popup" title="Düzəliş et" data-id="modal-3">
                           <img src="/assets/images/icons/edit.svg" alt="#" />
                         </button>
                         <div
@@ -980,7 +1288,7 @@
                   <tr>
                     <td>
                       <label class="checkbox_label">
-                        <input type="checkbox" checked="checked" />
+                        <input type="checkbox" />
                         <span class="checkmark"></span>
                       </label>
                     </td>
@@ -1007,7 +1315,7 @@
                         <button type="button" class="btn" title="Ödəniş et">
                           <img src="/assets/images/icons/pay.svg" alt="#" />
                         </button>
-                        <button type="button" class="btn" title="Düzəliş et">
+                        <button type="button" class="btn btn_popup" title="Düzəliş et" data-id="modal-3">
                           <img src="/assets/images/icons/edit.svg" alt="#" />
                         </button>
                         <div
@@ -1032,7 +1340,7 @@
                   <tr>
                     <td>
                       <label class="checkbox_label">
-                        <input type="checkbox" checked="checked" />
+                        <input type="checkbox" />
                         <span class="checkmark"></span>
                       </label>
                     </td>
@@ -1059,7 +1367,7 @@
                         <button type="button" class="btn" title="Ödəniş et">
                           <img src="/assets/images/icons/pay.svg" alt="#" />
                         </button>
-                        <button type="button" class="btn" title="Düzəliş et">
+                        <button type="button" class="btn btn_popup" title="Düzəliş et" data-id="modal-3">
                           <img src="/assets/images/icons/edit.svg" alt="#" />
                         </button>
                         <div
@@ -1084,7 +1392,7 @@
                   <tr>
                     <td>
                       <label class="checkbox_label">
-                        <input type="checkbox" checked="checked" />
+                        <input type="checkbox" />
                         <span class="checkmark"></span>
                       </label>
                     </td>
@@ -1111,7 +1419,7 @@
                         <button type="button" class="btn" title="Ödəniş et">
                           <img src="/assets/images/icons/pay.svg" alt="#" />
                         </button>
-                        <button type="button" class="btn" title="Düzəliş et">
+                        <button type="button" class="btn btn_popup" title="Düzəliş et" data-id="modal-3">
                           <img src="/assets/images/icons/edit.svg" alt="#" />
                         </button>
                         <div
@@ -1136,7 +1444,7 @@
                   <tr>
                     <td>
                       <label class="checkbox_label">
-                        <input type="checkbox" checked="checked" />
+                        <input type="checkbox" />
                         <span class="checkmark"></span>
                       </label>
                     </td>
@@ -1163,7 +1471,7 @@
                         <button type="button" class="btn" title="Ödəniş et">
                           <img src="/assets/images/icons/pay.svg" alt="#" />
                         </button>
-                        <button type="button" class="btn" title="Düzəliş et">
+                        <button type="button" class="btn btn_popup" title="Düzəliş et" data-id="modal-3">
                           <img src="/assets/images/icons/edit.svg" alt="#" />
                         </button>
                         <div
@@ -1185,54 +1493,55 @@
                       </div>
                     </td>
                   </tr>
+                </table>
+              </div>
+              <div class="table_declaration_mobile">
+                <select class="operations_select">
+                  <option value="#">Bütün əməliyyatlar</option>
+                </select>
+                <table>
+                  <tr>
+                    <th></th>
+                    <th>Kod</th>
+                    <th>Status</th>
+                    <th>Kargo...</th>
+                  </tr>
                   <tr>
                     <td>
                       <label class="checkbox_label">
-                        <input type="checkbox" checked="checked" />
+                        <input type="checkbox" />
                         <span class="checkmark"></span>
                       </label>
                     </td>
-                    <td>12233243532</td>
-                    <td>LC Waikiki</td>
+                    <td>122332435</td>
+                    <td>Ödənilib</td>
                     <td class="price">
-                      <span>123.45</span>
-                      <img src="/assets/images/icons/tl.svg" alt="#" />
-                    </td>
-                    <td>12234553</td>
-                    <td>123 kq</td>
-                    <td>4.84 $</td>
-                    <td>Nərimanov ofisində</td>
-                    <td>Bəyan edilib</td>
-                    <td>Koynek Jeans</td>
-                    <td>
-                      <a href="#" download="#" class="btn_download">
-                        Endir
-                        <img src="/assets/images/icons/download.svg" alt="#" />
-                      </a>
-                    </td>
-                    <td>
-                      <div class="buttons">
-                        <button type="button" class="btn" title="Ödəniş et">
-                          <img src="/assets/images/icons/pay.svg" alt="#" />
-                        </button>
-                        <button type="button" class="btn" title="Düzəliş et">
-                          <img src="/assets/images/icons/edit.svg" alt="#" />
-                        </button>
-                        <div
-                          type="button"
-                          class="btn popover_wrapper left_popover"
-                          title="Ətraflı"
-                        >
-                          <img src="/assets/images/icons/dots.svg" alt="#" />
-                          <div class="popover_content">
-                            <button
-                              class="btn_popup"
-                              data-id="modal-1"
-                              type="button"
-                            >
-                              Ətraflı
-                            </button>
-                          </div>
+                      <div class="number">
+                        <span>1.50</span>
+                        <img src="/assets/images/icons/manat.svg" alt="#" />
+                      </div>
+                      <div
+                        type="button"
+                        class="btn_more popover_wrapper left_popover"
+                        title="Ətraflı"
+                      >
+                        <img src="/assets/images/icons/dots.svg" alt="#" />
+                        <div class="popover_content">
+                          <button
+                            class="btn_popup btn_popover"
+                            data-id="modal-2"
+                            type="button"
+                          >
+                            Ətraflı
+                          </button>
+                          <a href="#" class="btn_popover">Ödəniş et</a>
+                          <button
+                            class="btn_popup btn_popover"
+                            data-id="modal-3"
+                            type="button"
+                          >
+                            Redaktə et
+                          </button>
                         </div>
                       </div>
                     </td>
@@ -1240,51 +1549,39 @@
                   <tr>
                     <td>
                       <label class="checkbox_label">
-                        <input type="checkbox" checked="checked" />
+                        <input type="checkbox" />
                         <span class="checkmark"></span>
                       </label>
                     </td>
-                    <td>12233243532</td>
-                    <td>LC Waikiki</td>
+                    <td>122332435</td>
+                    <td>Ödənilib</td>
                     <td class="price">
-                      <span>123.45</span>
-                      <img src="/assets/images/icons/tl.svg" alt="#" />
-                    </td>
-                    <td>12234553</td>
-                    <td>123 kq</td>
-                    <td>4.84 $</td>
-                    <td>Nərimanov ofisində</td>
-                    <td>Bəyan edilib</td>
-                    <td>Koynek Jeans</td>
-                    <td>
-                      <a href="#" download="#" class="btn_download">
-                        Endir
-                        <img src="/assets/images/icons/download.svg" alt="#" />
-                      </a>
-                    </td>
-                    <td>
-                      <div class="buttons">
-                        <button type="button" class="btn" title="Ödəniş et">
-                          <img src="/assets/images/icons/pay.svg" alt="#" />
-                        </button>
-                        <button type="button" class="btn" title="Düzəliş et">
-                          <img src="/assets/images/icons/edit.svg" alt="#" />
-                        </button>
-                        <div
-                          type="button"
-                          class="btn popover_wrapper left_popover"
-                          title="Ətraflı"
-                        >
-                          <img src="/assets/images/icons/dots.svg" alt="#" />
-                          <div class="popover_content">
-                            <button
-                              class="btn_popup"
-                              data-id="modal-1"
-                              type="button"
-                            >
-                              Ətraflı
-                            </button>
-                          </div>
+                      <div class="number">
+                        <span>1.50</span>
+                        <img src="/assets/images/icons/manat.svg" alt="#" />
+                      </div>
+                      <div
+                        type="button"
+                        class="btn_more popover_wrapper left_popover"
+                        title="Ətraflı"
+                      >
+                        <img src="/assets/images/icons/dots.svg" alt="#" />
+                        <div class="popover_content">
+                          <button
+                            class="btn_popup btn_popover"
+                            data-id="modal-2"
+                            type="button"
+                          >
+                            Ətraflı
+                          </button>
+                          <a href="#" class="btn_popover">Ödəniş et</a>
+                          <button
+                            class="btn_popup btn_popover"
+                            data-id="modal-3"
+                            type="button"
+                          >
+                            Redaktə et
+                          </button>
                         </div>
                       </div>
                     </td>
@@ -1292,51 +1589,39 @@
                   <tr>
                     <td>
                       <label class="checkbox_label">
-                        <input type="checkbox" checked="checked" />
+                        <input type="checkbox" />
                         <span class="checkmark"></span>
                       </label>
                     </td>
-                    <td>12233243532</td>
-                    <td>LC Waikiki</td>
+                    <td>122332435</td>
+                    <td>Ödənilib</td>
                     <td class="price">
-                      <span>123.45</span>
-                      <img src="/assets/images/icons/tl.svg" alt="#" />
-                    </td>
-                    <td>12234553</td>
-                    <td>123 kq</td>
-                    <td>4.84 $</td>
-                    <td>Nərimanov ofisində</td>
-                    <td>Bəyan edilib</td>
-                    <td>Koynek Jeans</td>
-                    <td>
-                      <a href="#" download="#" class="btn_download">
-                        Endir
-                        <img src="/assets/images/icons/download.svg" alt="#" />
-                      </a>
-                    </td>
-                    <td>
-                      <div class="buttons">
-                        <button type="button" class="btn" title="Ödəniş et">
-                          <img src="/assets/images/icons/pay.svg" alt="#" />
-                        </button>
-                        <button type="button" class="btn" title="Düzəliş et">
-                          <img src="/assets/images/icons/edit.svg" alt="#" />
-                        </button>
-                        <div
-                          type="button"
-                          class="btn popover_wrapper left_popover"
-                          title="Ətraflı"
-                        >
-                          <img src="/assets/images/icons/dots.svg" alt="#" />
-                          <div class="popover_content">
-                            <button
-                              class="btn_popup"
-                              data-id="modal-1"
-                              type="button"
-                            >
-                              Ətraflı
-                            </button>
-                          </div>
+                      <div class="number">
+                        <span>1.50</span>
+                        <img src="/assets/images/icons/manat.svg" alt="#" />
+                      </div>
+                      <div
+                        type="button"
+                        class="btn_more popover_wrapper left_popover"
+                        title="Ətraflı"
+                      >
+                        <img src="/assets/images/icons/dots.svg" alt="#" />
+                        <div class="popover_content">
+                          <button
+                            class="btn_popup btn_popover"
+                            data-id="modal-2"
+                            type="button"
+                          >
+                            Ətraflı
+                          </button>
+                          <a href="#" class="btn_popover">Ödəniş et</a>
+                          <button
+                            class="btn_popup btn_popover"
+                            data-id="modal-3"
+                            type="button"
+                          >
+                            Redaktə et
+                          </button>
                         </div>
                       </div>
                     </td>
@@ -1344,51 +1629,119 @@
                   <tr>
                     <td>
                       <label class="checkbox_label">
-                        <input type="checkbox" checked="checked" />
+                        <input type="checkbox" />
                         <span class="checkmark"></span>
                       </label>
                     </td>
-                    <td>12233243532</td>
-                    <td>LC Waikiki</td>
+                    <td>122332435</td>
+                    <td>Ödənilib</td>
                     <td class="price">
-                      <span>123.45</span>
-                      <img src="/assets/images/icons/tl.svg" alt="#" />
+                      <div class="number">
+                        <span>1.50</span>
+                        <img src="/assets/images/icons/manat.svg" alt="#" />
+                      </div>
+                      <div
+                        type="button"
+                        class="btn_more popover_wrapper left_popover"
+                        title="Ətraflı"
+                      >
+                        <img src="/assets/images/icons/dots.svg" alt="#" />
+                        <div class="popover_content">
+                          <button
+                            class="btn_popup btn_popover"
+                            data-id="modal-2"
+                            type="button"
+                          >
+                            Ətraflı
+                          </button>
+                          <a href="#" class="btn_popover">Ödəniş et</a>
+                          <button
+                            class="btn_popup btn_popover"
+                            data-id="modal-3"
+                            type="button"
+                          >
+                            Redaktə et
+                          </button>
+                        </div>
+                      </div>
                     </td>
-                    <td>12234553</td>
-                    <td>123 kq</td>
-                    <td>4.84 $</td>
-                    <td>Nərimanov ofisində</td>
-                    <td>Bəyan edilib</td>
-                    <td>Koynek Jeans</td>
+                  </tr>
+                  <tr>
                     <td>
-                      <a href="#" download="#" class="btn_download">
-                        Endir
-                        <img src="/assets/images/icons/download.svg" alt="#" />
-                      </a>
+                      <label class="checkbox_label">
+                        <input type="checkbox" />
+                        <span class="checkmark"></span>
+                      </label>
                     </td>
+                    <td>122332435</td>
+                    <td>Ödənilib</td>
+                    <td class="price">
+                      <div class="number">
+                        <span>1.50</span>
+                        <img src="/assets/images/icons/manat.svg" alt="#" />
+                      </div>
+                      <div
+                        type="button"
+                        class="btn_more popover_wrapper left_popover"
+                        title="Ətraflı"
+                      >
+                        <img src="/assets/images/icons/dots.svg" alt="#" />
+                        <div class="popover_content">
+                          <button
+                            class="btn_popup btn_popover"
+                            data-id="modal-2"
+                            type="button"
+                          >
+                            Ətraflı
+                          </button>
+                          <a href="#" class="btn_popover">Ödəniş et</a>
+                          <button
+                            class="btn_popup btn_popover"
+                            data-id="modal-3"
+                            type="button"
+                          >
+                            Redaktə et
+                          </button>
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
                     <td>
-                      <div class="buttons">
-                        <button type="button" class="btn" title="Ödəniş et">
-                          <img src="/assets/images/icons/pay.svg" alt="#" />
-                        </button>
-                        <button type="button" class="btn" title="Düzəliş et">
-                          <img src="/assets/images/icons/edit.svg" alt="#" />
-                        </button>
-                        <div
-                          type="button"
-                          class="btn popover_wrapper left_popover"
-                          title="Ətraflı"
-                        >
-                          <img src="/assets/images/icons/dots.svg" alt="#" />
-                          <div class="popover_content">
-                            <button
-                              class="btn_popup"
-                              data-id="modal-1"
-                              type="button"
-                            >
-                              Ətraflı
-                            </button>
-                          </div>
+                      <label class="checkbox_label">
+                        <input type="checkbox" />
+                        <span class="checkmark"></span>
+                      </label>
+                    </td>
+                    <td>122332435</td>
+                    <td>Ödənilib</td>
+                    <td class="price">
+                      <div class="number">
+                        <span>1.50</span>
+                        <img src="/assets/images/icons/manat.svg" alt="#" />
+                      </div>
+                      <div
+                        type="button"
+                        class="btn_more popover_wrapper left_popover"
+                        title="Ətraflı"
+                      >
+                        <img src="/assets/images/icons/dots.svg" alt="#" />
+                        <div class="popover_content">
+                          <button
+                            class="btn_popup btn_popover"
+                            data-id="modal-2"
+                            type="button"
+                          >
+                            Ətraflı
+                          </button>
+                          <a href="#" class="btn_popover">Ödəniş et</a>
+                          <button
+                            class="btn_popup btn_popover"
+                            data-id="modal-3"
+                            type="button"
+                          >
+                            Redaktə et
+                          </button>
                         </div>
                       </div>
                     </td>
@@ -1436,6 +1789,9 @@
                   </a>
                 </li>
               </ul>
+              <div class="toggle_pay">
+                <button type="button" class="pay_btn">Ödəmə</button>
+              </div>
               <select class="operations_select">
                 <option value="#">Bütün əməliyyatlar</option>
               </select>
@@ -1676,6 +2032,177 @@
                 <td class="success">Ödənilib</td>
               </tr>
             </table>
+          </div>
+          <button type="button" class="cancell close_modal">
+            <img
+              class="injectable"
+              src="/assets/images/icons/closeModal.svg"
+              alt="#"
+            />
+          </button>
+        </div>
+      </div>
+    </div>
+    <div id="modal-2" class="my_modal">
+      <div class="modal_center">
+        <div class="modal_inner courier_modal">
+          <h3 class="title">Ətraflı</h3>
+          <div class="courier_info">
+            <div class="info_row">
+              <span class="title_info">Kod</span>
+              <span>KGF-5020298081</span>
+            </div>
+            <div class="info_row">
+              <span class="title_info">Mağaza</span>
+              <span>LC Waikiki</span>
+            </div>
+            <div class="info_row">
+              <span class="title_info">Faktura qiyməti</span>
+              <span
+                >109.99 <img src="/assets/images/icons/manat.svg" alt="#"
+              /></span>
+            </div>
+            <div class="info_row">
+              <span class="title_info">Kargo takip NO.</span>
+              <span>1323434234</span>
+            </div>
+            <div class="info_row">
+              <span class="title_info">Çəki</span>
+              <span>12 kq</span>
+            </div>
+            <div class="info_row">
+              <span class="title_info">Çatdırılma</span>
+              <span>23 $</span>
+            </div>
+            <div class="info_row">
+              <span class="title_info">Status</span>
+              <span>Nərimanov ofisində</span>
+            </div>
+            <div class="info_row">
+              <span class="title_info">SC status</span>
+              <span>Bəyan edilməyib</span>
+            </div>
+            <div class="info_row">
+              <span class="title_info">Qeyd</span>
+              <span>Köynək, jeans</span>
+            </div>
+            <div class="info_row">
+              <span class="title_info">Faktura</span>
+              <a href="#" download="#" class="download">
+                Endir
+                <img src="/assets/images/icons/download.svg" alt="#" />
+              </a>
+            </div>
+            <div class="info_row">
+              <span class="title_info">Məhsulun sayı</span>
+              <span>12</span>
+            </div>
+            <div class="info_row">
+              <span class="title_info">Əlavə xidmətlər $</span>
+              <span>0</span>
+            </div>
+            <div class="info_row">
+              <span class="title_info">Kateqoriya</span>
+              <span>Geyim</span>
+            </div>
+            <div class="info_row">
+              <span class="title_info">Ödəmə</span>
+              <span class="success">Ödənilib</span>
+            </div>
+            <div class="info_row">
+              <span class="title_info">Əməliyyatlar</span>
+            </div>
+          </div>
+          <div class="buttons">
+            <button type="button" class="btn" title="Ödəniş et">
+              <img src="/assets/images/icons/pay.svg" alt="#" />
+            </button>
+            <button type="button" class="btn btn_popup" title="Düzəliş et" data-id="modal-3">
+              <img src="/assets/images/icons/edit.svg" alt="#" />
+            </button>
+          </div>
+          <button type="button" class="cancell close_modal">
+            <img
+              class="injectable"
+              src="/assets/images/icons/closeModal.svg"
+              alt="#"
+            />
+          </button>
+        </div>
+      </div>
+    </div>
+    <div id="modal-3" class="my_modal">
+      <div class="modal_center">
+        <div class="modal_inner facture_edit_modal">
+          <h3 class="title">Düzəliş</h3>
+          <div class="inputs">
+            <div class="input">
+              <label>Kod</label>
+              <span class="value">KGL-12233243532</span>
+            </div>
+            <div class="input disable">
+              <label>Mağaza</label>
+              <span class="value">LC Waikiki</span>
+            </div>
+            <div class="input">
+              <label for="price">
+                Faktura qiyməti
+                <img src="/assets/images/icons/tl.svg" alt="#" />
+              </label>
+              <input type="text" id="price" placeholder="Qiymət əlavə et" />
+            </div>
+            <div class="input disable">
+              <label>Kargo takip NO.</label>
+              <span class="value">1232345</span>
+            </div>
+            <div class="input disable">
+              <label>Çəki (kq)</label>
+              <span class="value">3</span>
+            </div>
+            <div class="input disable">
+              <label>Çatdırılma $</label>
+              <span class="value">4.45</span>
+            </div>
+            <div class="input disable">
+              <label>Status</label>
+              <span class="value">Türkiyə ofisində</span>
+            </div>
+            <div class="input disable">
+              <label>SC status</label>
+              <span class="value error">Bəyan edilməyib</span>
+            </div>
+            <div class="input disable">
+              <label>Qeyd</label>
+              <span class="value">Köynək, Jeans</span>
+            </div>
+            <div class="input">
+              <label>Faktura</label>
+              <div class="facture_btn">
+                <span class="fileName">Faktura əlavə et</span>
+                <img src="/assets/images/icons/download.svg" alt="#" />
+                <input id="factureFile" type="file" />
+              </div>
+            </div>
+            <div class="input">
+              <label for="count">Məhsulun sayı</label>
+              <input type="number" id="count" value="3" />
+            </div>
+            <div class="input disable">
+              <label>Əlavə xidmətlər$</label>
+              <span class="value">123.5</span>
+            </div>
+            <div class="input disable">
+              <label>Kateqoriya</label>
+              <span class="value">Geyim</span>
+            </div>
+            <div class="input disable">
+              <label>Daşıma haqqı</label>
+              <span class="value success">Geyim</span>
+            </div>
+          </div>
+          <div class="foot_buttons">
+            <button type="button" class="black_btn close_modal">İmtina et</button>
+            <button type="button" class="black_btn">Əlavə et</button>
           </div>
           <button type="button" class="cancell close_modal">
             <img

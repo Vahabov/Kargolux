@@ -1,6 +1,7 @@
 $(function () {
   //convert img to svg
   SVGInject(document.querySelectorAll("img.injectable"));
+
   if ($(".owl-carousel")[0]) {
     $(".main_slider_section .owl-carousel").owlCarousel({
       margin: 0,
@@ -94,11 +95,21 @@ $(function () {
     }
   });
   var modalCenter = $(".modal_center");
+  var notifyModal = $(".overlay_modal");
   for (let i = 0; i < modalCenter.length; i++) {
     const element = modalCenter[i];
     $(window).click(function (e) {
       if (e.target == element) {
         $(".my_modal").fadeOut("fast");
+      }
+    });
+  }
+  for (let i = 0; i < notifyModal.length; i++) {
+    const element = notifyModal[i];
+    $(window).click(function (e) {
+      if (e.target == element) {
+        $(".notify_modal").fadeOut("fast");
+        $("body").removeClass("hidden");
       }
     });
   }
@@ -215,4 +226,28 @@ $(function () {
   if ($("#messagesBlock")[0]) {
     $("#messagesBlock").scrollTop($("#messages")[0].scrollHeight + 2);
   }
+
+  $(".declarations_main .checkbox_label").on("click", function () {
+    let arrCheck = $(".declarations_main .checkbox_label input");
+    if ($(arrCheck).is(":checked")) {
+      $(".toggle_pay").fadeIn("fast");
+    } else {
+      $(".toggle_pay").fadeOut("fast");
+    }
+  });
+
+  $("#factureFile").change(function () {
+    var file = $(this)[0].files[0].name;
+    $(this).parent().find(".fileName").html(file);
+  });
+
+  $(".notify_btn").on("click", function () {
+    $("body").addClass("hidden");
+    $(this).find(".notify_modal").fadeIn("fast");
+  });
+  $(".close_notify_modal").on("click", function (e) {
+    e.stopPropagation();
+    $("body").removeClass("hidden");
+    $(".notify_modal").fadeOut("fast");
+  });
 });

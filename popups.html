@@ -5,7 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Home Page</title>
     <link rel="stylesheet" href="/assets/css/main.css" />
+    <link rel="stylesheet" href="/assets/css/main.css.map" />
     <link rel="stylesheet" href="/assets/css/media.css" />
+    <link rel="stylesheet" href="/assets/css/media.css.map" />
     <link href="/assets/css/owl.carousel.css" rel="stylesheet" />
     <link href="/assets/css/owl.theme.default.min.css" rel="stylesheet" />
     <style>
@@ -56,9 +58,11 @@
           <a href="/" class="logo">
             <img src="/assets/images/icons/logo.svg" alt="#" />
           </a>
-          <button type="button" class="mobile_btn_menu">
-            <img src="/assets/images/icons/hamburger.svg" alt="#" />
-          </button>
+          <div class="mobile_right">
+            <button type="button" class="mobile_btn_menu">
+              <img src="/assets/images/icons/hamburger.svg" alt="#" />
+            </button>
+          </div>
           <ul class="navbar">
             <li>
               <a href="/"> Ana səhifə </a>
@@ -236,6 +240,24 @@
         </button>
         <button type="button" class="btn_popup test_btn" data-id="modal-7">
           Faktura əlavə et
+        </button>
+        <button type="button" class="btn_popup test_btn" data-id="modal-8">
+          Baglamalarim etrafli
+        </button>
+        <button type="button" class="btn_popup test_btn" data-id="modal-9">
+          Baglamalarim mobile etrafli
+        </button>
+        <button type="button" class="btn_popup test_btn" data-id="modal-10">
+          Kuryer etrafli
+        </button>
+        <button type="button" class="btn_popup test_btn" data-id="modal-11">
+          Sifarishler etrafli
+        </button>
+        <button type="button" class="btn_popup test_btn" data-id="modal-12">
+          Faktura duzelis
+        </button>
+        <button type="button" class="btn_popup test_btn" data-id="modal-13">
+          Diqqət - Bəyannamə yükləməklə bağlı məlumat
         </button>
       </div>
     </main>
@@ -644,12 +666,337 @@
         <div class="modal_inner facture_modal">
           <h3 class="title">Faktura əlavə et</h3>
           <form action="#">
-            <input type="text" placeholder="KGL-XXXXXXXXXXXX">
+            <input type="text" placeholder="KGL-XXXXXXXXXXXX" />
             <button type="submit" class="btn_submit">
-              <img src="/assets/images/icons/search.svg" alt="#">
+              <img src="/assets/images/icons/search.svg" alt="#" />
             </button>
           </form>
-          <span class="info">Xahiş olunur faktura kodunu düzgün daxil edin</span>
+          <span class="info"
+            >Xahiş olunur faktura kodunu düzgün daxil edin</span
+          >
+          <button type="button" class="cancell close_modal">
+            <img
+              class="injectable"
+              src="/assets/images/icons/closeModal.svg"
+              alt="#"
+            />
+          </button>
+        </div>
+      </div>
+    </div>
+    <div id="modal-8" class="my_modal">
+      <div class="modal_center">
+        <div class="modal_inner declarations_desktop_modal">
+          <div class="table">
+            <table>
+              <tr>
+                <th>Məhsulun sayı</th>
+                <th>Əlavə xidmətlər $</th>
+                <th>Kateqoriya</th>
+                <th>Ödəmə</th>
+              </tr>
+              <tr>
+                <td>1</td>
+                <td>0</td>
+                <td>Geyim</td>
+                <td class="success">Ödənilib</td>
+              </tr>
+            </table>
+          </div>
+          <button type="button" class="cancell close_modal">
+            <img
+              class="injectable"
+              src="/assets/images/icons/closeModal.svg"
+              alt="#"
+            />
+          </button>
+        </div>
+      </div>
+    </div>
+    <div id="modal-9" class="my_modal">
+      <div class="modal_center">
+        <div class="modal_inner courier_modal">
+          <h3 class="title">Ətraflı</h3>
+          <div class="courier_info">
+            <div class="info_row">
+              <span class="title_info">Kod</span>
+              <span>KGF-5020298081</span>
+            </div>
+            <div class="info_row">
+              <span class="title_info">Mağaza</span>
+              <span>LC Waikiki</span>
+            </div>
+            <div class="info_row">
+              <span class="title_info">Faktura qiyməti</span>
+              <span
+                >109.99 <img src="/assets/images/icons/manat.svg" alt="#"
+              /></span>
+            </div>
+            <div class="info_row">
+              <span class="title_info">Kargo takip NO.</span>
+              <span>1323434234</span>
+            </div>
+            <div class="info_row">
+              <span class="title_info">Çəki</span>
+              <span>12 kq</span>
+            </div>
+            <div class="info_row">
+              <span class="title_info">Çatdırılma</span>
+              <span>23 $</span>
+            </div>
+            <div class="info_row">
+              <span class="title_info">Status</span>
+              <span>Nərimanov ofisində</span>
+            </div>
+            <div class="info_row">
+              <span class="title_info">SC status</span>
+              <span>Bəyan edilməyib</span>
+            </div>
+            <div class="info_row">
+              <span class="title_info">Qeyd</span>
+              <span>Köynək, jeans</span>
+            </div>
+            <div class="info_row">
+              <span class="title_info">Faktura</span>
+              <a href="#" download="#" class="download">
+                Endir
+                <img src="/assets/images/icons/download.svg" alt="#" />
+              </a>
+            </div>
+            <div class="info_row">
+              <span class="title_info">Məhsulun sayı</span>
+              <span>12</span>
+            </div>
+            <div class="info_row">
+              <span class="title_info">Əlavə xidmətlər $</span>
+              <span>0</span>
+            </div>
+            <div class="info_row">
+              <span class="title_info">Kateqoriya</span>
+              <span>Geyim</span>
+            </div>
+            <div class="info_row">
+              <span class="title_info">Ödəmə</span>
+              <span class="success">Ödənilib</span>
+            </div>
+            <div class="info_row">
+              <span class="title_info">Əməliyyatlar</span>
+            </div>
+          </div>
+          <div class="buttons">
+            <button type="button" class="btn" title="Ödəniş et">
+              <img src="/assets/images/icons/pay.svg" alt="#" />
+            </button>
+            <button
+              type="button"
+              class="btn btn_popup"
+              title="Düzəliş et"
+              data-id="modal-12"
+            >
+              <img src="/assets/images/icons/edit.svg" alt="#" />
+            </button>
+          </div>
+          <button type="button" class="cancell close_modal">
+            <img
+              class="injectable"
+              src="/assets/images/icons/closeModal.svg"
+              alt="#"
+            />
+          </button>
+        </div>
+      </div>
+    </div>
+    <div id="modal-10" class="my_modal">
+      <div class="modal_center">
+        <div class="modal_inner courier_modal">
+          <h3 class="title">Ətraflı</h3>
+          <div class="courier_info">
+            <div class="info_row">
+              <span class="title_info">Bəyannamə</span>
+              <span>123343545</span>
+            </div>
+            <div class="info_row">
+              <span class="title_info">Rayon</span>
+              <span>Suraxanı rayonu</span>
+            </div>
+            <div class="info_row">
+              <span class="title_info">Kuryerin qiyməti</span>
+              <span
+                >2.50 <img src="/assets/images/icons/manat.svg" alt="#"
+              /></span>
+            </div>
+            <div class="info_row">
+              <span class="title_info">Təhvil alan</span>
+              <span>Shahin Aliyev</span>
+            </div>
+            <div class="info_row">
+              <span class="title_info">Ünvan</span>
+              <span>Y. Gunesli q. massiv “Q” bina 20 menzil 40</span>
+            </div>
+            <div class="info_row">
+              <span class="title_info">Əlavə məlumat</span>
+              <span>Y. Gunesli q. massiv “Q”</span>
+            </div>
+            <div class="info_row">
+              <span class="title_info">Telefon</span>
+              <span>0508500955</span>
+            </div>
+            <div class="info_row">
+              <span class="title_info">Status</span>
+              <span>Kuryer bağlamanı təhvil verdi</span>
+            </div>
+            <div class="info_row">
+              <span class="title_info">Əməliyyat</span>
+              <span class="success">Ödənilib</span>
+            </div>
+          </div>
+          <button type="button" class="cancell close_modal">
+            <img
+              class="injectable"
+              src="/assets/images/icons/closeModal.svg"
+              alt="#"
+            />
+          </button>
+        </div>
+      </div>
+    </div>
+    <div id="modal-11" class="my_modal">
+      <div class="modal_center">
+        <div class="modal_inner declarations_desktop_modal">
+          <div class="table">
+            <table>
+              <tr>
+                <th>Məhsulun sayı</th>
+                <th>Əlavə xidmətlər $</th>
+                <th>Kateqoriya</th>
+                <th>Ödəmə</th>
+                <th>Əməliyyat</th>
+              </tr>
+              <tr>
+                <td>1</td>
+                <td>0</td>
+                <td>Geyim</td>
+                <td class="success">Ödənilib</td>
+                <td>
+                  <button type="button">
+                    <img src="/assets/images/icons/trash.svg" alt="#" />
+                  </button>
+                </td>
+              </tr>
+            </table>
+          </div>
+          <button type="button" class="cancell close_modal">
+            <img
+              class="injectable"
+              src="/assets/images/icons/closeModal.svg"
+              alt="#"
+            />
+          </button>
+        </div>
+      </div>
+    </div>
+    <div id="modal-12" class="my_modal">
+      <div class="modal_center">
+        <div class="modal_inner facture_edit_modal">
+          <h3 class="title">Düzəliş</h3>
+          <div class="inputs">
+            <div class="input">
+              <label>Kod</label>
+              <span class="value">KGL-12233243532</span>
+            </div>
+            <div class="input disable">
+              <label>Mağaza</label>
+              <span class="value">LC Waikiki</span>
+            </div>
+            <div class="input">
+              <label for="price">
+                Faktura qiyməti
+                <img src="/assets/images/icons/tl.svg" alt="#" />
+              </label>
+              <input type="text" id="price" placeholder="Qiymət əlavə et" />
+            </div>
+            <div class="input disable">
+              <label>Kargo takip NO.</label>
+              <span class="value">1232345</span>
+            </div>
+            <div class="input disable">
+              <label>Çəki (kq)</label>
+              <span class="value">3</span>
+            </div>
+            <div class="input disable">
+              <label>Çatdırılma $</label>
+              <span class="value">4.45</span>
+            </div>
+            <div class="input disable">
+              <label>Status</label>
+              <span class="value">Türkiyə ofisində</span>
+            </div>
+            <div class="input disable">
+              <label>SC status</label>
+              <span class="value error">Bəyan edilməyib</span>
+            </div>
+            <div class="input disable">
+              <label>Qeyd</label>
+              <span class="value">Köynək, Jeans</span>
+            </div>
+            <div class="input">
+              <label>Faktura</label>
+              <div class="facture_btn">
+                <span class="fileName">Faktura əlavə et</span>
+                <img src="/assets/images/icons/download.svg" alt="#" />
+                <input id="factureFile" type="file" />
+              </div>
+            </div>
+            <div class="input">
+              <label for="count">Məhsulun sayı</label>
+              <input type="number" id="count" value="3" />
+            </div>
+            <div class="input disable">
+              <label>Əlavə xidmətlər$</label>
+              <span class="value">123.5</span>
+            </div>
+            <div class="input disable">
+              <label>Kateqoriya</label>
+              <span class="value">Geyim</span>
+            </div>
+            <div class="input disable">
+              <label>Daşıma haqqı</label>
+              <span class="value success">Geyim</span>
+            </div>
+          </div>
+          <div class="foot_buttons">
+            <button type="button" class="black_btn">Əlavə et</button>
+          </div>
+          <button type="button" class="cancell close_modal">
+            <img
+              class="injectable"
+              src="/assets/images/icons/closeModal.svg"
+              alt="#"
+            />
+          </button>
+        </div>
+      </div>
+    </div>
+    <div id="modal-13" class="my_modal">
+      <div class="modal_center">
+        <div class="modal_inner how_to_order">
+          <h3 class="title">Diqqət - Bəyannamə yükləməklə bağlı məlumat</h3>
+          <div class="description">
+            Məhsulları birbaşa özü alan müştərilərin nəzərinə Kargolux saytında
+            şəxsi kabinetinizə daxil olaraq bəyannamə yükləməniz vacibdir.Əks
+            halda məhsullarınız Türkiyə anbarından göndərilməyəcək! Bəyannamə
+            yükləməklə bağlı ətraflı video təlimat.
+          </div>
+          <div class="video">
+            <iframe
+              class="element"
+              src="https://www.youtube.com/embed/pbMwTqkKSps"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+          </div>
           <button type="button" class="cancell close_modal">
             <img
               class="injectable"
