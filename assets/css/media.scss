@@ -893,6 +893,7 @@ $siteRadius5: 5px;
                 float: none !important;
                 margin-bottom: 0px !important;
                 margin-right: 16px;
+                overflow: hidden;
                 .top_overlay {
                   padding: 13px;
                   width: 100%;
@@ -1399,6 +1400,32 @@ $siteRadius5: 5px;
           padding: 23px 16px;
           .element{
             height: 260px;
+          }
+        }
+      }
+      .news_in_section {
+        .container {
+          .news {
+            flex-direction: column;
+            .img{
+              width: 100%;
+              height: 65vw;
+              margin-bottom: 40px;
+            }
+            .content{
+              width: 100%;
+              .news_text{
+                max-height: 100%;
+                padding-right: 0px;
+                &::-webkit-scrollbar{
+                  display: none;
+                  width: 0px;
+                }
+              }
+              .date{
+                margin-top: 10px;
+              }
+            }
           }
         }
       }

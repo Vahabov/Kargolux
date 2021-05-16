@@ -271,7 +271,7 @@ body {
         top: 20px;
         right: -72px;
         z-index: 100;
-        max-height: 80vh;
+        max-height: 75vh;
         overflow: scroll;
         &::-webkit-scrollbar {
           width: 0px;
@@ -4072,6 +4072,75 @@ body {
           width: 100%;
           height: 357px;
           border-radius: $siteRadius10;
+        }
+      }
+    }
+    .news_in_section{
+      .container{
+        .news{
+          @include flex-between(flex);
+          align-items: flex-start;
+          .img{
+            height: 358px;
+            width: 30%;
+            overflow: hidden;
+            border-radius: $siteRadius10;
+            img{
+              width: 100%;
+              height: 100%;
+              object-fit: cover;
+            }
+          }
+          .content{
+            width: 66.5%;
+            .title{
+              font-family: $extraBold;
+              font-size: 22px;
+              margin-bottom: 10px;
+              color: $siteColor2;
+            }
+            .news_text{
+              max-height: 265px;
+              overflow-y: scroll;
+              overflow-x: hidden;
+              padding-right: 15px;
+              &::-webkit-scrollbar {
+                width: 2px;
+                position: absolute;
+              }
+              &::-webkit-scrollbar-track {
+                border-radius: $siteRadius5;
+                background-color: #c4c4c4;
+              }
+              &::-webkit-scrollbar-thumb {
+                background: $textColor;
+                border-radius: $siteRadius5;
+              }
+              &::-webkit-scrollbar-thumb:hover {
+                background: $siteColor;
+              }
+              *{
+                font-family: $regular;
+                font-size: 14px;
+                line-height: 22px;
+              }
+              p{
+                margin-bottom: 20px;
+              }
+            }
+            .date{
+              margin-top: 22px;
+              img{
+                width: 13px;
+                height: 14px;
+                margin-right: 5px;
+              }
+              span{
+                font-size: 14px;
+                color: $siteColor;
+              }
+            }
+          }
         }
       }
     }
