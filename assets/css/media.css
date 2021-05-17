@@ -445,7 +445,7 @@
   }
   body main .main_slider_section .container .owl-carousel .owl-nav {
     top: auto;
-    bottom: 100px;
+    bottom: 60px;
     -webkit-transform: none;
             transform: none;
     display: -webkit-box;
