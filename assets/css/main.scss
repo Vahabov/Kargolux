@@ -2897,6 +2897,7 @@ body {
           display: flex;
           justify-content: space-between;
           transform: translateY(-50%);
+          z-index: -1;
           button {
             width: 30px;
             height: 30px;
@@ -2927,7 +2928,6 @@ body {
           bottom: -70px;
           display: flex;
           justify-content: center;
-          z-index: -1;
           button.owl-dot {
             width: 15px;
             height: 15px;

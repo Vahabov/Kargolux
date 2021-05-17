@@ -4267,6 +4267,7 @@ body main .customer_ratings_section .container .owl-nav {
           justify-content: space-between;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
+  z-index: -1;
 }
 
 body main .customer_ratings_section .container .owl-nav button {
@@ -4307,7 +4308,6 @@ body main .customer_ratings_section .container .owl-dots {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  z-index: -1;
 }
 
 body main .customer_ratings_section .container .owl-dots button.owl-dot {
