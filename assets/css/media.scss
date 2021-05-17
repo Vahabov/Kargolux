@@ -1306,7 +1306,7 @@ $siteRadius5: 5px;
               .left_column {
                 width: 100%;
                 .input {
-                  width: 48%;
+                  width: 100%;
                 }
                 .total_price {
                   width: 100%;
@@ -1315,9 +1315,6 @@ $siteRadius5: 5px;
                   padding: 5px 16px 20px 16px;
                   .product_link {
                     width: 100%;
-                  }
-                  .product_count {
-                    width: 49%;
                   }
                 }
               }
@@ -1333,7 +1330,7 @@ $siteRadius5: 5px;
                   }
                 }
                 .sub_title {
-                  margin-top: 38px;
+                  margin-top: 15px;
                 }
               }
             }

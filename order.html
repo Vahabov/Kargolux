@@ -5,9 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Order</title>
     <link rel="stylesheet" href="/assets/css/main.css" />
-    <link rel="stylesheet" href="/assets/css/main.css.map">
+    <link rel="stylesheet" href="/assets/css/main.css.map" />
     <link rel="stylesheet" href="/assets/css/media.css" />
-    <link rel="stylesheet" href="/assets/css/media.css.map">
+    <link rel="stylesheet" href="/assets/css/media.css.map" />
   </head>
   <body>
     <div class="bg_overlay"></div>
@@ -31,7 +31,7 @@
             </li>
           </ul>
           <div class="right_column">
-           <div class="notify_btn bell_btn">
+            <div class="notify_btn bell_btn">
               <img src="/assets/images/icons/bell.svg" alt="#" />
               <div class="notify_modal notify_modal_main">
                 <div class="overlay_modal"></div>
@@ -556,8 +556,8 @@
                         Şəxsi məlumatlarım
                       </a>
                     </li>
-                     <li>
-                       <a href="./address.html">
+                    <li>
+                      <a href="./address.html">
                         <img
                           class="injectable"
                           src="/assets/images/icons/cabinet-icons/u_store.svg"
@@ -607,7 +607,7 @@
                       </a>
                     </li>
                     <li>
-                     <a href="./messages.html">
+                      <a href="./messages.html">
                         <img
                           class="injectable"
                           src="/assets/images/icons/cabinet-icons/u_envelope-download.svg"
@@ -701,8 +701,8 @@
             <span class="product">Məhsul 1</span>
           </div>
           <form action="#" class="order_form">
-            <div class="flexable_block">
-              <div class="left_column">
+            <div class="flexable_block" id="main-content">
+              <div class="left_column sticky1">
                 <div class="form_inputs_block">
                   <div class="input product_link">
                     <label for="productLink">Məhsulun linki</label>
@@ -717,27 +717,118 @@
                     <input type="text" placeholder="Say" id="productCount" />
                   </div>
                   <div class="input">
+                    <label for="productSize">Məhsulun ölçüsü</label>
+                    <input type="text" placeholder="Ölçü" id="productSize" />
+                  </div>
+                  <div class="input">
                     <label for="productPrice">Məhsulun qiyməti</label>
-                    <input type="text" placeholder="Say" id="productPrice" />
+                    <input
+                      type="text"
+                      placeholder="Qiymət ₺"
+                      id="productPrice"
+                    />
+                  </div>
+                  <div class="input product_detail">
+                    <label for="productDetail">Məhsulun digər detalları </label>
+                    <textarea placeholder="Məhsulun detalları"></textarea>
+                  </div>
+                  <p class="info_message">
+                    DİQQƏT: 24 saat ərzində ödəniş edilməyən sifarişlər
+                    avtomatik olaraq silinir
+                  </p>
+                </div>
+                <div class="form_inputs_block">
+                  <div class="input product_link">
+                    <label for="productLink">Məhsulun linki</label>
+                    <input
+                      type="text"
+                      placeholder="Məhsul linki"
+                      id="productLink"
+                    />
+                  </div>
+                  <div class="input product_count">
+                    <label for="productCount">Məhsulun sayı</label>
+                    <input type="text" placeholder="Say" id="productCount" />
                   </div>
                   <div class="input">
                     <label for="productSize">Məhsulun ölçüsü</label>
-                    <input type="text" placeholder="Say" id="productSize" />
+                    <input type="text" placeholder="Ölçü" id="productSize" />
                   </div>
                   <div class="input">
-                    <label for="productColor">Məhsulun rəngi</label>
-                    <input type="text" placeholder="Say" id="productColor" />
+                    <label for="productPrice">Məhsulun qiyməti</label>
+                    <input
+                      type="text"
+                      placeholder="Qiymət ₺"
+                      id="productPrice"
+                    />
                   </div>
-                  <div class="total_price input">
-                    <span class="label">Yekun qiymət</span>
-                    <div class="total">
-                      <span>0.00</span>
-                      <img
-                        class="injectable"
-                        src="/assets/images/icons/tl.svg"
-                        alt="#"
-                      />
-                    </div>
+                  <div class="input product_detail">
+                    <label for="productDetail">Məhsulun digər detalları </label>
+                    <textarea placeholder="Məhsulun detalları"></textarea>
+                  </div>
+                  <p class="info_message">
+                    DİQQƏT: 24 saat ərzində ödəniş edilməyən sifarişlər
+                    avtomatik olaraq silinir
+                  </p>
+                </div>
+                <div class="form_inputs_block">
+                  <div class="input product_link">
+                    <label for="productLink">Məhsulun linki</label>
+                    <input
+                      type="text"
+                      placeholder="Məhsul linki"
+                      id="productLink"
+                    />
+                  </div>
+                  <div class="input product_count">
+                    <label for="productCount">Məhsulun sayı</label>
+                    <input type="text" placeholder="Say" id="productCount" />
+                  </div>
+                  <div class="input">
+                    <label for="productSize">Məhsulun ölçüsü</label>
+                    <input type="text" placeholder="Ölçü" id="productSize" />
+                  </div>
+                  <div class="input">
+                    <label for="productPrice">Məhsulun qiyməti</label>
+                    <input
+                      type="text"
+                      placeholder="Qiymət ₺"
+                      id="productPrice"
+                    />
+                  </div>
+                  <div class="input product_detail">
+                    <label for="productDetail">Məhsulun digər detalları </label>
+                    <textarea placeholder="Məhsulun detalları"></textarea>
+                  </div>
+                  <p class="info_message">
+                    DİQQƏT: 24 saat ərzində ödəniş edilməyən sifarişlər
+                    avtomatik olaraq silinir
+                  </p>
+                </div>
+                <div class="form_inputs_block">
+                  <div class="input product_link">
+                    <label for="productLink">Məhsulun linki</label>
+                    <input
+                      type="text"
+                      placeholder="Məhsul linki"
+                      id="productLink"
+                    />
+                  </div>
+                  <div class="input product_count">
+                    <label for="productCount">Məhsulun sayı</label>
+                    <input type="text" placeholder="Say" id="productCount" />
+                  </div>
+                  <div class="input">
+                    <label for="productSize">Məhsulun ölçüsü</label>
+                    <input type="text" placeholder="Ölçü" id="productSize" />
+                  </div>
+                  <div class="input">
+                    <label for="productPrice">Məhsulun qiyməti</label>
+                    <input
+                      type="text"
+                      placeholder="Qiymət ₺"
+                      id="productPrice"
+                    />
                   </div>
                   <div class="input product_detail">
                     <label for="productDetail">Məhsulun digər detalları </label>
@@ -755,23 +846,7 @@
                   </button>
                 </div>
               </div>
-              <div class="sidebar">
-                <span class="title">Toplam qiymət</span>
-                <div class="product_price">
-                  <span class="text">Ümumi məhsul qiyməti -</span>
-                  <span class="text"
-                    >0.00 <img src="/assets/images/icons/tl.svg" alt="#"
-                  /></span>
-                </div>
-                <div class="product_price">
-                  <span>Ümumi xidmət haqqı (5%) - </span>
-                  <span class="text"
-                    >0.00 <img src="/assets/images/icons/tl.svg" alt="#"
-                  /></span>
-                </div>
-                <div class="product_price">
-                  <span class="orange_color text">Ümumi məhsul sayı (0)</span>
-                </div>
+              <div class="sidebar sticky2">
                 <span class="sub_title">Seçilmiş xidmətlər</span>
                 <div class="delivery">
                   <label class="checkbox_label">
@@ -785,6 +860,24 @@
                   * Sifarişin məbləği kargonuz Türkiyə ofisinə çatdıqda bəlli
                   olacaqdır.
                 </span>
+                <div class="total_price_block">
+                  <span class="title">Toplam qiymət</span>
+                  <div class="product_price">
+                    <span class="text">Ümumi məhsul qiyməti -</span>
+                    <span class="text"
+                      >0.00 <img src="/assets/images/icons/tl.svg" alt="#"
+                    /></span>
+                  </div>
+                  <div class="product_price">
+                    <span>Ümumi xidmət haqqı (5%) - </span>
+                    <span class="text"
+                      >0.00 <img src="/assets/images/icons/tl.svg" alt="#"
+                    /></span>
+                  </div>
+                  <div class="product_price">
+                    <span class="orange_color text">Ümumi məhsul sayı (0)</span>
+                  </div>
+                </div>
                 <span class="order_info">
                   * Diqqət! <br />
                   Hörmətli müştəri, diqqətinizə çatdırırıq ki, təcili sifarişlər
@@ -1030,7 +1123,24 @@
       </div>
     </footer>
     <script src="/assets/js/jquery-3.6.0.min.js"></script>
+    <script src="/assets/js/sticky-sidebar.min.js"></script>
     <script src="/assets/js/svg-inject.min.js"></script>
     <script src="/assets/js/main.js"></script>
+    <script type="text/javascript">
+      $(function () {
+        if ($(window).width() > 991) {
+          var sticky1 = new StickySidebar(".sticky1", {
+            containerSelector: "#main-content",
+            topSpacing: 30,
+            bottomSpacing: 0,
+          });
+          var sticky2 = new StickySidebar(".sticky2", {
+            containerSelector: "#main-content",
+            topSpacing: 30,
+            bottomSpacing: 0,
+          });
+        }
+      });
+    </script>
   </body>
 </html>

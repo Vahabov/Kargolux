@@ -1218,7 +1218,7 @@
     width: 100%;
   }
   body main .order_page_section .container .order_form .flexable_block .left_column .input {
-    width: 48%;
+    width: 100%;
   }
   body main .order_page_section .container .order_form .flexable_block .left_column .total_price {
     width: 100%;
@@ -1228,9 +1228,6 @@
   }
   body main .order_page_section .container .order_form .flexable_block .left_column .form_inputs_block .product_link {
     width: 100%;
-  }
-  body main .order_page_section .container .order_form .flexable_block .left_column .form_inputs_block .product_count {
-    width: 49%;
   }
   body main .order_page_section .container .order_form .flexable_block .sidebar {
     width: 100%;
@@ -1243,7 +1240,7 @@
     font-size: 17px;
   }
   body main .order_page_section .container .order_form .flexable_block .sidebar .sub_title {
-    margin-top: 38px;
+    margin-top: 15px;
   }
   body main .order_page_section .container .order_form .foot_form {
     -webkit-box-orient: vertical;
