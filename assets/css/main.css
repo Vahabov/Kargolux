@@ -8019,6 +8019,11 @@ body .main_footer .center_section .container {
 body .main_footer .center_section .container .mobile_foot_logo {
   display: none;
   opacity: 1;
+  width: 116px;
+}
+
+body .main_footer .center_section .container .mobile_foot_logo img {
+  width: 100%;
 }
 
 body .main_footer .center_section .container .mobile_top_section {

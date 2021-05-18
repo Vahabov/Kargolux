@@ -5558,6 +5558,10 @@ body {
         .mobile_foot_logo {
           display: none;
           opacity: 1;
+          width: 116px;
+          img{
+            width: 100%;
+          }
         }
         .mobile_top_section {
           width: 100% !important;
