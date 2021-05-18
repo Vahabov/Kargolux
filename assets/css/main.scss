@@ -4171,6 +4171,19 @@ body {
             .news_items {
               .item {
                 margin-bottom: 30px;
+                opacity: 1;
+                &:hover{
+                  .img{
+                    img{
+                      transform: scale(1.1);
+                    }
+                  }
+                  .content{
+                    .news_title{
+                      color: $siteColor;
+                    }
+                  }
+                }
                 .img {
                   width: 100%;
                   height: 209px;
@@ -4178,6 +4191,7 @@ body {
                   overflow: hidden;
                   img {
                     @include full-image(100%);
+                    transition: .3s;
                   }
                 }
                 .content {
@@ -4186,6 +4200,7 @@ body {
                     font-size: 17px;
                     margin-bottom: 6px;
                     margin-top: 18px;
+                    transition: .3s;
                   }
                   .date {
                     display: flex;

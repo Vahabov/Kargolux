@@ -6188,6 +6188,16 @@ body main .news_in_section .container .news .right_column .title {
 
 body main .news_in_section .container .news .right_column .news_items .item {
   margin-bottom: 30px;
+  opacity: 1;
+}
+
+body main .news_in_section .container .news .right_column .news_items .item:hover .img img {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+body main .news_in_section .container .news .right_column .news_items .item:hover .content .news_title {
+  color: #7b5ce1;
 }
 
 body main .news_in_section .container .news .right_column .news_items .item .img {
@@ -6202,6 +6212,8 @@ body main .news_in_section .container .news .right_column .news_items .item .img
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
+  -webkit-transition: .3s;
+  transition: .3s;
 }
 
 body main .news_in_section .container .news .right_column .news_items .item .content .news_title {
@@ -6209,6 +6221,8 @@ body main .news_in_section .container .news .right_column .news_items .item .con
   font-size: 17px;
   margin-bottom: 6px;
   margin-top: 18px;
+  -webkit-transition: .3s;
+  transition: .3s;
 }
 
 body main .news_in_section .container .news .right_column .news_items .item .content .date {
