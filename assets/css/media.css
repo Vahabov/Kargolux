@@ -1178,6 +1178,7 @@
   }
   body main .rules_page_section .container .rules_main .rules::-webkit-scrollbar {
     display: none;
+    width: 0px;
   }
   body main .rules_page_section .container .rules_main .rules .rule .number {
     font-size: 16px;
@@ -1191,6 +1192,7 @@
   }
   body main .questions_page_section .container .questions_main .questions::-webkit-scrollbar {
     display: none;
+    width: 0px;
   }
   body main .notification_pages .container .notification_main {
     width: 100%;
@@ -1324,24 +1326,60 @@
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  body main .news_in_section .container .news .img {
-    width: 100%;
-    height: 65vw;
-    margin-bottom: 40px;
-  }
-  body main .news_in_section .container .news .content {
+  body main .news_in_section .container .news .left_column {
     width: 100%;
   }
-  body main .news_in_section .container .news .content .news_text {
-    max-height: 100%;
-    padding-right: 0px;
+  body main .news_in_section .container .news .left_column .img {
+    margin-bottom: 15px;
+    height: 75vw;
   }
-  body main .news_in_section .container .news .content .news_text::-webkit-scrollbar {
-    display: none;
-    width: 0px;
+  body main .news_in_section .container .news .left_column .img_bottom {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
   }
-  body main .news_in_section .container .news .content .date {
-    margin-top: 10px;
+  body main .news_in_section .container .news .left_column .img_bottom .date {
+    margin-bottom: 16px;
+  }
+  body main .news_in_section .container .news .left_column .img_bottom .share_news .social_icons {
+    width: 180px;
+  }
+  body main .news_in_section .container .news .left_column .img_bottom .share_news .social_icons li .elem {
+    width: 30px;
+    height: 30px;
+  }
+  body main .news_in_section .container .news .left_column .news_content {
+    margin-top: 28px;
+  }
+  body main .news_in_section .container .news .left_column .news_content .title {
+    margin-bottom: 20px;
+    font-size: 18px;
+  }
+  body main .news_in_section .container .news .right_column {
+    width: 100%;
+    margin-top: 50px;
+  }
+  body main .news_in_section .container .news .right_column .title {
+    color: #7b5ce1;
+    margin-bottom: 16px;
+    font-size: 18px;
+  }
+  body main .news_in_section .container .news .right_column .news_items .item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  body main .news_in_section .container .news .right_column .news_items .item .img {
+    width: 132px;
+    height: 28vw;
+    margin-right: 20px;
+  }
+  body main .news_in_section .container .news .right_column .news_items .item .content {
+    max-width: 50%;
   }
   body main .main_cabinet_section {
     padding-bottom: 0px;

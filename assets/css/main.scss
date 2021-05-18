@@ -273,10 +273,7 @@ body {
         z-index: 100;
         max-height: 75vh;
         overflow: scroll;
-        &::-webkit-scrollbar {
-          width: 0px;
-          display: none;
-        }
+        @include hideScrollBar();
         .cancell {
           position: absolute;
           top: 15px;
@@ -579,10 +576,7 @@ body {
       justify-content: center;
       background-color: #282141a2;
       overflow-y: scroll;
-      &::-webkit-scrollbar {
-        display: none;
-        width: 0px;
-      }
+      @include hideScrollBar();
       .modal_inner {
         width: 33%;
         background-color: #fff;
@@ -592,10 +586,7 @@ body {
         padding-top: 50px;
         max-height: 90vh;
         overflow: scroll;
-        &::-webkit-scrollbar {
-          display: none;
-          width: 0px;
-        }
+        @include hideScrollBar();
         .cancell {
           position: absolute;
           top: 20px;
@@ -855,13 +846,14 @@ body {
           display: flex;
           align-items: flex-start;
           flex-wrap: wrap;
-          .disable{
-            .error, .success{
+          .disable {
+            .error,
+            .success {
               opacity: 1 !important;
             }
           }
           .disable {
-            *{
+            * {
               opacity: 0.4;
             }
           }
@@ -1667,10 +1659,7 @@ body {
           display: flex;
           flex-direction: column;
           justify-content: space-between;
-          &::-webkit-scrollbar {
-            display: none;
-            width: 0px;
-          }
+          @include hideScrollBar();
           .head {
             @include flex-between(flex);
             border-bottom: 1px solid #2821414f;
@@ -1781,10 +1770,7 @@ body {
           display: flex;
           flex-direction: column;
           justify-content: space-between;
-          &::-webkit-scrollbar {
-            display: none;
-            width: 0px;
-          }
+          @include hideScrollBar();
           .head {
             @include flex-between(flex);
             border-bottom: 1px solid #2821414f;
@@ -1945,10 +1931,7 @@ body {
     .scrollable_block {
       overflow-x: scroll;
       overflow-y: hidden;
-      &::-webkit-scrollbar {
-        display: none;
-        width: 0px;
-      }
+      @include hideScrollBar();
     }
     //home page overtitle slider
     .main_slider_section {
@@ -2606,9 +2589,7 @@ body {
                 background-color: $siteColor2;
                 opacity: 1;
                 img {
-                  width: 100%;
-                  height: 100%;
-                  object-fit: cover;
+                  @include full-image(100%);
                   opacity: 0.7;
                   transition: 0.3s;
                 }
@@ -2812,9 +2793,7 @@ body {
                 z-index: 2;
               }
               .news_img {
-                width: 100%;
-                height: 100%;
-                object-fit: cover;
+                @include full-image(100%);
                 transition: 0.3s;
               }
               .top_overlay {
@@ -2947,7 +2926,7 @@ body {
             overflow: hidden;
             background: $cabinetBackground;
             padding: 30px;
-            transition: .3s;
+            transition: 0.3s;
             &:hover {
               box-shadow: 0px 10px 55px rgba(0, 0, 0, 0.1);
               .comment {
@@ -2964,9 +2943,7 @@ body {
                 border-radius: 100%;
                 overflow: hidden;
                 img {
-                  width: 100%;
-                  height: 100%;
-                  object-fit: cover;
+                  @include full-image(100%);
                 }
               }
               .content {
@@ -3888,7 +3865,7 @@ body {
                 overflow: hidden;
                 @include flex-between(flex);
                 flex-wrap: wrap;
-                &:not(:last-child){
+                &:not(:last-child) {
                   margin-bottom: 30px;
                 }
                 .product_link {
@@ -3964,7 +3941,7 @@ body {
                 width: 100%;
                 display: block;
               }
-              .total_price_block{
+              .total_price_block {
                 padding-bottom: 21px;
                 border-bottom: 1px solid $borderColor;
                 margin-bottom: 24px;
@@ -4098,64 +4075,134 @@ body {
         .news {
           @include flex-between(flex);
           align-items: flex-start;
-          .img {
-            height: 358px;
-            width: 30%;
-            overflow: hidden;
-            border-radius: $siteRadius10;
-            img {
+          .left_column {
+            width: 74%;
+            .img {
+              overflow: hidden;
+              border-radius: $siteRadius10;
               width: 100%;
-              height: 100%;
-              object-fit: cover;
+              height: 504px;
+              margin-bottom: 24px;
+              img {
+                @include full-image(100%);
+              }
             }
-          }
-          .content {
-            width: 66.5%;
-            .title {
-              font-family: $extraBold;
-              font-size: 22px;
-              margin-bottom: 10px;
-              color: $siteColor2;
+            .img_bottom {
+              @include flex-between(flex);
+              .date {
+                display: flex;
+                align-items: center;
+                img {
+                  width: 13px;
+                  height: 14px;
+                  margin-right: 5px;
+                }
+                span {
+                  color: $siteColor;
+                  font-family: $semiBold;
+                  font-size: 14px;
+                }
+              }
+              .share_news {
+                @include flex-between(flex);
+                width: max-content;
+                .social_icons {
+                  @include flex-between(flex);
+                  width: 222px;
+                  li {
+                    .elem {
+                      width: 36px;
+                      height: 36px;
+                      border: 1px solid #7b5ce125;
+                      @include flex-center(flex);
+                      border-radius: 100%;
+                      overflow: hidden;
+                      &:hover {
+                        background-color: $siteColor;
+                        svg {
+                          path,
+                          circle {
+                            fill: #fff;
+                          }
+                        }
+                      }
+                      svg {
+                        width: 50%;
+                        path {
+                          transition: 0.3s;
+                        }
+                      }
+                    }
+                  }
+                }
+                .follow_us {
+                  font-size: 14px;
+                  margin-left: 15px;
+                }
+              }
             }
-            .news_text {
-              max-height: 265px;
-              overflow-y: scroll;
-              overflow-x: hidden;
-              padding-right: 15px;
-              &::-webkit-scrollbar {
-                width: 2px;
-                position: absolute;
+            .news_content {
+              margin-top: 34px;
+              .title {
+                font-family: $extraBold;
+                font-size: 25px;
+                color: $siteColor;
+                margin-bottom: 12px;
               }
-              &::-webkit-scrollbar-track {
-                border-radius: $siteRadius5;
-                background-color: #c4c4c4;
-              }
-              &::-webkit-scrollbar-thumb {
-                background: $textColor;
-                border-radius: $siteRadius5;
-              }
-              &::-webkit-scrollbar-thumb:hover {
-                background: $siteColor;
+              p {
+                &:not(:last-child) {
+                  margin-bottom: 20px;
+                }
               }
               * {
                 font-family: $regular;
                 font-size: 14px;
                 line-height: 22px;
               }
-              p {
-                margin-bottom: 20px;
-              }
             }
-            .date {
-              margin-top: 22px;
-              img {
-                width: 13px;
-                height: 14px;
-                margin-right: 5px;
-              }
-              span {
-                font-size: 14px;
-                color: $siteColor;
+          }
+          .right_column {
+            width: 23.5%;
+            .title {
+              font-size: 22px;
+              font-family: $extraBold;
+              margin-bottom: 11px;
+            }
+            .news_items {
+              .item {
+                margin-bottom: 30px;
+                .img {
+                  width: 100%;
+                  height: 209px;
+                  border-radius: $siteRadius10;
+                  overflow: hidden;
+                  img {
+                    @include full-image(100%);
+                  }
+                }
+                .content {
+                  .news_title {
+                    font-family: $extraBold;
+                    font-size: 17px;
+                    margin-bottom: 6px;
+                    margin-top: 18px;
+                  }
+                  .date {
+                    display: flex;
+                    align-items: center;
+                    margin-top: 10px;
+                    img {
+                      width: 13px;
+                      height: 14px;
+                      margin-right: 5px;
+                    }
+                    span {
+                      color: $siteColor;
+                      font-size: 14px;
+                      line-height: 13px;
+                    }
+                  }
+                }
               }
             }
           }
@@ -4933,10 +4980,7 @@ body {
             width: 100%;
             max-height: 420px;
             padding-right: 5px;
-            &::-webkit-scrollbar {
-              width: 0px;
-              display: none;
-            }
+            @include hideScrollBar();
             .operations_select {
               background-color: $cabinetBackground;
               border-radius: $siteRadius10;
@@ -5262,10 +5306,10 @@ body {
                   margin-left: 3px;
                 }
               }
-              .facture_price{
+              .facture_price {
                 min-width: 102px;
               }
-              .kargo_follow{
+              .kargo_follow {
                 min-width: 104px;
               }
               th {
@@ -5318,10 +5362,7 @@ body {
             width: 100%;
             max-height: 420px;
             padding-right: 5px;
-            &::-webkit-scrollbar {
-              width: 0px;
-              display: none;
-            }
+            @include hideScrollBar();
             .operations_select {
               background-color: $cabinetBackground;
               border-radius: $siteRadius10;
@@ -5559,7 +5600,7 @@ body {
           display: none;
           opacity: 1;
           width: 116px;
-          img{
+          img {
             width: 100%;
           }
         }
