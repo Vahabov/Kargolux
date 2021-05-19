@@ -1771,6 +1771,10 @@ body .main_header .top_section .right_column .lang_select select {
   color: #fff;
 }
 
+body .main_header .top_section .right_column .lang_select select option {
+  color: black;
+}
+
 body .main_header .top_section .right_column .notify_btn {
   position: relative;
   padding-right: 30px;
@@ -2567,6 +2571,10 @@ body .main_header .mobile_overlay .overlay_inner .menu .foot div .lang_select se
   font-size: 12px;
 }
 
+body .main_header .mobile_overlay .overlay_inner .menu .foot div .lang_select select option {
+  color: black;
+}
+
 body .main_header .mobile_cabinet_overlay {
   width: 100%;
   height: 100vh;
@@ -2841,6 +2849,10 @@ body .main_header .mobile_cabinet_overlay .overlay_inner_cabinet .menu .foot div
   height: 100%;
   color: #fff;
   font-size: 12px;
+}
+
+body .main_header .mobile_cabinet_overlay .overlay_inner_cabinet .menu .foot div .lang_select select option {
+  color: black;
 }
 
 body main .scrollable_block {
@@ -8476,6 +8488,10 @@ body .auth_header .container .lang_select select {
   height: 100%;
   color: #fff;
   line-height: 20px;
+}
+
+body .auth_header .container .lang_select select option {
+  color: black;
 }
 
 body .auth_footer {
