@@ -90,6 +90,12 @@
   body main .order_page_section .container .order_form .flexable_block .sidebar .product_price span {
     font-size: 15px;
   }
+  body main .news_in_section .container .news .left_column {
+    width: 69%;
+  }
+  body main .news_in_section .container .news .right_column {
+    width: 29%;
+  }
   body main .main_cabinet_section .sidebar {
     padding: 15px;
   }
@@ -1391,12 +1397,15 @@
     display: flex;
   }
   body main .news_in_section .container .news .right_column .news_items .item .img {
-    width: 132px;
-    height: 28vw;
+    width: 40vw;
+    height: 39vw;
     margin-right: 20px;
   }
   body main .news_in_section .container .news .right_column .news_items .item .content {
     max-width: 50%;
+  }
+  body main .news_in_section .container .news .right_column .news_items .item .content .news_title {
+    margin-top: 5px;
   }
   body main .main_cabinet_section {
     padding-bottom: 0px;

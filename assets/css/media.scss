@@ -186,6 +186,18 @@ $siteRadius5: 5px;
           }
         }
       }
+      .news_in_section {
+        .container {
+          .news {
+            .left_column{
+              width: 69%;
+            }
+            .right_column{
+              width: 29%;
+            }
+          }
+        }
+      }
       //cabinet style
       .main_cabinet_section {
         .sidebar {
@@ -1449,12 +1461,15 @@ $siteRadius5: 5px;
                 .item{
                   display: flex;
                   .img{
-                    width: 132px;
-                    height: 28vw;
+                    width: 40vw;
+                    height: 39vw;
                     margin-right: 20px;
                   }
                   .content{
                     max-width: 50%;
+                    .news_title{
+                      margin-top: 5px;
+                    }
                   }
                 }
               }
