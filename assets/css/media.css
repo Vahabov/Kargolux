@@ -1226,10 +1226,27 @@
     width: 100%;
   }
   body main .order_page_section .container .order_form .flexable_block .left_column .form_inputs_block {
-    padding: 5px 16px 20px 16px;
+    padding: 20px 16px;
   }
   body main .order_page_section .container .order_form .flexable_block .left_column .form_inputs_block .product_link {
     width: 100%;
+  }
+  body main .order_page_section .container .order_form .flexable_block .left_column .form_inputs_block .form_in .form_head .left .item_numb {
+    font-size: 11px;
+    width: 24px;
+    height: 24px;
+    margin-right: 6px;
+  }
+  body main .order_page_section .container .order_form .flexable_block .left_column .form_inputs_block .form_in .form_head .left .label {
+    font-size: 12px;
+  }
+  body main .order_page_section .container .order_form .flexable_block .left_column .form_inputs_block .form_in .form_head .right .btn_remove {
+    font-size: 11px;
+  }
+  body main .order_page_section .container .order_form .flexable_block .left_column .form_inputs_block .form_in .form_head .right .btn_remove img {
+    width: 22px;
+    height: 22px;
+    margin-right: 6px;
   }
   body main .order_page_section .container .order_form .flexable_block .sidebar {
     width: 100%;

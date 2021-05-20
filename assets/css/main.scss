@@ -230,11 +230,44 @@ body {
   .mb-block {
     margin-bottom: 100px;
   }
+  .alert_label {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 10px 15px;
+    border-radius: $siteRadius10;
+    overflow: hidden;
+    margin: 10px 0px;
+    * {
+      font-size: 16px;
+    }
+  }
   .success {
     color: #0cc0cc;
   }
   .error {
     color: $errorColor;
+  }
+  .a-success {
+    color: #155724 !important;
+    background-color: #d4edda !important;
+    * {
+      color: #155724 !important;
+    }
+  }
+  .a-error {
+    color: #721c24 !important;
+    background-color: #f8d7da !important;
+    * {
+      color: #721c24 !important;
+    }
+  }
+  .a-warning {
+    color: #856404 !important;
+    background-color: #fff3cd !important;
+    * {
+      color: #856404 !important;
+    }
   }
   .notify_btn {
     position: relative;
@@ -3746,11 +3779,6 @@ body {
           .title {
             margin-bottom: 0px;
           }
-          .product {
-            font-family: $bold;
-            font-size: 22px;
-            margin-left: 18px;
-          }
         }
         .order_form {
           .flexable_block {
@@ -3862,11 +3890,9 @@ body {
               }
               .form_inputs_block {
                 background-color: $cabinetBackground;
-                padding: 15px 44px;
+                padding: 20px 44px;
                 border-radius: $siteRadius10;
                 overflow: hidden;
-                @include flex-between(flex);
-                flex-wrap: wrap;
                 &:not(:last-child) {
                   margin-bottom: 30px;
                 }
@@ -3880,6 +3906,48 @@ body {
                   font-size: 12px;
                   color: $errorColor;
                   margin-top: 10px;
+                }
+                .form_in {
+                  width: 100%;
+                  @include flex-between(flex);
+                  flex-wrap: wrap;
+                  .form_head {
+                    @include flex-between(flex);
+                    width: 100%;
+                    .left {
+                      display: flex;
+                      align-items: center;
+                      max-width: 50%;
+                      .item_numb {
+                        width: 40px;
+                        height: 40px;
+                        background-color: $siteColor;
+                        color: #fff;
+                        border-radius: 100%;
+                        @include flex-center(flex);
+                        text-align: center;
+                        margin-right: 15px;
+                        font-size: 15px;
+                      }
+                      .label {
+                        font-family: $regular;
+                        font-size: 15px;
+                      }
+                    }
+                    .right {
+                      max-width: 50%;
+                      .btn_remove {
+                        font-size: 14px;
+                        color: $errorColor;
+                        img {
+                          width: 24px;
+                          height: 24px;
+                          margin-right: 10px;
+                        }
+                        @include flex-center(flex);
+                      }
+                    }
+                  }
                 }
               }
               .add_form_block {

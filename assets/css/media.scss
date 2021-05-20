@@ -1288,9 +1288,34 @@ $siteRadius5: 5px;
                   width: 100%;
                 }
                 .form_inputs_block {
-                  padding: 5px 16px 20px 16px;
+                  padding: 20px 16px;
                   .product_link {
                     width: 100%;
+                  }
+                  .form_in {
+                    .form_head {
+                      .left{
+                        .item_numb{
+                          font-size: 11px;
+                          width: 24px;
+                          height: 24px;
+                          margin-right: 6px;
+                        }
+                        .label{
+                          font-size: 12px;
+                        }
+                      }
+                      .right {
+                        .btn_remove{
+                          font-size: 11px;
+                          img{
+                            width: 22px;
+                            height: 22px;
+                            margin-right: 6px;
+                          }
+                        }
+                      }
+                    }
                   }
                 }
               }

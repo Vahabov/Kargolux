@@ -266,12 +266,57 @@ body .mb-block {
   margin-bottom: 100px;
 }
 
+body .alert_label {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 10px 15px;
+  border-radius: 10px;
+  overflow: hidden;
+  margin: 10px 0px;
+}
+
+body .alert_label * {
+  font-size: 16px;
+}
+
 body .success {
   color: #0cc0cc;
 }
 
 body .error {
   color: #ff5050;
+}
+
+body .a-success {
+  color: #155724 !important;
+  background-color: #d4edda !important;
+}
+
+body .a-success * {
+  color: #155724 !important;
+}
+
+body .a-error {
+  color: #721c24 !important;
+  background-color: #f8d7da !important;
+}
+
+body .a-error * {
+  color: #721c24 !important;
+}
+
+body .a-warning {
+  color: #856404 !important;
+  background-color: #fff3cd !important;
+}
+
+body .a-warning * {
+  color: #856404 !important;
 }
 
 body .notify_btn {
@@ -5549,12 +5594,6 @@ body main .order_page_section .container .section_head .title {
   margin-bottom: 0px;
 }
 
-body main .order_page_section .container .section_head .product {
-  font-family: Nunito-Bold;
-  font-size: 22px;
-  margin-left: 18px;
-}
-
 body main .order_page_section .container .order_form .flexable_block {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -5709,20 +5748,9 @@ body main .order_page_section .container .order_form .flexable_block .left_colum
 
 body main .order_page_section .container .order_form .flexable_block .left_column .form_inputs_block {
   background-color: #f8f7fe;
-  padding: 15px 44px;
+  padding: 20px 44px;
   border-radius: 10px;
   overflow: hidden;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
 }
 
 body main .order_page_section .container .order_form .flexable_block .left_column .form_inputs_block:not(:last-child) {
@@ -5741,6 +5769,93 @@ body main .order_page_section .container .order_form .flexable_block .left_colum
   font-size: 12px;
   color: #ff5050;
   margin-top: 10px;
+}
+
+body main .order_page_section .container .order_form .flexable_block .left_column .form_inputs_block .form_in {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+body main .order_page_section .container .order_form .flexable_block .left_column .form_inputs_block .form_in .form_head {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+}
+
+body main .order_page_section .container .order_form .flexable_block .left_column .form_inputs_block .form_in .form_head .left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  max-width: 50%;
+}
+
+body main .order_page_section .container .order_form .flexable_block .left_column .form_inputs_block .form_in .form_head .left .item_numb {
+  width: 40px;
+  height: 40px;
+  background-color: #7b5ce1;
+  color: #fff;
+  border-radius: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  margin-right: 15px;
+  font-size: 15px;
+}
+
+body main .order_page_section .container .order_form .flexable_block .left_column .form_inputs_block .form_in .form_head .left .label {
+  font-family: Nunito-Regular;
+  font-size: 15px;
+}
+
+body main .order_page_section .container .order_form .flexable_block .left_column .form_inputs_block .form_in .form_head .right {
+  max-width: 50%;
+}
+
+body main .order_page_section .container .order_form .flexable_block .left_column .form_inputs_block .form_in .form_head .right .btn_remove {
+  font-size: 14px;
+  color: #ff5050;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+body main .order_page_section .container .order_form .flexable_block .left_column .form_inputs_block .form_in .form_head .right .btn_remove img {
+  width: 24px;
+  height: 24px;
+  margin-right: 10px;
 }
 
 body main .order_page_section .container .order_form .flexable_block .left_column .add_form_block {
