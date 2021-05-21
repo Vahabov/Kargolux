@@ -57,6 +57,23 @@ $siteRadius5: 5px;
     .container {
       max-width: 1100px;
     }
+    main {
+      .news_in_section {
+        .container {
+          .news {
+            .left_column {
+              width: 72%;
+              .img {
+                height: 397px;
+              }
+            }
+            .right_column {
+              width: 26%;
+            }
+          }
+        }
+      }
+    }
   }
 }
 @media screen and (max-width: 1240px) {
@@ -189,10 +206,10 @@ $siteRadius5: 5px;
       .news_in_section {
         .container {
           .news {
-            .left_column{
+            .left_column {
               width: 69%;
             }
-            .right_column{
+            .right_column {
               width: 29%;
             }
           }
@@ -1306,21 +1323,21 @@ $siteRadius5: 5px;
                   }
                   .form_in {
                     .form_head {
-                      .left{
-                        .item_numb{
+                      .left {
+                        .item_numb {
                           font-size: 11px;
                           width: 24px;
                           height: 24px;
                           margin-right: 6px;
                         }
-                        .label{
+                        .label {
                           font-size: 12px;
                         }
                       }
                       .right {
-                        .btn_remove{
+                        .btn_remove {
                           font-size: 11px;
-                          img{
+                          img {
                             width: 22px;
                             height: 22px;
                             margin-right: 6px;
@@ -1421,7 +1438,7 @@ $siteRadius5: 5px;
               width: 100%;
               .img {
                 margin-bottom: 15px;
-                height: 75vw;
+                height: 49vw;
               }
               .img_bottom {
                 flex-direction: column-reverse;
@@ -1458,16 +1475,16 @@ $siteRadius5: 5px;
                 font-size: 18px;
               }
               .news_items {
-                .item{
+                .item {
                   display: flex;
-                  .img{
+                  .img {
                     width: 40vw;
-                    height: 39vw;
+                    height: 40vw;
                     margin-right: 20px;
                   }
-                  .content{
+                  .content {
                     max-width: 50%;
-                    .news_title{
+                    .news_title {
                       margin-top: 5px;
                     }
                   }
