@@ -1170,22 +1170,46 @@
   body main .news_page_youtube .container .pagination {
     margin: 30px auto 0px auto;
   }
-  body main .contact_page_section .container .contact_main {
+  body main .contact_page_section .container .main_tab_forms {
+    background-color: #fff;
     padding: 15px 16px;
+  }
+  body main .contact_page_section .container .main_tab_forms .contact_main {
+    padding: 0px;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  body main .contact_page_section .container .contact_main .contact_form {
+  body main .contact_page_section .container .main_tab_forms .contact_main .contact_form {
     width: 100%;
   }
-  body main .contact_page_section .container .contact_main .address_info {
+  body main .contact_page_section .container .main_tab_forms .contact_main .address_info {
     width: 100%;
     margin: 50px 0px;
   }
-  body main .contact_page_section .container .contact_main .map {
+  body main .contact_page_section .container .main_tab_forms .contact_main .map {
     width: 100%;
+  }
+  body main .contact_page_section .container .main_tab_forms .contact_tab_nav {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  body main .contact_page_section .container .main_tab_forms .contact_tab_nav .btn_tab {
+    min-width: auto;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    opacity: .6;
+    font-size: 12px;
+    padding: 0px 12px;
+  }
+  body main .contact_page_section .container .main_tab_forms .contact_tab_nav .btn_tab:not(:last-child) {
+    margin-right: 15px;
+  }
+  body main .contact_page_section .container .main_tab_forms .contact_tab_nav .active_tab {
+    background-color: #7b5ce1;
+    color: #fff;
+    opacity: 1 !important;
   }
   body main .rules_page_section .container .rules_main .rules {
     max-height: 100%;

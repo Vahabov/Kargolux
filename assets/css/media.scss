@@ -1237,18 +1237,42 @@ $siteRadius5: 5px;
       }
       .contact_page_section {
         .container {
-          .contact_main {
+          .main_tab_forms {
+            background-color: #fff;
             padding: 15px 16px;
-            flex-direction: column;
-            .contact_form {
-              width: 100%;
+
+            .contact_main {
+              padding: 0px;
+              flex-direction: column;
+              .contact_form {
+                width: 100%;
+              }
+              .address_info {
+                width: 100%;
+                margin: 50px 0px;
+              }
+              .map {
+                width: 100%;
+              }
             }
-            .address_info {
-              width: 100%;
-              margin: 50px 0px;
-            }
-            .map {
-              width: 100%;
+            .contact_tab_nav {
+              flex-wrap: wrap;
+              .btn_tab {
+                min-width: auto;
+                border-radius: $siteRadius10;
+                margin-bottom: 15px;
+                opacity: .6;
+                font-size: 12px;
+                padding: 0px 12px;
+                &:not(:last-child) {
+                  margin-right: 15px;
+                }
+              }
+              .active_tab {
+                background-color: $siteColor;
+                color: #fff;
+                opacity: 1 !important;
+              }
             }
           }
         }

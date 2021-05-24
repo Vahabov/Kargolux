@@ -368,7 +368,7 @@ body {
         }
         .table {
           width: 100%;
-          max-height: 250px;
+          max-height: 450px;
           overflow-y: scroll;
           overflow-x: hidden;
           padding-right: 10px;
@@ -3528,60 +3528,78 @@ body {
     }
     .contact_page_section {
       .container {
-        .contact_main {
-          background-color: #fff;
+        .main_tab_forms {
           border-radius: $siteRadius10;
-          padding: 30px;
-          @include flex-between(flex);
-          align-items: flex-start;
-          .contact_form {
-            width: 36%;
-            input,
-            textarea {
-              border-color: $textColor;
-              color: $textColor;
-              &::placeholder {
+          .contact_main {
+            background-color: #fff;
+            border-radius: 0px $siteRadius10 $siteRadius10 $siteRadius10;
+            padding: 30px;
+            @include flex-between(flex);
+            align-items: flex-start;
+            .contact_form {
+              width: 36%;
+              input,
+              textarea {
+                border-color: $textColor;
                 color: $textColor;
-                opacity: 0.3;
+                &::placeholder {
+                  color: $textColor;
+                  opacity: 0.3;
+                }
               }
             }
-          }
-          .address_info {
-            .row_info {
-              &:not(:last-child) {
-                margin-bottom: 30px;
-              }
-              .title_info {
-                margin-bottom: 10px;
-                @include flex-between(flex);
-                justify-content: flex-start;
-                img {
-                  margin-right: 10px;
-                }
-                span {
-                  font-family: $bold;
-                  font-size: 18px;
-                  color: $siteColor2;
-                }
-              }
-              .text_info {
-                font-size: 14px;
-                display: block;
-                padding-left: 30px;
+            .address_info {
+              .row_info {
                 &:not(:last-child) {
+                  margin-bottom: 30px;
+                }
+                .title_info {
                   margin-bottom: 10px;
+                  @include flex-between(flex);
+                  justify-content: flex-start;
+                  img {
+                    margin-right: 10px;
+                  }
+                  span {
+                    font-family: $bold;
+                    font-size: 18px;
+                    color: $siteColor2;
+                  }
+                }
+                .text_info {
+                  font-size: 14px;
+                  display: block;
+                  padding-left: 30px;
+                  &:not(:last-child) {
+                    margin-bottom: 10px;
+                  }
                 }
               }
             }
+            .map {
+              border-radius: $siteRadius10;
+              overflow: hidden;
+              height: 260px;
+              width: 36%;
+              .element {
+                width: 100%;
+                height: 100%;
+              }
+            }
           }
-          .map {
-            border-radius: $siteRadius10;
-            overflow: hidden;
-            height: 260px;
-            width: 36%;
-            .element {
-              width: 100%;
-              height: 100%;
+          .contact_tab_nav {
+            display: flex;
+            align-items: flex-end;
+            .btn_tab {
+              min-width: 185px;
+              height: 42px;
+              background-color: #f5f5f5;
+              border-radius: $siteRadius10 $siteRadius10 0px 0px;
+              padding: 0px 20px;
+              font-size: 14px;
+            }
+            .active_tab {
+              background-color: #fff;
             }
           }
         }
@@ -5581,11 +5599,11 @@ body {
             background-color: $siteColor;
           }
           .toggle_pay {
-            display: none;
             .pay_btn {
               min-width: 163px;
               height: 52px;
               padding: 0px 20px;
+              font-size: 16px;
               border-radius: $siteRadius10;
               color: #fff;
               @include flex-center(flex);

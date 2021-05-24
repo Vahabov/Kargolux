@@ -437,7 +437,7 @@ body .notify_btn .basket_modal_main .notify_modal_in .title {
 
 body .notify_btn .basket_modal_main .notify_modal_in .table {
   width: 100%;
-  max-height: 250px;
+  max-height: 450px;
   overflow-y: scroll;
   overflow-x: hidden;
   padding-right: 10px;
@@ -5258,9 +5258,13 @@ body main .news_page_youtube .pagination {
   margin: 30px 0px 0px auto;
 }
 
-body main .contact_page_section .container .contact_main {
-  background-color: #fff;
+body main .contact_page_section .container .main_tab_forms {
   border-radius: 10px;
+}
+
+body main .contact_page_section .container .main_tab_forms .contact_main {
+  background-color: #fff;
+  border-radius: 0px 10px 10px 10px;
   padding: 30px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -5276,45 +5280,45 @@ body main .contact_page_section .container .contact_main {
           align-items: flex-start;
 }
 
-body main .contact_page_section .container .contact_main .contact_form {
+body main .contact_page_section .container .main_tab_forms .contact_main .contact_form {
   width: 36%;
 }
 
-body main .contact_page_section .container .contact_main .contact_form input,
-body main .contact_page_section .container .contact_main .contact_form textarea {
+body main .contact_page_section .container .main_tab_forms .contact_main .contact_form input,
+body main .contact_page_section .container .main_tab_forms .contact_main .contact_form textarea {
   border-color: #282141;
   color: #282141;
 }
 
-body main .contact_page_section .container .contact_main .contact_form input::-webkit-input-placeholder,
-body main .contact_page_section .container .contact_main .contact_form textarea::-webkit-input-placeholder {
+body main .contact_page_section .container .main_tab_forms .contact_main .contact_form input::-webkit-input-placeholder,
+body main .contact_page_section .container .main_tab_forms .contact_main .contact_form textarea::-webkit-input-placeholder {
   color: #282141;
   opacity: 0.3;
 }
 
-body main .contact_page_section .container .contact_main .contact_form input:-ms-input-placeholder,
-body main .contact_page_section .container .contact_main .contact_form textarea:-ms-input-placeholder {
+body main .contact_page_section .container .main_tab_forms .contact_main .contact_form input:-ms-input-placeholder,
+body main .contact_page_section .container .main_tab_forms .contact_main .contact_form textarea:-ms-input-placeholder {
   color: #282141;
   opacity: 0.3;
 }
 
-body main .contact_page_section .container .contact_main .contact_form input::-ms-input-placeholder,
-body main .contact_page_section .container .contact_main .contact_form textarea::-ms-input-placeholder {
+body main .contact_page_section .container .main_tab_forms .contact_main .contact_form input::-ms-input-placeholder,
+body main .contact_page_section .container .main_tab_forms .contact_main .contact_form textarea::-ms-input-placeholder {
   color: #282141;
   opacity: 0.3;
 }
 
-body main .contact_page_section .container .contact_main .contact_form input::placeholder,
-body main .contact_page_section .container .contact_main .contact_form textarea::placeholder {
+body main .contact_page_section .container .main_tab_forms .contact_main .contact_form input::placeholder,
+body main .contact_page_section .container .main_tab_forms .contact_main .contact_form textarea::placeholder {
   color: #282141;
   opacity: 0.3;
 }
 
-body main .contact_page_section .container .contact_main .address_info .row_info:not(:last-child) {
+body main .contact_page_section .container .main_tab_forms .contact_main .address_info .row_info:not(:last-child) {
   margin-bottom: 30px;
 }
 
-body main .contact_page_section .container .contact_main .address_info .row_info .title_info {
+body main .contact_page_section .container .main_tab_forms .contact_main .address_info .row_info .title_info {
   margin-bottom: 10px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -5330,36 +5334,58 @@ body main .contact_page_section .container .contact_main .address_info .row_info
           justify-content: flex-start;
 }
 
-body main .contact_page_section .container .contact_main .address_info .row_info .title_info img {
+body main .contact_page_section .container .main_tab_forms .contact_main .address_info .row_info .title_info img {
   margin-right: 10px;
 }
 
-body main .contact_page_section .container .contact_main .address_info .row_info .title_info span {
+body main .contact_page_section .container .main_tab_forms .contact_main .address_info .row_info .title_info span {
   font-family: Nunito-Bold;
   font-size: 18px;
   color: #ff6d67;
 }
 
-body main .contact_page_section .container .contact_main .address_info .row_info .text_info {
+body main .contact_page_section .container .main_tab_forms .contact_main .address_info .row_info .text_info {
   font-size: 14px;
   display: block;
   padding-left: 30px;
 }
 
-body main .contact_page_section .container .contact_main .address_info .row_info .text_info:not(:last-child) {
+body main .contact_page_section .container .main_tab_forms .contact_main .address_info .row_info .text_info:not(:last-child) {
   margin-bottom: 10px;
 }
 
-body main .contact_page_section .container .contact_main .map {
+body main .contact_page_section .container .main_tab_forms .contact_main .map {
   border-radius: 10px;
   overflow: hidden;
   height: 260px;
   width: 36%;
 }
 
-body main .contact_page_section .container .contact_main .map .element {
+body main .contact_page_section .container .main_tab_forms .contact_main .map .element {
   width: 100%;
   height: 100%;
+}
+
+body main .contact_page_section .container .main_tab_forms .contact_tab_nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+body main .contact_page_section .container .main_tab_forms .contact_tab_nav .btn_tab {
+  min-width: 185px;
+  height: 42px;
+  background-color: #f5f5f5;
+  border-radius: 10px 10px 0px 0px;
+  padding: 0px 20px;
+  font-size: 14px;
+}
+
+body main .contact_page_section .container .main_tab_forms .contact_tab_nav .active_tab {
+  background-color: #fff;
 }
 
 body main .rules_page_section .container .rules_main .rules {
@@ -8116,14 +8142,11 @@ body main .main_cabinet_section .content_main .foot_content .purple_btn {
   background-color: #7b5ce1;
 }
 
-body main .main_cabinet_section .content_main .foot_content .toggle_pay {
-  display: none;
-}
-
 body main .main_cabinet_section .content_main .foot_content .toggle_pay .pay_btn {
   min-width: 163px;
   height: 52px;
   padding: 0px 20px;
+  font-size: 16px;
   border-radius: 10px;
   color: #fff;
   display: -webkit-box;

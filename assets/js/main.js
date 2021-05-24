@@ -226,15 +226,15 @@ $(function () {
   if ($("#messagesBlock")[0]) {
     $("#messagesBlock").scrollTop($("#messages")[0].scrollHeight + 2);
   }
-
-  $(".declarations_main .checkbox_label").on("click", function () {
-    let arrCheck = $(".declarations_main .checkbox_label input");
-    if ($(arrCheck).is(":checked")) {
-      $(".toggle_pay").fadeIn("fast");
-    } else {
-      $(".toggle_pay").fadeOut("fast");
-    }
-  });
+  //toggle paymentBtn
+  // $(".declarations_main .checkbox_label").on("click", function () {
+  //   let arrCheck = $(".declarations_main .checkbox_label input");
+  //   if ($(arrCheck).is(":checked")) {
+  //     $(".toggle_pay").fadeIn("fast");
+  //   } else {
+  //     $(".toggle_pay").fadeOut("fast");
+  //   }
+  // });
 
   $("#factureFile").change(function () {
     var file = $(this)[0].files[0].name;
@@ -249,5 +249,17 @@ $(function () {
     e.stopPropagation();
     $("body").removeClass("hidden");
     $(".notify_modal").fadeOut("fast");
+  });
+
+  //dynamic checkboxes
+
+  $(".selectall").click(function () {
+    $(".selectedId").prop("checked", this.checked);
+  });
+
+  $(".selectedId").change(function () {
+    var check =
+      $(".selectedId").filter(":checked").length == $(".selectedId").length;
+    $(".selectall").prop("checked", check);
   });
 });
