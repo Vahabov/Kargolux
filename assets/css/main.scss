@@ -368,7 +368,7 @@ body {
         }
         .table {
           width: 100%;
-          max-height: 450px;
+          max-height: 420px;
           overflow-y: scroll;
           overflow-x: hidden;
           padding-right: 10px;
@@ -390,6 +390,17 @@ body {
           table {
             border-collapse: collapse;
             width: 100%;
+            .checkbox_label {
+              padding-left: 12px;
+              .checkmark {
+                width: 14px;
+                height: 14px;
+                border-radius: 3px;
+                &::after {
+                  font-size: 9px;
+                }
+              }
+            }
             .price {
               img {
                 width: 7.8px;
@@ -787,6 +798,9 @@ body {
             &:not(:last-child) {
               border-bottom: 1px solid $borderColor;
               padding-bottom: 18px;
+            }
+            .link{
+              color: #0cc0cc ;
             }
             span {
               display: block;
@@ -5381,13 +5395,26 @@ body {
               border-collapse: collapse;
               width: 100%;
               .price {
+                text-align: center;
                 img {
                   width: 7.8px;
                   height: 9px;
                 }
               }
+              .qeyd{
+                max-width: 100px;
+                p{
+                  @include ellipsis-text(2);
+                }
+              }
+              .link{
+                *{
+                  color: #0cc0cc
+                }
+              }
               .buttons {
                 @include flex-between(flex);
+                justify-content: flex-end;
                 .btn {
                   @include flex-center(flex);
                   width: 26px;
@@ -5547,9 +5574,9 @@ body {
                 .popover_content {
                   border-radius: 0px;
                   box-shadow: 0px 2px 14px rgba(0, 0, 0, 0.1);
-                  min-width: 106px;
                   text-align: right;
                   padding: 18px !important;
+                  min-width: 107px;
                   .btn_popover {
                     &:not(:last-child) {
                       margin-bottom: 18px;

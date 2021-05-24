@@ -254,7 +254,7 @@ $(function () {
   //dynamic checkboxes
 
   $(".selectall").click(function () {
-    $(".selectedId").prop("checked", this.checked);
+    $(this).parents("table").find(".selectedId").prop("checked", this.checked);
   });
 
   $(".selectedId").change(function () {
