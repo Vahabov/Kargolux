@@ -741,7 +741,7 @@
     padding: 16px;
   }
   body main .news_and_updates .container .scrollable_block .center .item .img {
-    height: 81vw;
+    height: 69vw;
   }
   body main .news_and_updates .container .scrollable_block .center .item .content {
     height: 102px;
@@ -1163,6 +1163,9 @@
   }
   body main .news_page_update .container .scrollable_block .center .item:not(:last-child) {
     margin-bottom: 20px;
+  }
+  body main .news_page_update .container .scrollable_block .center .item .img {
+    height: 81vw;
   }
   body main .news_page_youtube .container {
     padding-bottom: 30px;

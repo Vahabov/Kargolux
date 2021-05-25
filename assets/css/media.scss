@@ -847,7 +847,7 @@ $siteRadius5: 5px;
                 margin-right: 20px;
                 padding: 16px;
                 .img {
-                  height: 81vw;
+                  height: 69vw;
                 }
                 .content {
                   height: 102px;
@@ -1221,6 +1221,9 @@ $siteRadius5: 5px;
                 margin-right: 0px;
                 &:not(:last-child) {
                   margin-bottom: 20px;
+                }
+                .img {
+                  height: 81vw;
                 }
               }
             }
