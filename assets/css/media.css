@@ -1632,6 +1632,8 @@
   }
   body main .main_cabinet_section .content_main .foot_content .pagination {
     margin: 15px auto 0px auto;
+    width: 100%;
+    max-width: 300px;
   }
   body main .main_cabinet_section .content_main .foot_content .facture_btn {
     height: 40px;
