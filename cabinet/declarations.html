@@ -756,6 +756,10 @@
                   <span class="title">Sifariş</span>
                   <div class="mobile_items">
                     <div class="item">
+                      <label class="checkbox_label">
+                        <input type="checkbox" class="selectedId" />
+                        <span class="checkmark"></span>
+                      </label>
                       <div class="cols">
                         <div class="col">
                           <span class="title_item">Kod</span>
@@ -2269,13 +2273,7 @@
                 <li>
                   <a href="#4"> 4 </a>
                 </li>
-                <li>
-                  <a href="#5"> 5 </a>
-                </li>
                 <li>...</li>
-                <li>
-                  <a href="#5"> 728 </a>
-                </li>
                 <li class="right_icn active_icn">
                   <a href="#">
                     <img
@@ -2286,9 +2284,18 @@
                   </a>
                 </li>
               </ul>
-              <div class="toggle_pay">
-                <button type="button" class="pay_btn">Ödəmə</button>
+              <div class="total_price">
+                <span class="label">Cəmi 2 bağlama:</span>
+                <span class="price">
+                  324
+                  <img
+                    class="injectable"
+                    src="/assets/images/icons/manat.svg"
+                    alt="#"
+                  />
+                </span>
               </div>
+              <button type="button" class="pay_btn">Ödəmə</button>
               <select class="operations_select">
                 <option value="#">Bütün əməliyyatlar</option>
               </select>

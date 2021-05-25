@@ -453,8 +453,23 @@ body {
             padding: 16px;
             border-radius: $siteRadius10;
             border: 1px solid #7b5ce142;
+            position: relative;
             &:not(:last-child) {
               margin-bottom: 20px;
+            }
+            .checkbox_label {
+              position: absolute;
+              top: 10px;
+              right: 20px;
+              padding-left: 12px;
+              .checkmark {
+                width: 22px;
+                height: 22px;
+                border-radius: 3px;
+                &::after {
+                  font-size: 11px;
+                }
+              }
             }
             .cols {
               @include flex-between(flex);
@@ -799,8 +814,8 @@ body {
               border-bottom: 1px solid $borderColor;
               padding-bottom: 18px;
             }
-            .link{
-              color: #0cc0cc ;
+            .link {
+              color: #0cc0cc;
             }
             span {
               display: block;
@@ -5401,15 +5416,18 @@ body {
                   height: 9px;
                 }
               }
-              .qeyd{
+              .status {
+                width: 110px;
+              }
+              .qeyd {
                 max-width: 100px;
-                p{
+                p {
                   @include ellipsis-text(2);
                 }
               }
-              .link{
-                *{
-                  color: #0cc0cc
+              .link {
+                * {
+                  color: #0cc0cc;
                 }
               }
               .buttons {
@@ -5610,7 +5628,7 @@ body {
             border-radius: $siteRadius10;
             padding: 0px 20px;
             height: 52px;
-            min-width: 211px;
+            min-width: 185px;
             margin-left: 20px;
             background-image: url(../images/icons/select_arrow_black.svg);
             background-position-x: 91%;
@@ -5618,29 +5636,62 @@ body {
           .purple_btn {
             min-width: 211px;
             height: 52px;
-            padding: 0px 20px;
+            padding: 0px 15px;
             border-radius: $siteRadius10;
             color: #fff;
             @include flex-center(flex);
             margin: auto 0px auto auto;
             background-color: $siteColor;
           }
-          .toggle_pay {
-            .pay_btn {
-              min-width: 163px;
-              height: 52px;
-              padding: 0px 20px;
+          .pay_btn {
+            height: 52px;
+            padding: 0px 15px;
+            font-size: 16px;
+            border-radius: $siteRadius10;
+            color: #fff;
+            @include flex-center(flex);
+            background-color: #0cc0cc;
+            margin-left: 15px;
+          }
+          .facture_btn {
+            height: 52px;
+            padding: 0px 15px;
+            font-size: 16px;
+            border-radius: $siteRadius10;
+            color: #fff;
+            @include flex-center(flex);
+            background-color: #ff6d67;
+            margin-left: 15px;
+          }
+          .total_price {
+            @include flex-center(flex);
+            .label {
               font-size: 16px;
-              border-radius: $siteRadius10;
-              color: #fff;
+              margin-right: 2px;
+            }
+            .price {
               @include flex-center(flex);
-              margin: auto 0px auto auto;
-              background-color: #0cc0cc;
+              background-color: #ff5050;
+              color: #fff;
+              font-size: 20px;
+              margin-left: 10px;
+              height: 52px;
+              padding: 0px 15px;
+              border-radius: $siteRadius10;
+              svg {
+                width: 17px;
+                height: 17px;
+                margin-left: 10px;
+                path {
+                  fill: #fff;
+                }
+              }
             }
           }
           .pagination {
             margin-top: 10px;
             margin-left: 0px;
+            width: 196px;
             .left_icn *,
             .right_icn * {
               width: 10px;

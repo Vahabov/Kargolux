@@ -541,10 +541,28 @@ body .notify_btn .basket_modal_main .notify_modal_in .mobile_items .item {
   padding: 16px;
   border-radius: 10px;
   border: 1px solid #7b5ce142;
+  position: relative;
 }
 
 body .notify_btn .basket_modal_main .notify_modal_in .mobile_items .item:not(:last-child) {
   margin-bottom: 20px;
+}
+
+body .notify_btn .basket_modal_main .notify_modal_in .mobile_items .item .checkbox_label {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  padding-left: 12px;
+}
+
+body .notify_btn .basket_modal_main .notify_modal_in .mobile_items .item .checkbox_label .checkmark {
+  width: 22px;
+  height: 22px;
+  border-radius: 3px;
+}
+
+body .notify_btn .basket_modal_main .notify_modal_in .mobile_items .item .checkbox_label .checkmark::after {
+  font-size: 11px;
 }
 
 body .notify_btn .basket_modal_main .notify_modal_in .mobile_items .item .cols {
@@ -7860,6 +7878,10 @@ body main .main_cabinet_section .content_main .declarations_main .table_declarat
   height: 9px;
 }
 
+body main .main_cabinet_section .content_main .declarations_main .table_declaration table .status {
+  width: 110px;
+}
+
 body main .main_cabinet_section .content_main .declarations_main .table_declaration table .qeyd {
   max-width: 100px;
 }
@@ -8159,7 +8181,7 @@ body main .main_cabinet_section .content_main .foot_content .operations_select {
   border-radius: 10px;
   padding: 0px 20px;
   height: 52px;
-  min-width: 211px;
+  min-width: 185px;
   margin-left: 20px;
   background-image: url(../images/icons/select_arrow_black.svg);
   background-position-x: 91%;
@@ -8168,7 +8190,7 @@ body main .main_cabinet_section .content_main .foot_content .operations_select {
 body main .main_cabinet_section .content_main .foot_content .purple_btn {
   min-width: 211px;
   height: 52px;
-  padding: 0px 20px;
+  padding: 0px 15px;
   border-radius: 10px;
   color: #fff;
   display: -webkit-box;
@@ -8184,10 +8206,9 @@ body main .main_cabinet_section .content_main .foot_content .purple_btn {
   background-color: #7b5ce1;
 }
 
-body main .main_cabinet_section .content_main .foot_content .toggle_pay .pay_btn {
-  min-width: 163px;
+body main .main_cabinet_section .content_main .foot_content .pay_btn {
   height: 52px;
-  padding: 0px 20px;
+  padding: 0px 15px;
   font-size: 16px;
   border-radius: 10px;
   color: #fff;
@@ -8200,13 +8221,79 @@ body main .main_cabinet_section .content_main .foot_content .toggle_pay .pay_btn
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin: auto 0px auto auto;
   background-color: #0cc0cc;
+  margin-left: 15px;
+}
+
+body main .main_cabinet_section .content_main .foot_content .facture_btn {
+  height: 52px;
+  padding: 0px 15px;
+  font-size: 16px;
+  border-radius: 10px;
+  color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #ff6d67;
+  margin-left: 15px;
+}
+
+body main .main_cabinet_section .content_main .foot_content .total_price {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+body main .main_cabinet_section .content_main .foot_content .total_price .label {
+  font-size: 16px;
+  margin-right: 2px;
+}
+
+body main .main_cabinet_section .content_main .foot_content .total_price .price {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #ff5050;
+  color: #fff;
+  font-size: 20px;
+  margin-left: 10px;
+  height: 52px;
+  padding: 0px 15px;
+  border-radius: 10px;
+}
+
+body main .main_cabinet_section .content_main .foot_content .total_price .price svg {
+  width: 17px;
+  height: 17px;
+  margin-left: 10px;
+}
+
+body main .main_cabinet_section .content_main .foot_content .total_price .price svg path {
+  fill: #fff;
 }
 
 body main .main_cabinet_section .content_main .foot_content .pagination {
   margin-top: 10px;
   margin-left: 0px;
+  width: 196px;
 }
 
 body main .main_cabinet_section .content_main .foot_content .pagination .left_icn *,
