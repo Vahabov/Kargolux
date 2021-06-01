@@ -1029,6 +1029,9 @@ $siteRadius5: 5px;
                 background-position-x: 96%;
               }
             }
+            .phone_input {
+              width: 100%;
+            }
             .input_with_info {
               width: 100%;
               .input_row {
@@ -1723,21 +1726,21 @@ $siteRadius5: 5px;
               width: 100%;
               max-width: 300px;
             }
-            .facture_btn{
+            .facture_btn {
               height: 40px;
               width: 100%;
               margin-left: 0px;
               margin-bottom: 15px;
             }
-            .total_price{
+            .total_price {
               order: 1;
               width: 100%;
               margin-bottom: 15px;
               justify-content: space-between;
-              .price{
+              .price {
                 height: 40px;
                 font-size: 16px;
-                svg{
+                svg {
                   width: 14px;
                   height: 14px;
                 }

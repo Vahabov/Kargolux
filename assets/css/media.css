@@ -944,6 +944,9 @@
   body main .auth_block .container .big_form .input select {
     background-position-x: 96%;
   }
+  body main .auth_block .container .big_form .phone_input {
+    width: 100%;
+  }
   body main .auth_block .container .big_form .input_with_info {
     width: 100%;
   }

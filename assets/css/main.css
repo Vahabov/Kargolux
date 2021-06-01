@@ -4780,6 +4780,47 @@ body main .auth_block .container .big_form .input .error_message {
   display: block;
 }
 
+body main .auth_block .container .big_form .phone_input {
+  width: 205px;
+  margin-bottom: 10px;
+  height: 52px;
+  padding: 0px 20px;
+  border: 1px solid #282141;
+  border-radius: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body main .auth_block .container .big_form .phone_input .error_message {
+  margin: 10px 0px;
+  font-size: 12px;
+  font-family: Nunito-Regular;
+  display: block;
+}
+
+body main .auth_block .container .big_form .phone_input .code {
+  border-right: 1px solid #282141;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-right: 15px;
+  font-size: 14px;
+}
+
+body main .auth_block .container .big_form .phone_input input {
+  height: 100%;
+  padding-left: 15px;
+  width: 70%;
+}
+
 body main .auth_block .container .big_form .input_with_info {
   width: 49%;
 }

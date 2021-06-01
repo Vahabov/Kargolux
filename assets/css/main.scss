@@ -3210,6 +3210,35 @@ body {
               display: block;
             }
           }
+          .phone_input {
+            width: 205px;
+            margin-bottom: 10px;
+            height: 52px;
+            padding: 0px 20px;
+            border: 1px solid $textColor;
+            border-radius: $siteRadius10;
+            display: flex;
+            align-items: center;
+            .error_message {
+              margin: 10px 0px;
+              font-size: 12px;
+              font-family: $regular;
+              display: block;
+            }
+            .code{
+              border-right: 1px solid $textColor;
+              height: 100%;
+              display: flex;
+              align-items: center;
+              padding-right: 15px;
+              font-size: 14px;
+            }
+            input{
+              height: 100%;
+              padding-left: 15px;
+              width: 70%;
+            }
+          }
           .input_with_info {
             width: 49%;
             .error_message {
