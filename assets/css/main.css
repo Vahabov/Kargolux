@@ -2524,17 +2524,11 @@ body .main_header .mobile_overlay .overlay_inner .menu::-webkit-scrollbar {
 }
 
 body .main_header .mobile_overlay .overlay_inner .menu .head {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
   border-bottom: 1px solid #2821414f;
   padding: 20px 15px;
+  width: 100%;
+  min-height: 63px;
+  position: relative;
 }
 
 body .main_header .mobile_overlay .overlay_inner .menu .head .logout {
@@ -2547,6 +2541,9 @@ body .main_header .mobile_overlay .overlay_inner .menu .head .logout {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
 }
 
 body .main_header .mobile_overlay .overlay_inner .menu .head .logout img {
@@ -2556,6 +2553,9 @@ body .main_header .mobile_overlay .overlay_inner .menu .head .logout img {
 body .main_header .mobile_overlay .overlay_inner .menu .head .close_menu {
   width: 22px;
   height: 22px;
+  position: absolute;
+  top: 20px;
+  right: 16px;
 }
 
 body .main_header .mobile_overlay .overlay_inner .menu .head .close_menu img {
