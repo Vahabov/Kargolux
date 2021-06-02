@@ -854,9 +854,12 @@ $siteRadius5: 5px;
                   .head_content {
                     .title_content {
                       font-size: 16px;
+                      line-clamp: 3;
+                      -webkit-line-clamp: 3;
                     }
                     p {
                       font-size: 12px;
+                      display: none;
                     }
                   }
                 }

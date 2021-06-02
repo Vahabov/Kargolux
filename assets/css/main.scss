@@ -2669,12 +2669,13 @@ body {
                     font-size: 20px;
                     font-family: $extraBold;
                     color: $siteColor2;
+                    @include ellipsis-text(2);
                   }
                   p {
                     font-size: 14px;
                     font-family: $regular;
                     line-height: 20px;
-                    @include ellipsis-text(3);
+                    @include ellipsis-text(1);
                   }
                 }
                 .foot_content {

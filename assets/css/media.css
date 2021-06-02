@@ -748,9 +748,12 @@
   }
   body main .news_and_updates .container .scrollable_block .center .item .content .head_content .title_content {
     font-size: 16px;
+    line-clamp: 3;
+    -webkit-line-clamp: 3;
   }
   body main .news_and_updates .container .scrollable_block .center .item .content .head_content p {
     font-size: 12px;
+    display: none;
   }
   body main .partners_carousel_section .container {
     padding-bottom: 30px;
