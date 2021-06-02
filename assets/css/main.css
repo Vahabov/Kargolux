@@ -3983,6 +3983,7 @@ body main .news_and_updates .container .scrollable_block .center .item .content 
   line-clamp: 2;
   -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
+  margin-bottom: 8px;
 }
 
 body main .news_and_updates .container .scrollable_block .center .item .content .head_content p {

@@ -2676,6 +2676,7 @@ body {
                     font-family: $extraBold;
                     color: $siteColor2;
                     @include ellipsis-text(2);
+                    margin-bottom: 8px;
                   }
                   p {
                     font-size: 14px;
