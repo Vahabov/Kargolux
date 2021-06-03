@@ -4303,6 +4303,7 @@ body main .youtube_videos_section .container .scrollable_block .center .item .ov
   color: #fff;
   margin-bottom: 12px;
   line-height: 20px;
+  max-width: 65%;
 }
 
 body main .youtube_videos_section .container .scrollable_block .center .item .overlay .content p {
@@ -6435,7 +6436,7 @@ body main .news_in_section .container .news .right_column .news_items .item .img
   height: 290px;
   border-radius: 10px;
   overflow: hidden;
-  background-color: #000;
+  background-color: #fff;
 }
 
 body main .news_in_section .container .news .right_column .news_items .item .img img {

@@ -2907,6 +2907,7 @@ body {
                     color: #fff;
                     margin-bottom: 12px;
                     line-height: 20px;
+                    max-width: 65%;
                   }
                   p {
                     font-family: $regular;
@@ -4343,7 +4344,7 @@ body {
                   height: 290px;
                   border-radius: $siteRadius10;
                   overflow: hidden;
-                  background-color: #000;
+                  background-color: #fff;
                   img {
                     @include full-image(100%);
                     transition: 0.3s;
