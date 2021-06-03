@@ -2973,7 +2973,7 @@ body main .main_slider_section .container .owl-carousel .item {
 }
 
 body main .main_slider_section .container .owl-carousel .item .slider_desc_side {
-  width: 35%;
+  width: 40%;
 }
 
 body main .main_slider_section .container .owl-carousel .item .slider_desc_side h2,
@@ -3063,7 +3063,7 @@ body main .main_slider_section .container .owl-carousel .item .slider_img_cont {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
-  width: 60%;
+  width: 56%;
   position: relative;
   margin-top: 30px;
 }
