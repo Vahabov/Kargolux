@@ -950,6 +950,18 @@ $siteRadius5: 5px;
                     }
                   }
                 }
+                &:not(:first-child) {
+                  .overlay {
+                    .content {
+                      .title {
+                        font-size: 16px;
+                      }
+                      p {
+                        font-size: 12px;
+                      }
+                    }
+                  }
+                }
               }
             }
           }

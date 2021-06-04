@@ -845,6 +845,12 @@
   body main .youtube_videos_section .container .scrollable_block .center .item .overlay .date span {
     font-size: 12px;
   }
+  body main .youtube_videos_section .container .scrollable_block .center .item:not(:first-child) .overlay .content .title {
+    font-size: 16px;
+  }
+  body main .youtube_videos_section .container .scrollable_block .center .item:not(:first-child) .overlay .content p {
+    font-size: 12px;
+  }
   body main .customer_ratings_section .container {
     padding-bottom: 30px;
     border: none;
