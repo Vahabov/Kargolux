@@ -6010,6 +6010,10 @@ body main .order_page_section .container .order_form .flexable_block .left_colum
 
 body main .order_page_section .container .order_form .flexable_block .sidebar {
   width: 24.8%;
+  overflow: auto;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 5%;
 }
 
 body main .order_page_section .container .order_form .flexable_block .sidebar .sub_title {

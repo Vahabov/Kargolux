@@ -2003,6 +2003,7 @@ body {
       }
     }
   }
+  
   main {
     //components
     .scrollable_block {
@@ -4055,6 +4056,10 @@ body {
             }
             .sidebar {
               width: 24.8%;
+              overflow: auto;
+              position: -webkit-sticky;
+              position: sticky;
+              top: 5%;
               .sub_title {
                 font-size: 22px;
                 display: block;
