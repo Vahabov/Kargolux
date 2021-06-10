@@ -5,9 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Cabinet balance</title>
     <link rel="stylesheet" href="/assets/css/main.css" />
-    <link rel="stylesheet" href="/assets/css/main.css.map">
+    <link rel="stylesheet" href="/assets/css/main.css.map" />
     <link rel="stylesheet" href="/assets/css/media.css" />
-    <link rel="stylesheet" href="/assets/css/media.css.map">
+    <link rel="stylesheet" href="/assets/css/media.css.map" />
   </head>
   <body>
     <div class="bg_overlay"></div>
@@ -31,7 +31,7 @@
             </li>
           </ul>
           <div class="right_column">
-           <div class="notify_btn bell_btn">
+            <div class="notify_btn bell_btn">
               <img src="/assets/images/icons/bell.svg" alt="#" />
               <div class="notify_modal notify_modal_main">
                 <div class="overlay_modal"></div>
@@ -755,7 +755,7 @@
                 <div class="notify_modal_in">
                   <span class="title">Sifariş</span>
                   <div class="mobile_items">
-                   <div class="item">
+                    <div class="item">
                       <label class="checkbox_label">
                         <input type="checkbox" class="selectedId" />
                         <span class="checkmark"></span>
@@ -925,7 +925,14 @@
                 </div>
                 <div class="in">
                   <span class="label">Daşınma balansım</span>
-                  <span class="numb"> $393 </span>
+                  <span class="numb">
+                    234
+                    <img
+                      class="injectable manat"
+                      src="/assets/images/icons/manat.svg"
+                      alt="#"
+                    />
+                  </span>
                 </div>
               </div>
               <div class="info">
@@ -1121,7 +1128,7 @@
                       </a>
                     </li>
                     <li class="active_li">
-                      <a href="./balance.html">
+                      <a href="./balance-tl.html">
                         <img
                           class="injectable"
                           src="/assets/images/icons/cabinet-icons/u_wallet.svg"
@@ -1141,7 +1148,7 @@
                       </a>
                     </li>
                     <li>
-                     <a href="./messages.html">
+                      <a href="./messages.html">
                         <img
                           class="injectable"
                           src="/assets/images/icons/cabinet-icons/u_envelope-download.svg"
@@ -1283,7 +1290,7 @@
                 </a>
               </li>
               <li class="active_li">
-                <a href="./balance.html">
+                <a href="./balance-tl.html">
                   <img
                     class="injectable"
                     src="/assets/images/icons/cabinet-icons/u_wallet.svg"
@@ -1326,201 +1333,186 @@
           </div>
           <div class="content_main">
             <div class="balance_main">
-              <div class="tab_navs">
-                <button
-                  type="button"
-                  class="btn_tab active_tab"
-                  data-id="tab-1"
-                >
+              <div class="link_navs">
+                <a href="./balance-tl.html" class="balnce_nav_btn active_tab">
                   Sifariş balansım
-                </button>
-                <button type="button" class="btn_tab" data-id="tab-2">
-                  Daşıma balansım
-                </button>
+                </a>
+                <a href="./balance-azn.html" class="balnce_nav_btn"> Daşıma balansım </a>
               </div>
-              <div class="tabs_container">
-                <div class="tab active_tab" id="tab-1">
-                  <div class="order_balance">
-                    <span class="title">TL balansı</span>
-                    <form action="#">
-                      <div class="input">
-                        <label for="amount22">Məbləğ</label>
-                        <input
-                          type="text"
-                          id="amount22"
-                          placeholder="Məbləğ daxil edin"
-                        />
-                      </div>
-                      <button type="submit" class="btn_submit">
-                        Balans artır
-                      </button>
-                    </form>
+              <div class="order_balance">
+                <span class="title">TL balansı</span>
+                <form action="#">
+                  <div class="input">
+                    <label for="amount22">Məbləğ</label>
+                    <input
+                      type="text"
+                      id="amount22"
+                      placeholder="Məbləğ daxil edin"
+                    />
                   </div>
-                  <div class="gift_card">
-                    <span class="title">Hədiyyə kartı</span>
-                    <p class="desc">
-                      Hədiyyə kartı ilə balansınızı artırmaq üçün aşağıdakı
-                      formadan istifadə edə bilərsiniz. Kart üzərindəki nömrəni
-                      verilən xanaya yazıb təsdiqləyin
-                    </p>
-                    <form action="#">
-                      <div class="input">
-                        <label for="amount">Kartın nömrəsi</label>
-                        <input
-                          type="text"
-                          id="amount"
-                          placeholder="Kartın nömrəsini daxil edin"
-                        />
-                      </div>
-                      <button type="submit" class="btn_submit">
-                        Balans artır
-                      </button>
-                    </form>
+                  <button type="submit" class="btn_submit">Balans artır</button>
+                </form>
+              </div>
+              <div class="gift_card">
+                <span class="title">Hədiyyə kartı</span>
+                <p class="desc">
+                  Hədiyyə kartı ilə balansınızı artırmaq üçün aşağıdakı formadan
+                  istifadə edə bilərsiniz. Kart üzərindəki nömrəni verilən
+                  xanaya yazıb təsdiqləyin
+                </p>
+                <form action="#">
+                  <div class="input">
+                    <label for="amount">Kartın nömrəsi</label>
+                    <input
+                      type="text"
+                      id="amount"
+                      placeholder="Kartın nömrəsini daxil edin"
+                    />
                   </div>
-                  <div class="balance_archive_block">
-                    <span class="title">Balans keçmişi</span>
-                    <div class="table">
-                      <table>
-                        <tr>
-                          <th>Əməliyyatlar</th>
-                          <th>Məbləğ</th>
-                          <th>Tarix və saat</th>
-                        </tr>
-                        <tr>
-                          <td>Sifariş Qalıq Ödənişi</td>
-                          <td><span class="pluse">+115.49</span></td>
-                          <td>09.05.2020 06:54</td>
-                        </tr>
-                        <tr>
-                          <td>Sifariş Ödənişi</td>
-                          <td><span class="minus">-115.49</span></td>
-                          <td>09.05.2020 06:54</td>
-                        </tr>
-                        <tr>
-                          <td>Balans artırılması</td>
-                          <td><span class="pluse">+115.49</span></td>
-                          <td>09.05.2020 06:54</td>
-                        </tr>
-                        <tr>
-                          <td>Sifariş Qalıq Ödənişi</td>
-                          <td><span class="pluse">+115.49</span></td>
-                          <td>09.05.2020 06:54</td>
-                        </tr>
-                        <tr>
-                          <td>Sifariş Ödənişi</td>
-                          <td><span class="minus">-115.49</span></td>
-                          <td>09.05.2020 06:54</td>
-                        </tr>
-                        <tr>
-                          <td>Balans artırılması</td>
-                          <td><span class="pluse">+115.49</span></td>
-                          <td>09.05.2020 06:54</td>
-                        </tr>
-                      </table>
-                    </div>
-                  </div>
-                </div>
-                <div class="tab" id="tab-2">
-                  <div class="order_balance">
-                    <span class="title">AZN balansının artırılması</span>
-                    <form action="#">
-                      <div class="input">
-                        <label for="amount2">Məbləğ</label>
-                        <input
-                          type="text"
-                          id="amount2"
-                          placeholder="Məbləğ daxil edin"
-                        />
-                      </div>
-                      <button type="submit" class="btn_submit">
-                        Balans artır
-                      </button>
-                    </form>
-                  </div>
-                  <div class="e_manat_balance">
-                    <img src="/assets/images/img/e-manat.png" alt="#" />
-                    <div class="content">
-                      <span class="title">E-manat ilə balans artırma</span>
-                      <p class="desc">
-                        E-manat terminalları vasitəsilə balansınızı artıra
-                        bilərsiniz. Bunun üçün E-manat terminalına
-                        yaxınlaşırsınız, 'digər' bölməsinə daxil olaraq
-                        'Starex'-i seçirsiniz. '010103' müştəri kodunuzu yığaraq
-                        'davam et' düyməsini sıxırsınız. İstədiyiniz məbləği
-                        daxil edib təsdiq edirsiniz. Əməliyyatı bitirdikdən
-                        sonra pul dərhal şəxsi kabinetdəki balansınızda
-                        görünəcək.
-                      </p>
-                    </div>
-                  </div>
-                  <div class="gift_card">
-                    <span class="title">Hədiyyə kartı</span>
-                    <p class="desc">
-                      Hədiyyə kartı ilə balansınızı artırmaq üçün aşağıdakı
-                      formadan istifadə edə bilərsiniz. Kart üzərindəki nömrəni
-                      verilən xanaya yazıb təsdiqləyin
-                    </p>
-                    <form action="#">
-                      <div class="input error">
-                        <label for="amount3">Kartın nömrəsi</label>
-                        <input
-                          type="text"
-                          id="amount3"
-                          placeholder="Kartın nömrəsini daxil edin"
-                        />
-                        <span class="error_message"
-                          >Kupon kartın nömrəsi düzgün daxil edilməyib
-                        </span>
-                      </div>
-                      <button type="submit" class="btn_submit">
-                        Balans artır
-                      </button>
-                    </form>
-                  </div>
-                  <div class="balance_archive_block">
-                    <span class="title">Balans keçmişi</span>
-                    <div class="table">
-                      <table>
-                        <tr>
-                          <th>Əməliyyatlar</th>
-                          <th>Məbləğ</th>
-                          <th>Tarix və saat</th>
-                        </tr>
-                        <tr>
-                          <td>Sifariş Qalıq Ödənişi</td>
-                          <td><span class="pluse">+115.49</span></td>
-                          <td>09.05.2020 06:54</td>
-                        </tr>
-                        <tr>
-                          <td>Sifariş Ödənişi</td>
-                          <td><span class="minus">-115.49</span></td>
-                          <td>09.05.2020 06:54</td>
-                        </tr>
-                        <tr>
-                          <td>Balans artırılması</td>
-                          <td><span class="pluse">+115.49</span></td>
-                          <td>09.05.2020 06:54</td>
-                        </tr>
-                        <tr>
-                          <td>Sifariş Qalıq Ödənişi</td>
-                          <td><span class="pluse">+115.49</span></td>
-                          <td>09.05.2020 06:54</td>
-                        </tr>
-                        <tr>
-                          <td>Sifariş Ödənişi</td>
-                          <td><span class="minus">-115.49</span></td>
-                          <td>09.05.2020 06:54</td>
-                        </tr>
-                        <tr>
-                          <td>Balans artırılması</td>
-                          <td><span class="pluse">+115.49</span></td>
-                          <td>09.05.2020 06:54</td>
-                        </tr>
-                      </table>
-                    </div>
-                  </div>
+                  <button type="submit" class="btn_submit">Balans artır</button>
+                </form>
+              </div>
+              <div class="balance_archive_block">
+                <span class="title">Balans keçmişi</span>
+                <div class="table">
+                  <table>
+                    <tr>
+                      <th>Əməliyyatlar</th>
+                      <th>Məbləğ</th>
+                      <th>Tarix və saat</th>
+                    </tr>
+                    <tr>
+                      <td>Sifariş Qalıq Ödənişi</td>
+                      <td><span class="pluse">+115.49</span></td>
+                      <td>09.05.2020 06:54</td>
+                    </tr>
+                    <tr>
+                      <td>Sifariş Ödənişi</td>
+                      <td><span class="minus">-115.49</span></td>
+                      <td>09.05.2020 06:54</td>
+                    </tr>
+                    <tr>
+                      <td>Balans artırılması</td>
+                      <td><span class="pluse">+115.49</span></td>
+                      <td>09.05.2020 06:54</td>
+                    </tr>
+                    <tr>
+                      <td>Sifariş Qalıq Ödənişi</td>
+                      <td><span class="pluse">+115.49</span></td>
+                      <td>09.05.2020 06:54</td>
+                    </tr>
+                    <tr>
+                      <td>Sifariş Ödənişi</td>
+                      <td><span class="minus">-115.49</span></td>
+                      <td>09.05.2020 06:54</td>
+                    </tr>
+                    <tr>
+                      <td>Balans artırılması</td>
+                      <td><span class="pluse">+115.49</span></td>
+                      <td>09.05.2020 06:54</td>
+                    </tr>
+                  </table>
                 </div>
               </div>
+              <!-- <div class="tab" id="tab-2">
+                <div class="order_balance">
+                  <span class="title">AZN balansının artırılması</span>
+                  <form action="#">
+                    <div class="input">
+                      <label for="amount2">Məbləğ</label>
+                      <input
+                        type="text"
+                        id="amount2"
+                        placeholder="Məbləğ daxil edin"
+                      />
+                    </div>
+                    <button type="submit" class="btn_submit">
+                      Balans artır
+                    </button>
+                  </form>
+                </div>
+                <div class="e_manat_balance">
+                  <img src="/assets/images/img/e-manat.png" alt="#" />
+                  <div class="content">
+                    <span class="title">E-manat ilə balans artırma</span>
+                    <p class="desc">
+                      E-manat terminalları vasitəsilə balansınızı artıra
+                      bilərsiniz. Bunun üçün E-manat terminalına
+                      yaxınlaşırsınız, 'digər' bölməsinə daxil olaraq 'Starex'-i
+                      seçirsiniz. '010103' müştəri kodunuzu yığaraq 'davam et'
+                      düyməsini sıxırsınız. İstədiyiniz məbləği daxil edib
+                      təsdiq edirsiniz. Əməliyyatı bitirdikdən sonra pul dərhal
+                      şəxsi kabinetdəki balansınızda görünəcək.
+                    </p>
+                  </div>
+                </div>
+                <div class="gift_card">
+                  <span class="title">Hədiyyə kartı</span>
+                  <p class="desc">
+                    Hədiyyə kartı ilə balansınızı artırmaq üçün aşağıdakı
+                    formadan istifadə edə bilərsiniz. Kart üzərindəki nömrəni
+                    verilən xanaya yazıb təsdiqləyin
+                  </p>
+                  <form action="#">
+                    <div class="input error">
+                      <label for="amount3">Kartın nömrəsi</label>
+                      <input
+                        type="text"
+                        id="amount3"
+                        placeholder="Kartın nömrəsini daxil edin"
+                      />
+                      <span class="error_message"
+                        >Kupon kartın nömrəsi düzgün daxil edilməyib
+                      </span>
+                    </div>
+                    <button type="submit" class="btn_submit">
+                      Balans artır
+                    </button>
+                  </form>
+                </div>
+                <div class="balance_archive_block">
+                  <span class="title">Balans keçmişi</span>
+                  <div class="table">
+                    <table>
+                      <tr>
+                        <th>Əməliyyatlar</th>
+                        <th>Məbləğ</th>
+                        <th>Tarix və saat</th>
+                      </tr>
+                      <tr>
+                        <td>Sifariş Qalıq Ödənişi</td>
+                        <td><span class="pluse">+115.49</span></td>
+                        <td>09.05.2020 06:54</td>
+                      </tr>
+                      <tr>
+                        <td>Sifariş Ödənişi</td>
+                        <td><span class="minus">-115.49</span></td>
+                        <td>09.05.2020 06:54</td>
+                      </tr>
+                      <tr>
+                        <td>Balans artırılması</td>
+                        <td><span class="pluse">+115.49</span></td>
+                        <td>09.05.2020 06:54</td>
+                      </tr>
+                      <tr>
+                        <td>Sifariş Qalıq Ödənişi</td>
+                        <td><span class="pluse">+115.49</span></td>
+                        <td>09.05.2020 06:54</td>
+                      </tr>
+                      <tr>
+                        <td>Sifariş Ödənişi</td>
+                        <td><span class="minus">-115.49</span></td>
+                        <td>09.05.2020 06:54</td>
+                      </tr>
+                      <tr>
+                        <td>Balans artırılması</td>
+                        <td><span class="pluse">+115.49</span></td>
+                        <td>09.05.2020 06:54</td>
+                      </tr>
+                    </table>
+                  </div>
+                </div>
+              </div> -->
             </div>
             <div class="foot_content">
               <ul class="pagination">

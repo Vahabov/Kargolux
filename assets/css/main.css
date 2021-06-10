@@ -1256,7 +1256,7 @@ body .my_modal .modal_center .facture_edit_modal .inputs .input label {
 }
 
 body .my_modal .modal_center .facture_edit_modal .inputs .input label img {
-  width: 8px;
+  width: 10px;
   height: 10px;
 }
 
@@ -2415,6 +2415,11 @@ body .main_header .cabinet_bottom_section .right_column .user_profile_info .info
 body .main_header .cabinet_bottom_section .right_column .user_profile_info .info .icn .araba {
   width: 62%;
   height: 62%;
+}
+
+body .main_header .cabinet_bottom_section .right_column .user_profile_info .info .manat {
+  width: 17px !important;
+  height: 16px !important;
 }
 
 body .main_header .cabinet_bottom_section .right_column .user_profile_info .info .in {
@@ -6915,7 +6920,7 @@ body main .main_cabinet_section .content_main .balance_main {
   padding: 25px;
 }
 
-body main .main_cabinet_section .content_main .balance_main .tab_navs {
+body main .main_cabinet_section .content_main .balance_main .link_navs {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -6924,12 +6929,12 @@ body main .main_cabinet_section .content_main .balance_main .tab_navs {
           align-items: center;
 }
 
-body main .main_cabinet_section .content_main .balance_main .tab_navs .active_tab {
+body main .main_cabinet_section .content_main .balance_main .link_navs .active_tab {
   background-color: #ff6d67 !important;
   color: #fff !important;
 }
 
-body main .main_cabinet_section .content_main .balance_main .tab_navs .btn_tab {
+body main .main_cabinet_section .content_main .balance_main .link_navs .balnce_nav_btn {
   min-width: 163px;
   height: 52px;
   border-radius: 10px;
@@ -6948,7 +6953,7 @@ body main .main_cabinet_section .content_main .balance_main .tab_navs .btn_tab {
   opacity: 1;
 }
 
-body main .main_cabinet_section .content_main .balance_main .tab_navs .btn_tab:not(:last-child) {
+body main .main_cabinet_section .content_main .balance_main .link_navs .balnce_nav_btn:not(:last-child) {
   margin-right: 15px;
 }
 

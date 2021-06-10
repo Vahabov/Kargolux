@@ -1496,11 +1496,11 @@
   body main .main_cabinet_section .content_main .balance_main {
     padding: 15px;
   }
-  body main .main_cabinet_section .content_main .balance_main .tab_navs .btn_tab {
+  body main .main_cabinet_section .content_main .balance_main .link_navs .balnce_nav_btn {
     padding: 0px 10px;
     min-width: auto;
   }
-  body main .main_cabinet_section .content_main .balance_main .tab_navs .btn_tab:not(:last-child) {
+  body main .main_cabinet_section .content_main .balance_main .link_navs .balnce_nav_btn:not(:last-child) {
     margin-right: 5px;
   }
   body main .main_cabinet_section .content_main .balance_main .order_balance {

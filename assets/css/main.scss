@@ -931,7 +931,7 @@ body {
               font-size: 14px;
               margin-bottom: 5px;
               img {
-                width: 8px;
+                width: 10px;
                 height: 10px;
               }
             }
@@ -1656,6 +1656,10 @@ body {
                 height: 62%;
               }
             }
+            .manat {
+              width: 17px !important;
+              height: 16px !important;
+            }
             .in {
               margin-left: 16px;
               span {
@@ -2003,7 +2007,7 @@ body {
       }
     }
   }
-  
+
   main {
     //components
     .scrollable_block {
@@ -3235,7 +3239,7 @@ body {
               font-family: $regular;
               display: block;
             }
-            .code{
+            .code {
               border-right: 1px solid $textColor;
               height: 100%;
               display: flex;
@@ -3243,7 +3247,7 @@ body {
               padding-right: 15px;
               font-size: 14px;
             }
-            input{
+            input {
               height: 100%;
               padding-left: 15px;
               width: 70%;
@@ -4691,14 +4695,14 @@ body {
           border-radius: $siteRadius10;
           overflow: hidden;
           padding: 25px;
-          .tab_navs {
+          .link_navs {
             display: flex;
             align-items: center;
             .active_tab {
               background-color: $siteColor2 !important;
               color: #fff !important;
             }
-            .btn_tab {
+            .balnce_nav_btn {
               min-width: 163px;
               height: 52px;
               border-radius: $siteRadius10;
