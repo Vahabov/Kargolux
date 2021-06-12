@@ -5719,12 +5719,14 @@ body {
             .price {
               @include flex-center(flex);
               background-color: #ff5050;
-              color: #fff;
-              font-size: 20px;
               margin-left: 10px;
               height: 52px;
               padding: 0px 15px;
               border-radius: $siteRadius10;
+              span{
+                color: #fff;
+              font-size: 20px;
+              }
               svg {
                 width: 17px;
                 height: 17px;

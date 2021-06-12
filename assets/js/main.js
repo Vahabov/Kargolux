@@ -253,13 +253,51 @@ $(function () {
 
   //dynamic checkboxes
 
+  var totalAllPrice = 0;
+
   $(".selectall").click(function () {
+    // let checkes = $(this).parents("table").find(".selectedId");
     $(this).parents("table").find(".selectedId").prop("checked", this.checked);
+    // for (let i = 0; i < checkes.length; i++) {
+    //   const element = checkes[i];
+    //   let priceElement = $(element).parents("tr").find(".price span").text();
+    //   if ($(".selectedId").is(":checked")) {
+    //     totalAllPrice = totalAllPrice + Number(priceElement);
+    //     $(this)
+    //       .parents(".main_price_block")
+    //       .find(".total_price .price span")
+    //       .text(totalAllPrice.toFixed(2));
+    //   } else {
+    //     totalAllPrice = totalAllPrice - Number(priceElement);
+    //     $(this)
+    //       .parents(".main_price_block")
+    //       .find(".total_price .price span")
+    //       .text(totalAllPrice.toFixed(2));
+    //   }
+    // }
   });
+
+  // var totalPrice = 0;
 
   $(".selectedId").change(function () {
     var check =
       $(".selectedId").filter(":checked").length == $(".selectedId").length;
     $(".selectall").prop("checked", check);
+
+    // let thisPrice = $(this).parents("tr").find(".price span").text();
+
+    // if ($(this).is(":checked")) {
+    //   totalPrice = totalPrice + Number(thisPrice);
+    //   $(this)
+    //     .parents(".main_price_block")
+    //     .find(".total_price .price span")
+    //     .text(totalPrice.toFixed(2));
+    // } else {
+    //   totalPrice = totalPrice - Number(thisPrice);
+    //   $(this)
+    //     .parents(".main_price_block")
+    //     .find(".total_price .price span")
+    //     .text(totalPrice.toFixed(2));
+    // }
   });
 });

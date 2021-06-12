@@ -8330,12 +8330,15 @@ body main .main_cabinet_section .content_main .foot_content .total_price .price 
       -ms-flex-pack: center;
           justify-content: center;
   background-color: #ff5050;
-  color: #fff;
-  font-size: 20px;
   margin-left: 10px;
   height: 52px;
   padding: 0px 15px;
   border-radius: 10px;
+}
+
+body main .main_cabinet_section .content_main .foot_content .total_price .price span {
+  color: #fff;
+  font-size: 20px;
 }
 
 body main .main_cabinet_section .content_main .foot_content .total_price .price svg {
