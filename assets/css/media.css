@@ -1476,7 +1476,8 @@
     margin-bottom: 25px;
   }
   body main .main_cabinet_section .content_main .settings_main .inputs_settings .input,
-  body main .main_cabinet_section .content_main .settings_main .inputs_settings .input_with_select {
+  body main .main_cabinet_section .content_main .settings_main .inputs_settings .input_with_select,
+  body main .main_cabinet_section .content_main .settings_main .inputs_settings .phone_input {
     width: 100%;
     margin-right: 0px;
   }

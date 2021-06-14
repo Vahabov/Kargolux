@@ -5,9 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Cabinet settings</title>
     <link rel="stylesheet" href="/assets/css/main.css" />
-    
+
     <link rel="stylesheet" href="/assets/css/media.css" />
-    
+
     <link
       rel="stylesheet"
       href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css"
@@ -759,7 +759,7 @@
                 <div class="notify_modal_in">
                   <span class="title">Sifariş</span>
                   <div class="mobile_items">
-                   <div class="item">
+                    <div class="item">
                       <label class="checkbox_label">
                         <input type="checkbox" class="selectedId" />
                         <span class="checkmark"></span>
@@ -1374,9 +1374,13 @@
                         id="email"
                       />
                     </div>
-                    <div class="input">
+                    <div class="phone_input">
                       <label for="phone">Mobil</label>
-                      <input type="number" value="994508500955" id="phone" />
+                      <div class="input">
+                        <span class="code">+994</span>
+                        <input type="number" placeholder="Mobil nömrə" />
+                      </div>
+                      <span class="error_message"></span>
                     </div>
                     <div class="input">
                       <label for="gender">Doğum tarixi</label>

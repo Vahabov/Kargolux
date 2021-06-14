@@ -6806,6 +6806,66 @@ body main .main_cabinet_section .content_main .settings_main .inputs_settings .i
   background-image: url(../images/icons/select_arrow_black.svg);
 }
 
+body main .main_cabinet_section .content_main .settings_main .inputs_settings .phone_input {
+  margin-right: 25px;
+  width: 30%;
+}
+
+body main .main_cabinet_section .content_main .settings_main .inputs_settings .phone_input .disable_text {
+  border: 1px solid #282141;
+  border-radius: 10px;
+  height: 52px;
+  padding: 0px 20px;
+  font-family: Nunito-Regular;
+  font-size: 14px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body main .main_cabinet_section .content_main .settings_main .inputs_settings .phone_input label {
+  display: block;
+  font-family: Nunito-Regular;
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+body main .main_cabinet_section .content_main .settings_main .inputs_settings .phone_input .input {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 1px solid #282141;
+  border-radius: 10px;
+  height: 52px;
+  padding-left: 20px;
+}
+
+body main .main_cabinet_section .content_main .settings_main .inputs_settings .phone_input .input input {
+  height: 100%;
+  border: none;
+}
+
+body main .main_cabinet_section .content_main .settings_main .inputs_settings .phone_input .input .code {
+  border-right: 1px solid #282141;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-right: 15px;
+  font-size: 14px;
+}
+
 body main .main_cabinet_section .content_main .settings_main .inputs_settings .input_with_select {
   width: 30%;
   margin-right: 25px;

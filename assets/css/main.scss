@@ -4543,6 +4543,7 @@ body {
                 }
               }
             }
+
             .disabled {
               input,
               .disable_text {
@@ -4607,6 +4608,48 @@ body {
                 font-size: 14px;
                 width: 100%;
                 background-image: url(../images/icons/select_arrow_black.svg);
+              }
+            }
+            .phone_input {
+              margin-right: 25px;
+              width: 30%;
+              .disable_text {
+                border: 1px solid $textColor;
+                border-radius: $siteRadius10;
+                height: 52px;
+                padding: 0px 20px;
+                font-family: $regular;
+                font-size: 14px;
+                width: 100%;
+                display: flex;
+                align-items: center;
+              }
+              label {
+                display: block;
+                font-family: $regular;
+                font-size: 14px;
+                margin-bottom: 5px;
+              }
+              .input{
+                width: 100%;
+                display: flex;
+                align-items: center;
+                border: 1px solid $textColor;
+                border-radius: $siteRadius10;
+                height: 52px;
+                padding-left: 20px;
+                input{
+                  height: 100%;
+                  border: none;
+                }
+                .code {
+                  border-right: 1px solid $textColor;
+                  height: 100%;
+                  display: flex;
+                  align-items: center;
+                  padding-right: 15px;
+                  font-size: 14px;
+                }
               }
             }
             .input_with_select {
@@ -5723,9 +5766,9 @@ body {
               height: 52px;
               padding: 0px 15px;
               border-radius: $siteRadius10;
-              span{
+              span {
                 color: #fff;
-              font-size: 20px;
+                font-size: 20px;
               }
               svg {
                 width: 17px;
