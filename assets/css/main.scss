@@ -4630,7 +4630,7 @@ body {
                 font-size: 14px;
                 margin-bottom: 5px;
               }
-              .input{
+              .input {
                 width: 100%;
                 display: flex;
                 align-items: center;
@@ -4638,7 +4638,7 @@ body {
                 border-radius: $siteRadius10;
                 height: 52px;
                 padding-left: 20px;
-                input{
+                input {
                   height: 100%;
                   border: none;
                 }
@@ -5703,6 +5703,10 @@ body {
           margin-top: 15px;
           @include flex-between(flex);
           width: 100%;
+          .right {
+            display: flex;
+            align-items: center;
+          }
           .black_btn {
             min-width: 151px;
             height: 52px;
@@ -5780,43 +5784,46 @@ body {
               }
             }
           }
-          .pagination {
-            margin-top: 10px;
-            margin-left: 0px;
+          .left {
             width: 196px;
-            .left_icn *,
-            .right_icn * {
-              width: 10px;
-              height: 11px;
-              svg {
-                path {
-                  stroke: #aaaaad;
-                  fill: none;
+            .pagination {
+              margin-top: 10px;
+              margin-left: 0px;
+              width: 100%;
+              .left_icn *,
+              .right_icn * {
+                width: 10px;
+                height: 11px;
+                svg {
+                  path {
+                    stroke: #aaaaad;
+                    fill: none;
+                  }
                 }
               }
-            }
-            .active_li {
-              background-color: #fff;
-              border-radius: 100%;
-              width: 23px;
-              height: 23px;
-              @include flex-center(flex);
-              a {
-                color: $siteColor2;
-              }
-            }
-            .active_icn {
-              background-color: #fff;
-              svg {
-                path {
-                  stroke: #000;
+              .active_li {
+                background-color: #fff;
+                border-radius: 100%;
+                width: 23px;
+                height: 23px;
+                @include flex-center(flex);
+                a {
+                  color: $siteColor2;
                 }
               }
-            }
-            li {
-              a {
-                font-size: 12px;
-                line-height: 22px;
+              .active_icn {
+                background-color: #fff;
+                svg {
+                  path {
+                    stroke: #000;
+                  }
+                }
+              }
+              li {
+                a {
+                  font-size: 12px;
+                  line-height: 22px;
+                }
               }
             }
           }

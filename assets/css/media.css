@@ -1643,8 +1643,14 @@
     width: 100%;
     height: 40px;
   }
+  body main .main_cabinet_section .content_main .foot_content .left {
+    width: 100%;
+  }
+  body main .main_cabinet_section .content_main .foot_content .right {
+    width: 100%;
+  }
   body main .main_cabinet_section .content_main .foot_content .pagination {
-    margin: 15px auto 0px auto;
+    margin: 15px auto 0px auto !important;
     width: 100%;
     max-width: 300px;
   }
