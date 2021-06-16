@@ -1717,6 +1717,7 @@ $siteRadius5: 5px;
             }
             .table_declaration_mobile {
               display: block;
+              max-height: 100%;
             }
           }
           .foot_content {
@@ -1742,6 +1743,7 @@ $siteRadius5: 5px;
             }
             .right{
               width: 100%;
+              flex-direction: column-reverse;
             }
             .pagination {
               margin: 15px auto 0px auto !important;

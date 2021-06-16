@@ -1620,6 +1620,7 @@
   }
   body main .main_cabinet_section .content_main .declarations_main .table_declaration_mobile {
     display: block;
+    max-height: 100%;
   }
   body main .main_cabinet_section .content_main .foot_content {
     margin-top: 25px;
@@ -1648,6 +1649,10 @@
   }
   body main .main_cabinet_section .content_main .foot_content .right {
     width: 100%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
   }
   body main .main_cabinet_section .content_main .foot_content .pagination {
     margin: 15px auto 0px auto !important;
