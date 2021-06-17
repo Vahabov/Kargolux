@@ -1639,6 +1639,11 @@
   body main .main_cabinet_section .content_main .foot_content .operations_select {
     display: none;
   }
+  body main .main_cabinet_section .content_main .foot_content .order_coruier {
+    width: 100%;
+    margin-left: 0px;
+    margin-bottom: 20px;
+  }
   body main .main_cabinet_section .content_main .foot_content .pay_btn {
     margin-left: 0px;
     width: 100%;

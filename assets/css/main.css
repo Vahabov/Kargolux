@@ -8315,7 +8315,7 @@ body main .main_cabinet_section .content_main .foot_content .operations_select {
 }
 
 body main .main_cabinet_section .content_main .foot_content .purple_btn {
-  min-width: 211px;
+  min-width: 160px;
   height: 52px;
   padding: 0px 15px;
   border-radius: 10px;
@@ -8334,6 +8334,26 @@ body main .main_cabinet_section .content_main .foot_content .purple_btn {
 }
 
 body main .main_cabinet_section .content_main .foot_content .pay_btn {
+  height: 52px;
+  padding: 0px 15px;
+  font-size: 16px;
+  border-radius: 10px;
+  color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #0cc0cc;
+  margin-left: 15px;
+}
+
+body main .main_cabinet_section .content_main .foot_content .order_coruier {
+  min-width: 160px;
   height: 52px;
   padding: 0px 15px;
   font-size: 16px;

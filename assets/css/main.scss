@@ -5728,7 +5728,7 @@ body {
             background-position-x: 91%;
           }
           .purple_btn {
-            min-width: 211px;
+            min-width: 160px;
             height: 52px;
             padding: 0px 15px;
             border-radius: $siteRadius10;
@@ -5738,6 +5738,17 @@ body {
             background-color: $siteColor;
           }
           .pay_btn {
+            height: 52px;
+            padding: 0px 15px;
+            font-size: 16px;
+            border-radius: $siteRadius10;
+            color: #fff;
+            @include flex-center(flex);
+            background-color: #0cc0cc;
+            margin-left: 15px;
+          }
+          .order_coruier {
+            min-width: 160px;
             height: 52px;
             padding: 0px 15px;
             font-size: 16px;
