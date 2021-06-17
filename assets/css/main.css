@@ -7218,11 +7218,11 @@ body main .main_cabinet_section .content_main .balance_main .balance_archive_blo
 }
 
 body main .main_cabinet_section .content_main .balance_main .balance_archive_block .table table .minus {
-  color: #41dda5;
+  color: #fd4c50;
 }
 
 body main .main_cabinet_section .content_main .balance_main .balance_archive_block .table table .pluse {
-  color: #fd4c50;
+  color: #41dda5;
 }
 
 body main .main_cabinet_section .content_main .balance_main .balance_archive_block .table table th {
@@ -7908,11 +7908,11 @@ body main .main_cabinet_section .content_main .notification_main .table table {
 }
 
 body main .main_cabinet_section .content_main .notification_main .table table .minus {
-  color: #41dda5;
+  color: #fd4c50;
 }
 
 body main .main_cabinet_section .content_main .notification_main .table table .pluse {
-  color: #fd4c50;
+  color: #41dda5;
 }
 
 body main .main_cabinet_section .content_main .notification_main .table table th {
