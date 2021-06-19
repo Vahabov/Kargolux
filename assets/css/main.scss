@@ -1345,13 +1345,12 @@ body {
           padding-right: 30px;
           margin-right: 30px;
           border-right: 1px solid $borderColor;
-          &::before {
-            content: "";
+          .circle {
             width: 10px;
             height: 10px;
             position: absolute;
             top: -2px;
-            left: 14px;
+            left: 16px;
             background-color: $siteColor2;
             border-radius: 100%;
           }
@@ -1361,7 +1360,7 @@ body {
           }
         }
         .shop_btn {
-          &::before {
+          .circle {
             left: 20px;
           }
         }
@@ -1394,13 +1393,13 @@ body {
           position: relative;
           margin-right: 22px;
           @include flex-center(flex);
-          &::before {
+          .circle {
             content: "";
             width: 10px;
             height: 10px;
             position: absolute;
             top: -2px;
-            left: 14px;
+            left: 16px;
             background-color: $siteColor2;
             border-radius: 100%;
           }
@@ -1410,7 +1409,7 @@ body {
           }
         }
         .shop_btn {
-          &::before {
+          .circle {
             left: 20px;
           }
         }

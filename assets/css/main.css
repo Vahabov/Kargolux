@@ -1863,13 +1863,12 @@ body .main_header .top_section .right_column .notify_btn {
   border-right: 1px solid #28214121;
 }
 
-body .main_header .top_section .right_column .notify_btn::before {
-  content: "";
+body .main_header .top_section .right_column .notify_btn .circle {
   width: 10px;
   height: 10px;
   position: absolute;
   top: -2px;
-  left: 14px;
+  left: 16px;
   background-color: #ff6d67;
   border-radius: 100%;
 }
@@ -1879,7 +1878,7 @@ body .main_header .top_section .right_column .notify_btn img {
   height: 24px;
 }
 
-body .main_header .top_section .right_column .shop_btn::before {
+body .main_header .top_section .right_column .shop_btn .circle {
   left: 20px;
 }
 
@@ -1942,13 +1941,13 @@ body .main_header .center_section .mobile_right .notify_btn {
           justify-content: center;
 }
 
-body .main_header .center_section .mobile_right .notify_btn::before {
+body .main_header .center_section .mobile_right .notify_btn .circle {
   content: "";
   width: 10px;
   height: 10px;
   position: absolute;
   top: -2px;
-  left: 14px;
+  left: 16px;
   background-color: #ff6d67;
   border-radius: 100%;
 }
@@ -1958,7 +1957,7 @@ body .main_header .center_section .mobile_right .notify_btn img {
   height: 24px;
 }
 
-body .main_header .center_section .mobile_right .shop_btn::before {
+body .main_header .center_section .mobile_right .shop_btn .circle {
   left: 20px;
 }
 
