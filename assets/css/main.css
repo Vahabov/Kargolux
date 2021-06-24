@@ -4288,6 +4288,7 @@ body main .youtube_videos_section .container .scrollable_block .center .item .ov
 body main .youtube_videos_section .container .scrollable_block .center .item .overlay .content p {
   font-family: Nunito-Regular;
   font-size: 14px;
+  margin-top: 5px;
   color: #fff;
   overflow: hidden;
   text-overflow: ellipsis;
