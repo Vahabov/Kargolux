@@ -837,11 +837,6 @@
   body main .youtube_videos_section .container .scrollable_block .center .item .overlay .content p {
     font-size: 12px;
   }
-  body main .youtube_videos_section .container .scrollable_block .center .item .overlay .date {
-    position: absolute;
-    right: 14px;
-    top: 14px;
-  }
   body main .youtube_videos_section .container .scrollable_block .center .item .overlay .date span {
     font-size: 12px;
   }

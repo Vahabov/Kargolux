@@ -4208,17 +4208,10 @@ body main .youtube_videos_section .container .scrollable_block .center .item:not
 
 body main .youtube_videos_section .container .scrollable_block .center .item:not(:first-child) .overlay .content .title {
   font-size: 18px;
-  margin-bottom: 3px;
 }
 
 body main .youtube_videos_section .container .scrollable_block .center .item:not(:first-child) .overlay .content p {
   font-size: 14px;
-}
-
-body main .youtube_videos_section .container .scrollable_block .center .item:not(:first-child) .overlay .date {
-  position: absolute;
-  right: 14px;
-  top: 14px;
 }
 
 body main .youtube_videos_section .container .scrollable_block .center .item:not(:first-child) .overlay .date span {
@@ -4281,33 +4274,15 @@ body main .youtube_videos_section .container .scrollable_block .center .item .ov
   bottom: 0px;
   left: 0px;
   width: 100%;
-  padding: 28px;
+  padding: 20px;
   background-color: #7b5ce1a9;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
-}
-
-body main .youtube_videos_section .container .scrollable_block .center .item .overlay .content {
-  width: 40%;
 }
 
 body main .youtube_videos_section .container .scrollable_block .center .item .overlay .content .title {
   font-family: Nunito-ExtraBold;
   font-size: 20px;
   color: #fff;
-  margin-bottom: 12px;
   line-height: 20px;
-  max-width: 65%;
 }
 
 body main .youtube_videos_section .container .scrollable_block .center .item .overlay .content p {
@@ -4332,6 +4307,10 @@ body main .youtube_videos_section .container .scrollable_block .center .item .ov
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  margin: 7px 0px 0px auto;
 }
 
 body main .youtube_videos_section .container .scrollable_block .center .item .overlay .date svg {

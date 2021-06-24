@@ -2843,16 +2843,12 @@ body {
                     width: 100%;
                     .title {
                       font-size: 18px;
-                      margin-bottom: 3px;
                     }
                     p {
                       font-size: 14px;
                     }
                   }
                   .date {
-                    position: absolute;
-                    right: 14px;
-                    top: 14px;
                     span {
                       font-size: 12px;
                     }
@@ -2899,19 +2895,14 @@ body {
                 bottom: 0px;
                 left: 0px;
                 width: 100%;
-                padding: 28px;
+                padding: 20px;
                 background-color: #7b5ce1a9;
-                @include flex-between(flex);
-                align-items: flex-end;
                 .content {
-                  width: 40%;
                   .title {
                     font-family: $extraBold;
                     font-size: 20px;
                     color: #fff;
-                    margin-bottom: 12px;
                     line-height: 20px;
-                    max-width: 65%;
                   }
                   p {
                     font-family: $regular;
@@ -2922,6 +2913,8 @@ body {
                 }
                 .date {
                   @include flex-between(flex);
+                  width: max-content;
+                  margin: 7px 0px 0px auto;
                   svg {
                     width: 13px;
                     height: 14px;
