@@ -2907,6 +2907,7 @@ body {
                   p {
                     font-family: $regular;
                     font-size: 14px;
+                    margin-top: 5px;
                     color: #fff;
                     @include ellipsis-text(2);
                   }
