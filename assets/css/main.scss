@@ -5121,6 +5121,16 @@ body {
             .note {
               width: 74.2%;
             }
+            .order_coruier4 {
+              background-color: $siteColor2;
+              width: 23%;
+              height: 52px;
+              padding: 0px 15px;
+              font-size: 16px;
+              border-radius: 10px;
+              color: #fff;
+              @include flex-center(flex);
+            }
           }
           .table_courier {
             width: 100%;

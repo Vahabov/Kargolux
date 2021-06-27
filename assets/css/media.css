@@ -1573,6 +1573,11 @@
   body main .main_cabinet_section .content_main .courier_order_block .inputs .input {
     width: 100%;
   }
+  body main .main_cabinet_section .content_main .courier_order_block .inputs .order_coruier4 {
+    width: 100%;
+    margin-bottom: 20px;
+    height: 45px;
+  }
   body main .main_cabinet_section .content_main .courier_order_block .box_table_block .table {
     overflow: scroll;
   }

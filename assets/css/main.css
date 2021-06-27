@@ -7511,6 +7511,25 @@ body main .main_cabinet_section .content_main .courier_order_block .inputs .note
   width: 74.2%;
 }
 
+body main .main_cabinet_section .content_main .courier_order_block .inputs .order_coruier4 {
+  background-color: #ff6d67;
+  width: 23%;
+  height: 52px;
+  padding: 0px 15px;
+  font-size: 16px;
+  border-radius: 10px;
+  color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
 body main .main_cabinet_section .content_main .courier_order_block .table_courier {
   width: 100%;
   max-height: 477px;
