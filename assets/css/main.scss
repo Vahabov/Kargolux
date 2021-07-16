@@ -3346,9 +3346,14 @@ body {
           line-height: 20px;
         }
         .mobile_items_title {
-          display: none;
-          font-size: 16px;
-          font-family: $extraBold;
+          @include flex-between(none);
+          margin: 0px auto 30px auto;
+          max-width: 768px;
+          padding: 0px 15px;
+          * {
+            font-size: 16px;
+            font-family: $extraBold;
+          }
         }
         .tariff_items {
           @include flex-between(flex);

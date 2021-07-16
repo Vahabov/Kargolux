@@ -1007,8 +1007,9 @@
     margin-bottom: 20px;
   }
   body main .tariffs_section .container .mobile_items_title {
-    display: block;
-    margin-bottom: 30px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
   }
   body main .tariffs_section .container .tariff_items {
     -webkit-box-orient: vertical;
@@ -1019,7 +1020,7 @@
   body main .tariffs_section .container .tariff_items .item {
     min-height: auto;
     width: 100%;
-    max-width: 320px;
+    max-width: 768px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;

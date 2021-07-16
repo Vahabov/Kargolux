@@ -1101,15 +1101,14 @@ $siteRadius5: 5px;
             margin-bottom: 20px;
           }
           .mobile_items_title {
-            display: block;
-            margin-bottom: 30px;
+            display: flex;
           }
           .tariff_items {
             flex-direction: column;
             .item {
               min-height: auto;
               width: 100%;
-              max-width: 320px;
+              max-width: 768px;
               @include flex-between(flex);
               flex-direction: row-reverse;
               &:not(:last-child) {
