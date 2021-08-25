@@ -9015,4 +9015,8 @@ body .auth_footer .container .bottom_sect_mobile .visa {
 .concat_table tr {
   background-color: #e8e7f0 !important;
 }
+
+.concat_table tr:nth-child(odd), .concat_table td:first-child, .concat_table tr:nth-child(odd), .concat_table th:first-child {
+  border-radius: 0px !important;
+}
 /*# sourceMappingURL=main.css.map */

@@ -1828,6 +1828,9 @@
     display: -ms-flexbox;
     display: flex;
   }
+  .concat_table {
+    padding: 0px !important;
+  }
 }
 
 @media screen and (max-width: 360px) {

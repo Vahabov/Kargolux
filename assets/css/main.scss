@@ -6181,4 +6181,7 @@ body {
   tr{
     background-color: #e8e7f0 !important;
   }
+  tr:nth-child(odd),  td:first-child, tr:nth-child(odd), th:first-child{
+    border-radius: 0px !important;
+  }
 }
