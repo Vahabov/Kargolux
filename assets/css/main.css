@@ -9016,7 +9016,23 @@ body .auth_footer .container .bottom_sect_mobile .visa {
   background-color: #e8e7f0 !important;
 }
 
-.concat_table tr:nth-child(odd), .concat_table td:first-child, .concat_table tr:nth-child(odd), .concat_table th:first-child {
+.concat_table tr:nth-child(odd),
+.concat_table td:first-child,
+.concat_table tr:nth-child(odd),
+.concat_table th:first-child {
   border-radius: 0px !important;
+}
+
+.title_mobile_pice_blocks {
+  display: none;
+  font-size: 18px;
+  margin-bottom: 17px;
+  text-align: left;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+}
+
+.title_mobile_pice_blocks .orange_color {
+  font-family: Nunito-ExtraBold;
 }
 /*# sourceMappingURL=main.css.map */

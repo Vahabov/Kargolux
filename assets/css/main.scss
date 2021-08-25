@@ -6168,20 +6168,28 @@ body {
   }
 }
 
+///////// before added
 
-
-
-
-
-///////// before added 
-
-
-.concat_table{
+.concat_table {
   padding: 12px 0px !important;
-  tr{
+  tr {
     background-color: #e8e7f0 !important;
   }
-  tr:nth-child(odd),  td:first-child, tr:nth-child(odd), th:first-child{
+  tr:nth-child(odd),
+  td:first-child,
+  tr:nth-child(odd),
+  th:first-child {
     border-radius: 0px !important;
+  }
+}
+
+.title_mobile_pice_blocks {
+  display: none;
+  font-size: 18px;
+  margin-bottom: 17px;
+  text-align: left;
+  align-self: flex-start;
+  .orange_color {
+    font-family: $extraBold;
   }
 }
