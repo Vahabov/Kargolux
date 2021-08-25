@@ -9007,4 +9007,12 @@ body .auth_footer .container .bottom_sect_mobile .copyright_mob {
 body .auth_footer .container .bottom_sect_mobile .visa {
   width: 92px;
 }
+
+.concat_table {
+  padding: 12px 0px !important;
+}
+
+.concat_table tr {
+  background-color: #e8e7f0 !important;
+}
 /*# sourceMappingURL=main.css.map */
