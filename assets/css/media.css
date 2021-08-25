@@ -1828,9 +1828,6 @@
     display: -ms-flexbox;
     display: flex;
   }
-  .concat_table {
-    padding: 0px !important;
-  }
   .title_mobile_pice_blocks {
     display: block;
   }

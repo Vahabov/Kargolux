@@ -5578,8 +5578,11 @@ body {
                 margin-right: 17px;
               }
               tr {
-                &:nth-child(odd) {
+                border-bottom: 1px solid #e8e7f0;
+                &:hover {
                   background-color: #f1f0f9;
+                }
+                &:nth-child(odd) {
                   td:first-child,
                   th:first-child {
                     border-top-left-radius: $siteRadius5;
@@ -5672,8 +5675,11 @@ body {
                 }
               }
               tr {
-                &:nth-child(odd) {
+                border-bottom: 1px solid #e8e7f0;
+                &:hover {
                   background-color: #f1f0f9;
+                }
+                &:nth-child(odd) {
                   td:first-child,
                   th:first-child {
                     border-top-left-radius: $siteRadius5;
@@ -6169,20 +6175,6 @@ body {
 }
 
 ///////// before added
-
-.concat_table {
-  padding: 12px 0px !important;
-  tr {
-    background-color: #e8e7f0 !important;
-  }
-  tr:nth-child(odd),
-  td:first-child,
-  tr:nth-child(odd),
-  th:first-child {
-    border-radius: 0px !important;
-  }
-}
-
 .title_mobile_pice_blocks {
   display: none;
   font-size: 18px;
